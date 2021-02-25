@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <nav className='navbar'>
             <div className="nav-center">
-                <Link to='/' className='nav-link'>
+                <Link to='/' className='nav-link logo-link'>
                     <img src={logo} alt="logo" className='logo' />
                 </Link>
                 <ul className="nav-links">
@@ -27,14 +27,16 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to='/' className='nav-link'>
+                        <Link to='/' className='nav-link active'>
                             Home
                         </Link>
                     </li>
                 </ul>
-                <div>
-                    <IoBagOutline />
-                </div>
+                <section className='search'>
+                    <Link to='/cart' className='cart-link'>
+                        <IoBagOutline />
+                    </Link>
+                </section>
             </div>
         </nav>
     )
