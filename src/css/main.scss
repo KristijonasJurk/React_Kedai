@@ -1,3 +1,5 @@
+@import "./home/home";
+
 //  =====VARIABLES=====
 :root {
   --primaryLightColor: #d4e6a5;
@@ -71,75 +73,3 @@ img {
   border-bottom: 1px solid (var(--darkGrey));
 }
 //  =====BUTTONS=====
-
-
-
-//  =====NAVBAR=====
-.navbar {
-  background: var(--mainGrey);
-  height: 5rem;
-  border-bottom: (var(--borderBottom));
-  display: flex;
-  align-items: center;
-
-  .nav-center {
-    display: grid;
-    grid-template-columns: 2fr 8fr 2fr;
-    grid-template-areas: "logo navs search";
-    align-items: center;
-    text-align: center;
-    min-width: var(--smallWidth);
-    height: 100%;
-    margin: 0 0;
-    width: var(--fullWidth);
-      .logo-link {
-        grid-area: logo;
-        justify-self: center;
-      }
-      .logo {
-        width: 10rem;
-      }
-      .nav-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        grid-area: navs;
-        li {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100%;
-        }
-        .nav-link {
-          text-transform: capitalize;
-          display: block;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-right: 2.5rem;
-          font-weight: 400;
-          letter-spacing: 2px;
-          font-size: 0.8rem;
-          transition: var(--mainTransition);
-          &:hover {
-            color: var(--darkerGray);
-          }
-        }
-      }
-      .search {
-        grid-area: search;
-        width: 50%;
-        justify-self: end;
-        .cart-link svg {
-          transition: var(--mainTransition);
-          font-size: 1.5rem;
-          color:  var(--mainBlack);
-          &:hover{
-            color: var(--darkerGray)
-          }
-        }
-      }
-    }
-}

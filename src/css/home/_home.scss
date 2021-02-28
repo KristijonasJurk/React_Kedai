@@ -23,43 +23,65 @@
       width: 10rem;
       margin: 0 20px 0 0;
     }
-    .nav-links {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      grid-area: navs;
-      li {
+    .nav-links-container {
+      overflow: hidden;
+      transition: var(--mainTransition);
+
+      .nav-links {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
-      }
-      .nav-link {
-        text-transform: capitalize;
-        display: block;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 2.5rem;
-        font-weight: 400;
-        letter-spacing: 2px;
-        font-size: 0.8rem;
-        transition: var(--mainTransition);
-        &:hover {
-          color: var(--darkerGray);
+        grid-area: navs;
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+        }
+        .nav-link {
+          text-transform: capitalize;
+          display: block;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 2.5rem;
+          font-weight: 400;
+          letter-spacing: 2px;
+          font-size: 0.8rem;
+          transition: var(--mainTransition);
+          &:hover {
+            color: var(--darkerGray);
+          }
         }
       }
     }
     .search {
       grid-area: search;
-      width: 50%;
+      display: flex;
+      align-items: center;
       justify-self: end;
+      .hidden {
+        display: none;
+      }
+      .nav-toggle {
+        font-size: 1.5rem;
+        color: var(--darkerGray);
+        background: transparent;
+        border-color: transparent;
+        transition: var(--mainTransition);
+        cursor: pointer;
+        &:hover {
+          color: var(--mainBlack);
+          transform: rotate(90deg);
+        }
+      }
       .cart-link svg {
         transition: var(--mainTransition);
         font-size: 1.5rem;
         color: var(--mainBlack);
+        margin: 0 20px;
         &:hover {
           color: var(--darkerGray);
         }
@@ -68,5 +90,17 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
+  .nav-center {
+    grid-template-columns: 2fr 4fr 2fr;
+  }
+  .search {
+    justify-self: flex-start;
+  }
+  .mav-links-container {
+    height: auto !important;
+  }
+  .nav-links {
+    display: flex;
+  }
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 // import pages
-import Home from './pages/Home'
-import Cart from './pages/Cart'
+import Home from './pages/Home/Home'
+import Cart from './pages/Cart/Cart'
 // import components
 import Navbar from './components/Navbar'
 import Error from './components/Error'
