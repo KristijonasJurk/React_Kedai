@@ -18,10 +18,12 @@ const Navbar = () => {
 
     useEffect(() => {
         window.addEventListener('resize', checkSize);
-        if (screenSize < 850) {
+        if (screenSize < 860) {
             setIsHidden(true)
+            setShowNav(false)
         } else {
             setIsHidden(false)
+            setShowNav(true)
         }
         return () => {
             window.removeEventListener('resize', checkSize);
@@ -30,12 +32,12 @@ const Navbar = () => {
 
     useEffect(() => {
         if (showNav) {
-            navContainerRef.current.style.height = `35px`;
+            navContainerRef.current.style.height = `65px`;
         } else {
             navContainerRef.current.style.height = `0px`;
+            navContainerRef.current.style.overflow = `hidden`;
         }
     }, [showNav])
-    console.log(screenSize);
     return (
         <nav className='navbar'>
             <div className="nav-center">
@@ -43,20 +45,18 @@ const Navbar = () => {
                     <img src={logo} alt="logo" className='logo' />
                 </Link>
                 <div className='nav-links-container' ref={navContainerRef}>
-                    {screenSize > 850 &&
-                        <ul className="nav-links">
-                            {navLinks.map((singleLink, index) => {
-                                const { link, text } = singleLink;
-                                return (
-                                    <li key={index}>
-                                        <Link to={link} className='nav-link'>
-                                            {text}
-                                        </Link>
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                    }
+                    <ul className="nav-links">
+                        {navLinks.map((singleLink, index) => {
+                            const { link, text } = singleLink;
+                            return (
+                                <li key={index}>
+                                    <Link to={link} className='nav-link'>
+                                        {text}
+                                    </Link>
+                                </li>
+                            )
+                        })}
+                    </ul>
                 </div>
                 <section className='search'>
                     <button className={`${isHidden ? 'nav-toggle' : 'nav-toggle hidden'}`} onClick={() => setShowNav(!showNav)}>
