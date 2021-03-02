@@ -33,9 +33,11 @@ const Navbar = () => {
     useEffect(() => {
         if (showNav) {
             navContainerRef.current.style.height = `65px`;
+            navContainerRef.current.style.transition = `0.5s`;
         } else {
             navContainerRef.current.style.height = `0px`;
             navContainerRef.current.style.overflow = `hidden`;
+            navContainerRef.current.style.transition = `0s`;
         }
     }, [showNav])
     return (

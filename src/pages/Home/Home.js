@@ -1,12 +1,11 @@
 import React from 'react'
-// import CocktailList from '../components/CocktailList'
+import Grid from './Grid';
 // import SearchForm from '../components/SearchForm'
 
 const Home = () => {
     return (
-        <main>
-            {/* <SearchForm />
-            <CocktailList /> */}
+        <main className='main'>
+            <Grid />
         </main>
     )
 }

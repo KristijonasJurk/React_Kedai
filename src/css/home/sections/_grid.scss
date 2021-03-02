@@ -1,0 +1,36 @@
+//  =====GRID=====
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
+    max-width: 1561px;
+    margin: 0 auto;
+}
+.element0 {
+    grid-column: 1/13;
+}
+.element1 {
+    grid-column: 1/9;
+}
+.element2 {
+    grid-column: 1/5;
+}
+.element3 {
+    grid-column: 5/9;
+}
+.element4 {
+    grid-column: 1/13;
+}
+.element5 {
+    grid-column: 1/13;
+}
+.element6 {
+    grid-column: 1/13;
+}
+.element7 {
+    grid-column: 1/13;
+}
+.element8 {
+    grid-column: 1/13;
+}
