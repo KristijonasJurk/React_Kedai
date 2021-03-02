@@ -7,7 +7,7 @@ function Grid() {
             {mainGrid.map((element, index) => {
                 const { src, title, text } = element;
                 return (
-                    <div key={index} className={`element${index}`}>
+                    <div key={index} className={`element element${index}`}>
                         <img src={src} alt={title} />
                         { title && <div className="gridFooter">
                             <h4>{title}</h4>
