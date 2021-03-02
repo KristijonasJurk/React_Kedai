@@ -6,6 +6,7 @@ function Grid() {
         <div className='grid-container'>
             {mainGrid.map((element, index) => {
                 const { src, title, text } = element;
+                { }
                 return (
                     <div key={index} className={`element element${index}`}>
                         <img src={src} alt={title} />
