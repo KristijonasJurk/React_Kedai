@@ -32,7 +32,7 @@ const Navbar = () => {
 
     useEffect(() => {
         if (showNav) {
-            navContainerRef.current.style.height = `65px`;
+            navContainerRef.current.style.height = `115px`;
             navContainerRef.current.style.transition = `0.5s`;
         } else {
             navContainerRef.current.style.height = `0px`;
@@ -43,7 +43,7 @@ const Navbar = () => {
     return (
         <nav className='navbar'>
             <div className="nav-center">
-                <Link to='/' className='nav-link logo-link'>
+                <Link to='/' className='logo-link'>
                     <img src={logo} alt="logo" className='logo' />
                 </Link>
                 <div className='nav-links-container' ref={navContainerRef}>
@@ -72,5 +72,5 @@ const Navbar = () => {
         </nav >
     )
 }
-
+// TODO WHEN CLICKED ELSEWHERE BUT NOT THE NAV-LINKS-CONTAINER, THE CONTAINER CLOSES good luck
 export default Navbar

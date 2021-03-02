@@ -51,6 +51,7 @@
           letter-spacing: 2px;
           font-size: 0.8rem;
           transition: var(--mainTransition);
+          border-bottom: 1px solid transparent;
           &:hover {
             color: var(--darkerGray);
           }
@@ -106,8 +107,18 @@
   }
   .nav-links {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: start;
     align-items: flex-start;
+    background-color: var(--mainBackground);
+  }
+  .navbar .nav-center .nav-links-container .nav-link {
+    margin-right: 2.5rem;
+    font-size: 1rem;
+    transition: var(--mainTransition);
+    &:hover {
+      color: var(--darkerGray);
+      border-bottom: 1px solid var(--darkerGrey);
+    }
   }
 }
 
