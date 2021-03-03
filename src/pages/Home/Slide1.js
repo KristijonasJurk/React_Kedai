@@ -4,25 +4,32 @@ import { GrNext, GrPrevious } from 'react-icons/gr';
 
 function Slide1() {
     const containerWidth = useRef(null);
-    const [index, setIndex] = useState(0);
     const [unactiveNext, setUnactiveNext] = useState(false);
     const [unactivePrev, setUnctivePrev] = useState(true);
 
+    const singleElement = useRef(null);
+    const [mouseOver, setMouseOver] = useState(-1);
+
 
     const prevSlide = () => {
-        console.log('prev');
-        const width = containerWidth.current.getBoundingClientRect().width;
         containerWidth.current.style.transform = `translateX(0px)`;
         setUnactiveNext(false);
         setUnctivePrev(true);
     }
     const nextSlide = () => {
-        console.log('next');
         const width = containerWidth.current.getBoundingClientRect().width;
         containerWidth.current.style.transform = `translateX(-${width}px)`;
         setUnactiveNext(true);
         setUnctivePrev(false);
     }
+
+    // const handleMouseOver = () => {
+    //     if (!mouseOver) {
+    //         setMouseOver(true)
+    //     } else {
+    //         setMouseOver(false)
+    //     }
+    // }
 
     return (
         <div className='slide1-main'>
@@ -30,14 +37,19 @@ function Slide1() {
             <div className="slide1-view">
                 <div className="slide1-container" ref={containerWidth}>
                     {/* <div className="slide1-window"> */}
-                    {slide1.map((element, index) => {
-                        const { src, text } = element;
+                    {slide1.map((element) => {
+                        const { id, src, text } = element;
                         return (
-                            <article key={index} className='slide1-element'>
+                            <article ref={singleElement} key={id} className='slide1-element'
+                                onMouseEnter={() => setMouseOver(id)}
+                                onMouseLeave={() => setMouseOver(-1)}
+                            >
                                 <div className='slide1-image-container'>
                                     <img src={src} alt="" />
-                                    <div className="slide1-image-footer">
-                                        <p>Quick Shop</p>
+                                    <div className={`slide1-image-footer ${mouseOver === id ? '' : 'hidden'}`}>
+                                        <a href="#">
+                                            <p>Quick Shop</p>
+                                        </a>
                                     </div>
                                 </div>
                                 <p>{text}</p>

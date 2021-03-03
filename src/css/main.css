@@ -234,6 +234,10 @@
   }
 }
 
+.slide1-main {
+  width: calc(85vw + 6vw);
+}
+
 .slide1-main h5 {
   font-weight: 400;
   letter-spacing: 1.5px;
@@ -269,13 +273,17 @@
   margin-right: 0px;
 }
 
+.slide1-image-container {
+  position: relative;
+}
+
 .slide1-image-container img {
   width: 17vw;
 }
 
 .slide1-image-footer {
   color: #767676;
-  background-color: var(#fafbfa);
+  background-color: var(--mainWhite);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,13 +294,21 @@
       align-content: center;
   height: 44px;
   padding: 10px 0;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .slide1-image-container p,
 .slide1-element > p {
   font-weight: 300;
-  letter-spacing: 1px;
-  font-size: 0.8rem;
+  letter-spacing: 0.2px;
+  font-size: 0.75rem;
+}
+
+.slide1-image-container p {
+  padding: 5px 0 0 0;
 }
 
 .slide1-button {
@@ -330,6 +346,10 @@
   right: 0%;
 }
 
+.slide1-element .hidden {
+  display: none;
+}
+
 .navbar {
   background: var(--mainGrey);
   height: 5rem;
@@ -348,6 +368,8 @@
   display: grid;
   -ms-grid-columns: 2fr 8fr 2fr;
       grid-template-columns: 2fr 8fr 2fr;
+  -ms-grid-rows: 5rem;
+      grid-template-rows: 5rem;
       grid-template-areas: "logo navs search";
   text-align: center;
   -ms-flex-line-pack: center;
@@ -364,6 +386,9 @@
   grid-area: logo;
   -ms-grid-column-align: center;
       justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .navbar .nav-center .logo {
