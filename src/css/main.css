@@ -234,6 +234,13 @@
   }
 }
 
+.slide1-main h5 {
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--grey);
+}
+
 .navbar {
   background: var(--mainGrey);
   height: 5rem;
@@ -432,6 +439,7 @@
   --mainBackground: #f1f5f8;
   --mainBlack: #222;
   --mainOverlay: rgba(35, 10, 36, 0.4);
+  --grey: #ddd;
   --lightGrey: #ececec;
   --darkGrey: #afafaf;
   --darkerGray: #767676;
