@@ -235,7 +235,7 @@
 }
 
 .slide1-main {
-  width: calc(85vw + 6vw);
+  width: calc(83.5vw + 6vw);
 }
 
 .slide1-main h5 {
@@ -247,12 +247,15 @@
 
 .slide1-view {
   overflow: hidden;
-  width: calc(85vw + 6vw);
+  width: calc(83.5vw + 6vw);
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slide1-container {
-  width: calc(85vw + 6vw);
+  width: calc(83.5vw + 6vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,6 +266,7 @@
 .slide1-element {
   display: inline-block;
   margin: 0.75vw;
+  cursor: pointer;
 }
 
 .slide1-element:first-of-type, .slide1-element:nth-of-type(6) {
@@ -278,7 +282,7 @@
 }
 
 .slide1-image-container img {
-  width: 17vw;
+  width: 16.7vw;
 }
 
 .slide1-image-footer {
@@ -311,6 +315,10 @@
   padding: 5px 0 0 0;
 }
 
+.slide1-element > p {
+  margin: 10px 0;
+}
+
 .slide1-button {
   width: 2vw;
   display: -webkit-box;
@@ -323,7 +331,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  top: 32%;
+  top: 40%;
   font-size: 30px;
   cursor: pointer;
   border: none;
@@ -348,6 +356,66 @@
 
 .slide1-element .hidden {
   display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .slide1-main {
+    width: calc(76vw + 6vw);
+  }
+  .slide1-view {
+    width: calc(76vw + 6vw);
+  }
+  .slide1-container {
+    width: calc(76vw + 6vw);
+  }
+  .slide1-element {
+    margin: 1vw;
+  }
+  .slide1-element:nth-of-type(6) {
+    margin: 1vw;
+  }
+  .slide1-element:first-of-type, .slide1-element:nth-of-type(5) {
+    margin: 1vw 1vw 1vw 0%;
+  }
+  .slide1-element:nth-of-type(4) {
+    margin-right: 0%;
+  }
+  .slide1-image-container img {
+    width: 19vw;
+  }
+  .slide1-button {
+    top: 30%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slide1-main {
+    width: calc(76vw + 6vw);
+  }
+  .slide1-view {
+    width: calc(76vw + 6vw);
+  }
+  .slide1-container {
+    width: calc(76vw + 6vw);
+  }
+  .slide1-element {
+    margin: 1vw;
+  }
+  .slide1-element:nth-of-type(6) {
+    margin: 1vw;
+  }
+  .slide1-element:first-of-type, .slide1-element:nth-of-type(5) {
+    margin: 1vw 1vw 1vw 0%;
+  }
+  .slide1-element:nth-of-type(4) {
+    margin-right: 0%;
+  }
+  .slide1-image-container img {
+    width: 19vw;
+  }
+  .slide1-button {
+    top: 30%;
+  }
 }
 
 .navbar {

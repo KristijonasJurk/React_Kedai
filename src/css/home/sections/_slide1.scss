@@ -1,5 +1,5 @@
 .slide1-main {
-    width: calc(85vw + 6vw);
+    width: calc(83.5vw + 6vw);
 }
 .slide1-main h5 {
     font-weight: 400;
@@ -9,11 +9,12 @@
 }
 .slide1-view {
     overflow: hidden;
-    width: calc(85vw + 6vw);
+    width: calc(83.5vw + 6vw);
     position: relative;
+    display: flex;
 }
 .slide1-container {
-    width: calc(85vw + 6vw);
+    width: calc(83.5vw + 6vw);
     display: flex;
     transition: 0.5s cubic-bezier(0.19, 0.16, 0.63, 1.01);
 }
@@ -21,6 +22,7 @@
 .slide1-element {
     display: inline-block;
     margin: 0.75vw;
+    cursor: pointer;
     &:first-of-type,
     &:nth-of-type(6) {
         margin-left: 0px;
@@ -34,11 +36,10 @@
     position: relative;
 }
 .slide1-image-container img {
-    width: 17vw;
+    width: 16.7vw;
 }
 .slide1-image-footer {
     color: #767676;
-    // display: none;
     background-color: var(--mainWhite);
     display: flex;
     justify-content: center;
@@ -60,6 +61,7 @@
     padding: 5px 0 0 0;
 }
 .slide1-element > p {
+    margin: 10px 0;
 }
 
 // ===== BUTTONS =====
@@ -71,7 +73,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 32%;
+    top: 40%;
     font-size: 30px;
     cursor: pointer;
     border: none;
@@ -92,5 +94,63 @@
     display: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
+    .slide1-main {
+        width: calc(76vw + 6vw);
+    }
+    .slide1-view {
+        width: calc(76vw + 6vw);
+    }
+    .slide1-container {
+        width: calc(76vw + 6vw);
+    }
+    .slide1-element {
+        margin: 1vw;
+        &:nth-of-type(6) {
+            margin: 1vw;
+        }
+        &:first-of-type,
+        &:nth-of-type(5) {
+            margin: 1vw 1vw 1vw 0%;
+        }
+        &:nth-of-type(4) {
+            margin-right: 0%;
+        }
+    }
+    .slide1-image-container img {
+        width: 19vw;
+    }
+    .slide1-button {
+        top: 30%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .slide1-main {
+        width: calc(76vw + 6vw);
+    }
+    .slide1-view {
+        width: calc(76vw + 6vw);
+    }
+    .slide1-container {
+        width: calc(76vw + 6vw);
+    }
+    .slide1-element {
+        margin: 1vw;
+        &:nth-of-type(6) {
+            margin: 1vw;
+        }
+        &:first-of-type,
+        &:nth-of-type(5) {
+            margin: 1vw 1vw 1vw 0%;
+        }
+        &:nth-of-type(4) {
+            margin-right: 0%;
+        }
+    }
+    .slide1-image-container img {
+        width: 19vw;
+    }
+    .slide1-button {
+        top: 30%;
+    }
 }

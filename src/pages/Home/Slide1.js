@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { slide1 } from '../../components/data'
 import { GrNext, GrPrevious } from 'react-icons/gr';
 
@@ -6,9 +6,17 @@ function Slide1() {
     const containerWidth = useRef(null);
     const [unactiveNext, setUnactiveNext] = useState(false);
     const [unactivePrev, setUnctivePrev] = useState(true);
-
-    const singleElement = useRef(null);
     const [mouseOver, setMouseOver] = useState(-1);
+    const [screenResize, setScreenResize] = useState(window.innerWidth);
+
+    // this useEffect fixes the void that appears when the user expands the screen in slide1
+    useEffect(() => {
+        window.addEventListener('resize', prevSlide);
+        return () => {
+            window.removeEventListener('resize', prevSlide);
+        }
+    }, [setScreenResize])
+
 
 
     const prevSlide = () => {
@@ -23,14 +31,6 @@ function Slide1() {
         setUnctivePrev(false);
     }
 
-    // const handleMouseOver = () => {
-    //     if (!mouseOver) {
-    //         setMouseOver(true)
-    //     } else {
-    //         setMouseOver(false)
-    //     }
-    // }
-
     return (
         <div className='slide1-main'>
             <h5>New Arrivals</h5>
@@ -40,16 +40,15 @@ function Slide1() {
                     {slide1.map((element) => {
                         const { id, src, text } = element;
                         return (
-                            <article ref={singleElement} key={id} className='slide1-element'
+                            <article key={id} className='slide1-element'
                                 onMouseEnter={() => setMouseOver(id)}
                                 onMouseLeave={() => setMouseOver(-1)}
                             >
                                 <div className='slide1-image-container'>
                                     <img src={src} alt="" />
+                                    {/* onMousever a class of hidden is added to the specific id element */}
                                     <div className={`slide1-image-footer ${mouseOver === id ? '' : 'hidden'}`}>
-                                        <a href="#">
-                                            <p>Quick Shop</p>
-                                        </a>
+                                        <p>Quick Shop</p>
                                     </div>
                                 </div>
                                 <p>{text}</p>
