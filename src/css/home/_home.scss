@@ -13,7 +13,7 @@
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas: "logo navs search";
     text-align: center;
-    align-items: center;
+    align-content: center;
     min-width: var(--smallWidth);
     height: 100%;
     margin: 0 0;

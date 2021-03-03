@@ -241,6 +241,88 @@
   border-bottom: 1px solid var(--grey);
 }
 
+.slide1-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: calc(85vw + 4vw);
+  margin: 0 10px;
+  -webkit-transition: var(--mainTransition);
+  transition: var(--mainTransition);
+}
+
+.slide1-element {
+  display: inline-block;
+  margin: 0.5vw;
+}
+
+.slide1-element:first-of-type {
+  margin-left: 0px;
+}
+
+.slide1-image-container img {
+  width: 17vw;
+}
+
+.slide1-image-footer {
+  color: #767676;
+  background-color: var(#fafbfa);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 44px;
+  padding: 10px 0;
+}
+
+.slide1-image-container p,
+.slide1-element > p {
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.slide1-button {
+  width: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 32%;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  padding: 5px 2px;
+  -webkit-transform: translateX();
+          transform: translateX();
+}
+
+.slide1-button:hover {
+  background-color: var(--grey);
+  -webkit-transition: var(--mainTransition);
+  transition: var(--mainTransition);
+}
+
+.slide1-prev-button {
+  left: 0%;
+}
+
+.slide1-next-button {
+  right: 0%;
+}
+
 .navbar {
   background: var(--mainGrey);
   height: 5rem;
@@ -261,9 +343,8 @@
       grid-template-columns: 2fr 8fr 2fr;
       grid-template-areas: "logo navs search";
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   min-width: var(--smallWidth);
   height: 100%;
   margin: 0 0;

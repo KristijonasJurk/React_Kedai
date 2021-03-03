@@ -29,5 +29,7 @@ export const slide1 = [
     { src: 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0325291620392_061_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720', text: 'adidas Originals Red Suede Gazelle trainers' },
     { src: 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0322428570031_001_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720', text: 'Dr. Martens 8-Eyelet Boots' },
     { src: 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0323440490002_001_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720', text: 'Ralph Lauren Black Cayson Pool Sliders' },
-    { src: 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0321428570021_001_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720', text: 'Dr. Martens Bex 3-Eye Black Oxford Shoes' }
+    { src: 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0321428570021_001_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720', text: 'Dr. Martens Bex 3-Eye Black Oxford Shoes' },
+    { src: 'https://s7d5.scene7.com/is/image/UrbanOutfitters/44653293_001_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720', text: 'Birkenstock Arizona EVA Sandal' },
+    { src: 'https://s7d5.scene7.com/is/image/UrbanOutfitters/59129734_030_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720', text: 'Reebok Club C Revenge Sneaker' }
 ]
