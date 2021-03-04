@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { communityData } from '../../components/data'
 
 function Community() {
     return (
-        <div>
-            hello
+        <div className='community-container'>
+
         </div>
     )
 }
