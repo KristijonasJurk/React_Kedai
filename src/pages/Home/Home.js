@@ -3,7 +3,6 @@ import Grid from './Grid';
 import Slide1 from './Slide1';
 import Community from './Community';
 
-
 const Home = () => {
     return (
         <main className='main'>

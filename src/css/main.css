@@ -462,6 +462,15 @@
   }
 }
 
+.community-container {
+  margin: 120px 0 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
 .navbar {
   background: var(--mainGrey);
   height: 5rem;
