@@ -5,6 +5,7 @@ import Home from './pages/Home/Home'
 import Cart from './pages/Cart/Cart'
 // import components
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Error from './components/Error'
 import Loading from './components/Loading'
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/cart" component={Cart} />
           <Route path="*" component={Error} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

@@ -806,8 +806,6 @@
 
 :root {
   --primaryLightColor: #d4e6a5;
-  --primaryColor: #476a2e;
-  --active: #e00;
   --mainWhite: #fff;
   --offWhite: #f5f5f5;
   --mainBackground: #f1f5f8;
@@ -820,8 +818,6 @@
   --mainRed: #bd0303;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 0.3rem;
-  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
   --mainBorderRadius: 0.25rem;
   --smallWidth: 85vw;
   --maxWidth: 40rem;
@@ -851,7 +847,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--slantedFont);
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
@@ -875,7 +870,7 @@ img {
 }
 
 .active {
-  color: var(--active);
+  color: green;
   border-bottom: 1px solid var(--darkGrey);
 }
 /*# sourceMappingURL=main.css.map */
