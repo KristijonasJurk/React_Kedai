@@ -306,6 +306,14 @@
   right: 0%;
 }
 
+.slide1-image-footer .slide1-btn {
+  color: black;
+}
+
+.slide1-image-footer:hover .slide1-btn {
+  color: var(--darkerGray);
+}
+
 .slide1-image-container p,
 .slide1-element > p {
   font-weight: 300;

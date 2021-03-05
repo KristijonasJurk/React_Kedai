@@ -50,6 +50,14 @@
     bottom: 0%;
     left: 0%;
     right: 0%;
+    .slide1-btn {
+        color: black;
+    }
+    &:hover {
+        .slide1-btn {
+            color: var(--darkerGray);
+        }
+    }
 }
 .slide1-image-container p,
 .slide1-element > p {
