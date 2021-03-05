@@ -4,10 +4,12 @@ function Footer() {
     return (
         <footer>
             <section className="newsletter">
-                <h4>Get Our Emails</h4>
-                <p className='newsletter-text'>Sign up to receive Urban Outfitters emails and get first dibs on new arrivals, sales, exclusive content, events and more!</p>
-                <b>Email Address*</b>
+                <div className="newsletter-text-container">
+                    <h3>Get Our Emails</h3>
+                    <p className='newsletter-text'>Sign up to receive Kedai emails and get first dibs on new arrivals, sales, exclusive content, events and more!</p>
+                </div>
                 <form action="submit">
+                    <label htmlFor="">Email Address*</label>
                     <input type="text" />
                     <button>Submit</button>
                 </form>
