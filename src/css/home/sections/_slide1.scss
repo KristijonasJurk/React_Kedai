@@ -64,6 +64,9 @@
     font-weight: 300;
     letter-spacing: 0.2px;
     font-size: 0.75rem;
+    &:hover {
+        color: var(--darkerGray);
+    }
 }
 .slide1-image-container p {
     padding: 5px 0 0 0;

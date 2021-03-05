@@ -17,12 +17,15 @@
     position: relative;
     height: 120px;
     h4 {
+        padding: 5px 0 0 0;
         font-weight: 400;
         color: var(--mainBlack);
         word-break: keep-all;
-        letter-spacing: 2.5px;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
     }
     a {
+        font-weight: 400;
         position: absolute;
         bottom: 0%;
         font-size: 0.9rem;
@@ -31,7 +34,6 @@
 }
 @media only screen and (max-width: 1000px) {
     h4 {
-        letter-spacing: 2.5px;
         font-size: 0.9rem;
     }
     .community-footer {
