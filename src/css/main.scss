@@ -74,3 +74,8 @@ img {
 .main {
   padding: 0 60px;
 }
+@media only screen and (max-width: 600px) {
+  .main {
+    padding: 0 20px;
+  }
+}
