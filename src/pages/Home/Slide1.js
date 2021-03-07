@@ -18,7 +18,7 @@ function Slide1() {
         return () => {
             window.removeEventListener('resize', prevSlide);
         }
-    }, [setScreenResize])
+    }, [screenResize])
 
 
 
