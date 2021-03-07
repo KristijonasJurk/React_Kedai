@@ -813,7 +813,6 @@ footer {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   border-top: 1px solid var(--grey);
-  border-bottom: 1px solid var(--grey);
   padding: 30px 120px;
   display: -ms-grid;
   display: grid;
@@ -1046,6 +1045,7 @@ footer {
   display: grid;
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
+  border-top: 1px solid var(--grey);
 }
 
 .footer-container .footer-links {
@@ -1119,16 +1119,19 @@ footer {
 .footer-container .footer-links .footer-link3 h5,
 .footer-container .footer-links .footer-link4 h5 {
   padding: 0 5px;
+  cursor: pointer;
 }
 
 .footer-container .footer-links .footer-link3 svg,
 .footer-container .footer-links .footer-link4 svg {
   font-size: 22px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1000px) {
   .footer-container {
     padding: 30px 60px;
+    border-top: 1px solid transparent;
   }
   .footer-container .footer-links {
     -ms-grid-columns: (1fr)[4];
@@ -1161,7 +1164,7 @@ footer {
 
 @media only screen and (max-width: 800px) {
   .footer-container {
-    padding: 30px 0px;
+    padding: 0px 0px;
   }
   .footer-container .footer-links-tabs {
     -ms-grid-rows: 1/2;
@@ -1173,6 +1176,16 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer-container .footer-links-tabs .footer-link .footer-link-title-container {
+    position: relative;
+  }
+  .footer-container .footer-links-tabs .footer-link .footer-link-title-container .footer-link-expand {
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 10px);
+    font-size: 20px;
+    cursor: pointer;
   }
   .footer-container .footer-links-tabs .footer-link h5 {
     font-weight: 500;
@@ -1218,12 +1231,14 @@ footer {
   }
   .footer-container .footer-links-tabs .footer-link3 h5,
   .footer-container .footer-links-tabs .footer-link4 h5 {
+    cursor: pointer;
     border-top: 1px solid transparent;
     padding: 15px 5px;
     margin: 0px;
   }
   .footer-container .footer-links-tabs .footer-link3 svg,
   .footer-container .footer-links-tabs .footer-link4 svg {
+    cursor: pointer;
     font-size: 22px;
   }
 }

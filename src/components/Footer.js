@@ -11,6 +11,7 @@ const data = [
 
 function Footer() {
     const [screenWidth, setScreenWidth] = useState(0)
+    const [showLinks, setShowLinks] = useState(-1);
 
     useLayoutEffect(() => {
         function updateSize() {
@@ -42,14 +43,34 @@ function Footer() {
                         const { title, links } = row;
                         return (
                             links ? <div key={index} className={`footer-link footer-link${index}`}>
-                                <h5>{title}</h5>
-                                <ul>
-                                    {links.map((link) => {
-                                        return (
-                                            <li><a href="#">{link}</a></li>
-                                        )
-                                    })}
-                                </ul>
+                                <div className='footer-link-title-container'>
+                                    <h5>{title}</h5>
+                                    {screenWidth < 800 && <AiOutlinePlus className='footer-link-expand' onClick={() => setShowLinks(index)} />}
+                                </div>
+                                {showLinks === index && screenWidth < 800 ?
+                                    <ul>
+                                        {links.map((link) => {
+                                            return (
+                                                <li>
+                                                    <a href="#">{link}</a>
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                    : ''
+                                }
+                                {screenWidth > 800 ?
+                                    <ul>
+                                        {links.map((link) => {
+                                            return (
+                                                <li>
+                                                    <a href="#">{link}</a>
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                    : ''
+                                }
                             </div>
                                 : <div>
                                     <ul>
