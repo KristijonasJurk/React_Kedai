@@ -1,4 +1,14 @@
 import React from 'react'
+import { AiOutlineMail } from 'react-icons/ai';
+import { FaStoreAlt } from 'react-icons/fa';
+
+const data = [
+    { title: 'Help', links: ['Order status', 'Start A Return Or Exchange', 'Returns & Exchanges', 'Shipping', 'Order & Payments', 'FAQ', 'Product Recalls', 'Contact Us', 'See All Help Topics'] },
+    { title: 'Quick Links', links: ['Brands', 'Gift Cards', 'Careers', 'Shop Europe', 'Shop N.America'] },
+    { title: 'Extras', links: ['Afterpay', 'Kedai Community', 'Creative Services', 'Diversity & Inclusion', 'Kedai Spaces'] },
+    { title: 'Help', links: ['Order status', 'Start A Return Or Exchange', 'Returns & Exchanges', 'Shipping', 'Order & Payments', 'FAQ', 'Product Recalls', 'Contact Us', 'See All Help Topics'] },
+    { title: ['Find Store', 'Get Email'] }
+]
 
 function Footer() {
     return (
@@ -17,7 +27,33 @@ function Footer() {
             </section>
             <section className="footer-container">
                 <div className="footer-links">
-                    footer links
+                    {data.map((row, index) => {
+                        const { title, links, icon } = row;
+                        return (
+                            links ? <div>
+                                <h3>{title}</h3>
+                                <ul>
+                                    {links.map((link) => {
+                                        return (
+                                            <li>{link}</li>
+                                        )
+                                    })}
+                                </ul>
+                            </div>
+                                : <div>
+                                    <ul>
+                                        {title.map((single, index) => {
+                                            return (
+                                                <div>
+                                                    {index === 1 ? <AiOutlineMail /> : <FaStoreAlt />}
+                                                    <h4>{single}</h4>
+                                                </div>
+                                            )
+                                        })}
+                                    </ul>
+                                </div>
+                        )
+                    })}
                 </div>
                 <div className="footer-socials">
                     footer socials

@@ -159,11 +159,12 @@
   }
 }
 
-// ====== FOOTER ======
+// ====== FOOTER  ======
+// ====== NEWSLETTER  ======
 footer {
   background-color: var(--mainWhite);
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
 }
 .newsletter {
   grid-row: 1/2;
@@ -304,3 +305,5 @@ footer {
     }
   }
 }
+
+// ====== FOOTER LINKS  ======
