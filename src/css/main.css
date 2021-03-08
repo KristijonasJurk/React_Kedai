@@ -1040,12 +1040,13 @@ footer {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  padding: 30px 120px;
+  padding: 30px 120px 0px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
   border-top: 1px solid var(--grey);
+  grid-row-gap: 50px;
 }
 
 .footer-container .footer-links {
@@ -1130,7 +1131,7 @@ footer {
 
 @media only screen and (max-width: 1000px) {
   .footer-container {
-    padding: 30px 60px;
+    padding: 30px 60px 0;
     border-top: 1px solid transparent;
   }
   .footer-container .footer-links {
@@ -1240,6 +1241,166 @@ footer {
   .footer-container .footer-links-tabs .footer-link4 svg {
     cursor: pointer;
     font-size: 22px;
+  }
+}
+
+.footer-socials {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  padding: 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  grid-column-gap: 50px;
+}
+
+.footer-socials .footer-socials-download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: right;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.footer-socials .footer-socials-download img {
+  margin: 0 10px;
+  height: 40px;
+  width: 135px;
+}
+
+.footer-socials .footer-socials-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: left;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.footer-socials .footer-socials-links svg {
+  margin: 5px 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.footer-socials .footer-socials-docs {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: 20px 0 0;
+}
+
+.footer-socials .footer-socials-docs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-socials .footer-socials-docs ul li {
+  font-size: 0.6rem;
+  padding: 0 5px;
+  border-right: 1px solid var(--grey);
+}
+
+.footer-socials .footer-socials-docs ul li:last-of-type {
+  border-right: 1px solid transparent;
+}
+
+.footer-socials .footer-socials-rights {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: 20px 0 0;
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.footer-socials .footer-socials-rights p {
+  font-size: 0.6rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-socials .footer-socials-links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-socials .footer-socials-docs {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .footer-socials .footer-socials-rights {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .footer-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-socials .footer-socials-links {
+    margin-top: 20px;
+  }
+  .footer-socials .footer-socials-docs ul li {
+    padding: 0 2px;
   }
 }
 
