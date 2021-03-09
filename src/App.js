@@ -16,7 +16,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path={["/", "/React_Kedai", "/React_Kedai/"]} exact component={Home} />
           <Route path="/loading" component={Loading} />
           <Route path="/cart" component={Cart} />
           <Route path="*" component={Error} />
