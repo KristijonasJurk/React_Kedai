@@ -51,6 +51,10 @@
   grid-gap: 20px;
 }
 
+.element {
+  cursor: pointer;
+}
+
 .element1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -1569,6 +1573,30 @@ footer {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.error-page {
+  margin: 30px 60px;
+}
+
+.error-container h4 {
+  letter-spacing: 0.4px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+.back-home-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.back-home-btn svg {
+  margin-left: 10px;
 }
 
 :root {

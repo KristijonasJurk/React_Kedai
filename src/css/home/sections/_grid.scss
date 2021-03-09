@@ -35,6 +35,9 @@
     grid-template-rows: repeat(17, 8.3vw);
     grid-gap: 20px;
 }
+.element {
+    cursor: pointer;
+}
 .element1 {
     grid-column: 1/3;
     grid-row: 1/7;

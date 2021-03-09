@@ -1,14 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { RiArrowGoBackLine } from 'react-icons/ri'
 
 const Error = () => {
     return (
-        <section className='error-page section'>
+        <section className='error-page'>
             <div className="error-container">
-                <h1>Oops! It's a dead end!</h1>
-                <Link to='/' className='btn btn-primary'>
+                <h4>Oops! It's a dead end!</h4>
+                <Link to='/' className='back-home-btn'>
                     back home
-        </Link>
+                <RiArrowGoBackLine />
+                </Link>
             </div>
         </section>
     )
