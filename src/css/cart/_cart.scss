@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
     margin: 30px 60px;
-    grid-column-gap: 80px;
+    grid-column-gap: 100px;
     .cart-item-container {
         display: flex;
         flex-direction: column;
@@ -33,5 +33,70 @@
         }
     }
     .cart-order-container {
+        display: flex;
+        flex-direction: column;
+        .cart-order-header {
+            display: flex;
+            justify-content: space-between;
+            h5 {
+                font-weight: 400;
+                color: var(--mainBlack);
+                letter-spacing: 1px;
+                font-size: 1rem;
+            }
+            a {
+                font-size: 0.75rem;
+                text-decoration: underline;
+                color: var(--darkerGray);
+                letter-spacing: 0.4px;
+            }
+        }
+        .cart-order {
+            border: 1px solid var(--grey);
+            .cart-order-content {
+                margin: 20px;
+                font-size: 0.7rem;
+                color: var(--mainBlack);
+                display: flex;
+                flex-direction: column;
+                .cart-shipping {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .cart-tax {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .cart-total {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .cart-order-footer-container {
+                    margin: 20px 0;
+                    color: var(--darkerGray);
+                    letter-spacing: 0.5px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    p {
+                        margin: 0;
+                    }
+                    svg {
+                        font-size: 1.2rem;
+                        color: black;
+                        cursor: pointer;
+                    }
+                }
+                button {
+                    width: 100%;
+                    height: 45px;
+                    background-color: var(--mainBlack);
+                    color: white;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    align-self: center;
+                }
+            }
+        }
     }
 }

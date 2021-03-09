@@ -1,4 +1,5 @@
 import React from 'react'
+import { IoMdInformationCircleOutline } from 'react-icons/io'
 
 const Home = () => {
     return (
@@ -20,19 +21,25 @@ const Home = () => {
                 </a>
                 </div>
                 <div className="cart-order">
-                    <div className="cart-shipping">
-                        <p>Shipping</p>
-                        <p>TBD</p>
+                    <div className="cart-order-content">
+                        <div className="cart-shipping">
+                            <p>Shipping</p>
+                            <p>TBD</p>
+                        </div>
+                        <div className="cart-tax">
+                            <p>Estimated Tax</p>
+                            <p>$0.00</p>
+                        </div>
+                        <div className="cart-total">
+                            <b>Total</b>
+                            <b>$0.00</b>
+                        </div>
+                        <div className="cart-order-footer-container">
+                            <p className='cart-order-footer'>Available orders up to $3,500.00. No debit.</p>
+                            <IoMdInformationCircleOutline />
+                        </div>
+                        <button>Proceed to Checkout</button>
                     </div>
-                    <div className="cart-tax">
-                        <p>Estimated Tax</p>
-                        <p>$0.00</p>
-                    </div>
-                    <div className="cart-total">
-                        <b>Total</b>
-                        <p>$0.00</p>
-                    </div>
-                    <p>Available orders up to $3,500.00</p>
                 </div>
             </section>
         </div>

@@ -1410,7 +1410,7 @@ footer {
   -ms-grid-columns: minmax(0, 2fr) minmax(0, 1fr);
       grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
   margin: 30px 60px;
-  grid-column-gap: 80px;
+  grid-column-gap: 100px;
 }
 
 .cart-container .cart-item-container {
@@ -1455,6 +1455,120 @@ footer {
 
 .cart-container .cart-item-container .cart-items span {
   text-decoration: underline;
+}
+
+.cart-container .cart-order-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cart-container .cart-order-container .cart-order-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart-container .cart-order-container .cart-order-header h5 {
+  font-weight: 400;
+  color: var(--mainBlack);
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.cart-container .cart-order-container .cart-order-header a {
+  font-size: 0.75rem;
+  text-decoration: underline;
+  color: var(--darkerGray);
+  letter-spacing: 0.4px;
+}
+
+.cart-container .cart-order-container .cart-order {
+  border: 1px solid var(--grey);
+}
+
+.cart-container .cart-order-container .cart-order .cart-order-content {
+  margin: 20px;
+  font-size: 0.7rem;
+  color: var(--mainBlack);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cart-container .cart-order-container .cart-order .cart-order-content .cart-shipping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart-container .cart-order-container .cart-order .cart-order-content .cart-tax {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart-container .cart-order-container .cart-order .cart-order-content .cart-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart-container .cart-order-container .cart-order .cart-order-content .cart-order-footer-container {
+  margin: 20px 0;
+  color: var(--darkerGray);
+  letter-spacing: 0.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-container .cart-order-container .cart-order .cart-order-content .cart-order-footer-container p {
+  margin: 0;
+}
+
+.cart-container .cart-order-container .cart-order .cart-order-content .cart-order-footer-container svg {
+  font-size: 1.2rem;
+  color: black;
+  cursor: pointer;
+}
+
+.cart-container .cart-order-container .cart-order .cart-order-content button {
+  width: 100%;
+  height: 45px;
+  background-color: var(--mainBlack);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 :root {
