@@ -4,44 +4,6 @@
 
 // ====== NAV ======
 
-/* nav media query */
-// @media screen and (min-width: 800px) {
-//   .nav-center {
-//     display: grid;
-//     grid-template-columns: auto 1fr auto;
-//     align-items: center;
-//   }
-//   .toggle-btn {
-//     display: none;
-//   }
-//   .signin-btn {
-//     display: inline-block;
-//   }
-//   .nav-links {
-//     display: block;
-//     justify-self: center;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     text-align: center;
-//     height: 100%;
-//     display: grid;
-//     align-items: center;
-//   }
-//   .nav-links li {
-//     height: 100%;
-//   }
-//   .link-btn {
-//     height: 100%;
-//     background: transparent;
-//     border-color: transparent;
-//     font-size: 1.1rem;
-//     color: white;
-//     text-transform: capitalize;
-//     letter-spacing: 1px;
-//     width: 10rem;
-//   }
-// }
-
 //  ====== SIDEBAR ======
 
 .sidebar-wrapper {
@@ -64,9 +26,9 @@
   transform: scale(1);
 }
 .sidebar {
-  width: 80vw;
-  height: 85vh;
-  max-width: 620px;
+  width: 90vw;
+  height: 90vh;
+  max-width: 750px;
   background: white;
   border-radius: 0.25rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -91,7 +53,6 @@
 }
 
 // GRID OF SIDEBAR LINKS
-
 .sidebar-sublinks {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -100,11 +61,11 @@
 .sidebar-sublinks a {
   display: block;
   font-weight: 500;
-  color: var(--darkerGray);
+  color: var(--mainBlack);
   text-transform: capitalize;
   display: flex;
   align-items: center;
-  &:hover {
+  &:hover svg {
     color: var(--mainBlack);
   }
 }
@@ -120,7 +81,6 @@
 }
 
 // ====== SUBMENU ======
-
 .submenu {
   background: white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -163,21 +123,20 @@
   grid-template-columns: repeat(3, 1fr);
 }
 .col-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-.submenu h4 {
-  margin-bottom: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
 }
 .submenu-center a {
   width: 10rem;
   display: block;
-  color: grey;
+  color: var(--mainBlack);
   text-transform: capitalize;
-  display: flex;
-  align-items: center;
+  font-weight: 500;
+  &:hover svg {
+    color: var(--mainBlack);
+  }
 }
 .submenu-center svg {
-  color: grey;
+  color: var(--darkerGray);
   margin-right: 1rem;
 }
 

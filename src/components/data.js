@@ -1,47 +1,50 @@
 import { FaCreditCard, FaBook, FaBriefcase } from 'react-icons/fa';
+import { MdNewReleases } from 'react-icons/md';
+import { GiConverseShoe, GiLifeJacket, GiArmoredPants, GiUnderwear } from 'react-icons/gi';
+import { FcOldTimeCamera, FcMusic, FcFilmReel, FcLandscape, FcEditImage, FcBullish, FcHome, FcGoogle, FcHeadset, FcHighPriority, FcLike, FcOk, FcElectricity, FcBinoculars, FcAdvertising, FcDebian, FcRating, FcSlrBackSide, FcUp, FcSportsMode, FcCheckmark, FcIdea } from "react-icons/fc";
 import React from 'react';
 
 export const sublinks = [
     {
         page: `Home`,
         links: [
-            { label: 'Main Page', icon: <FaCreditCard />, url: '/' },
-            { label: 'Google', icon: <FaCreditCard />, url: '/' },
+            { label: 'Main Page', icon: <FcHome />, url: '/' },
+            { label: 'Google', icon: <FcGoogle />, url: '/' },
         ],
     },
     {
         page: `Women's`,
         links: [
-            { label: 'New', icon: <FaCreditCard />, url: '/womens' },
-            { label: 'Shoes', icon: <FaCreditCard />, url: '/womens' },
-            { label: 'Tops', icon: <FaCreditCard />, url: '/womens' },
-            { label: 'Jackets', icon: <FaCreditCard />, url: '/womens' },
-            { label: 'Denim', icon: <FaCreditCard />, url: '/womens' },
-            { label: 'Vintage', icon: <FaCreditCard />, url: '/womens' },
-            { label: 'Sale', icon: <FaCreditCard />, url: '/womens' },
+            { label: 'New', icon: <FcHeadset />, url: '/womens' },
+            { label: 'Shoes', icon: <FcElectricity />, url: '/womens' },
+            { label: 'Tops', icon: <FcLike />, url: '/womens' },
+            { label: 'Jackets', icon: <FcAdvertising />, url: '/womens' },
+            { label: 'Denim', icon: <FcDebian />, url: '/womens' },
+            { label: 'Vintage', icon: <FcOk />, url: '/womens' },
+            { label: 'Sale', icon: <FcHighPriority />, url: '/womens' },
         ],
     },
     {
         page: `Men's`,
         links: [
-            { label: 'New', icon: <FaBook />, url: '/mens' },
-            { label: 'Shoes', icon: <FaBook />, url: '/mens' },
-            { label: 'Jackets', icon: <FaBook />, url: '/mens' },
-            { label: 'Activewear', icon: <FaBook />, url: '/mens' },
-            { label: 'Bottoms', icon: <FaBook />, url: '/mens' },
-            { label: 'Vintage', icon: <FaBook />, url: '/mens' },
-            { label: 'Sale', icon: <FaBook />, url: '/mens' },
+            { label: 'New', icon: <FcIdea />, url: '/mens' },
+            { label: 'Shoes', icon: <FcSlrBackSide />, url: '/mens' },
+            { label: 'Jackets', icon: <FcUp />, url: '/mens' },
+            { label: 'Activewear', icon: <FcSportsMode />, url: '/mens' },
+            { label: 'Bottoms', icon: <FcCheckmark />, url: '/mens' },
+            { label: 'Vintage', icon: <FcRating />, url: '/mens' },
+            { label: 'Sale', icon: <FcBinoculars />, url: '/mens' },
         ],
     },
     {
         page: 'Lifestyle',
         links: [
-            { label: 'Accessories', icon: <FaBriefcase />, url: '/lifestyle' },
-            { label: 'Lifestyle Blog', icon: <FaBriefcase />, url: '/lifestyle' },
-            { label: 'Music', icon: <FaBriefcase />, url: '/lifestyle' },
-            { label: 'Books & Movies', icon: <FaBriefcase />, url: '/lifestyle' },
-            { label: 'Outdoors', icon: <FaBriefcase />, url: '/lifestyle' },
-            { label: 'Trends', icon: <FaBriefcase />, url: '/lifestyle' },
+            { label: 'Accessories', icon: <FcOldTimeCamera />, url: '/lifestyle' },
+            { label: 'Lifestyle & Blog', icon: <FcEditImage />, url: '/lifestyle' },
+            { label: 'Music', icon: <FcMusic />, url: '/lifestyle' },
+            { label: 'Books & Movies', icon: <FcFilmReel />, url: '/lifestyle' },
+            { label: 'Outdoors', icon: <FcLandscape />, url: '/lifestyle' },
+            { label: 'Trends', icon: <FcBullish />, url: '/lifestyle' },
 
         ],
     },

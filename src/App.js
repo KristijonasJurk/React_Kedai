@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Cart from './pages/Cart/Cart'
 // import components
-import Navbar from './components/Navbar/Navbar'
+import Nav from './components/Navbar/Nav'
 import Footer from './components/Footer'
 import Error from './components/Error'
 import Loading from './components/Loading';
@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Nav />
         <Switch>
           <Route path={["/", "/React_Kedai", "/React_Kedai/"]} exact component={Home} />
           <Route path="/loading" component={Loading} />
