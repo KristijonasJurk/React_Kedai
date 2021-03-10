@@ -1,8 +1,50 @@
-export const navLinks = [
-    { link: '/womens', text: `Women's` },
-    { link: '/mens', text: `Men's` },
-    { link: '/accessories', text: `Accessories & Lifestyle` },
-    { link: '/', text: `Home` }
+import { FaCreditCard, FaBook, FaBriefcase } from 'react-icons/fa';
+import React from 'react';
+
+export const sublinks = [
+    {
+        page: `Home`,
+        links: [
+            { label: 'Main Page', icon: <FaCreditCard />, url: '/' },
+            { label: 'Google', icon: <FaCreditCard />, url: '/' },
+        ],
+    },
+    {
+        page: `Women's`,
+        links: [
+            { label: 'New', icon: <FaCreditCard />, url: '/womens' },
+            { label: 'Shoes', icon: <FaCreditCard />, url: '/womens' },
+            { label: 'Tops', icon: <FaCreditCard />, url: '/womens' },
+            { label: 'Jackets', icon: <FaCreditCard />, url: '/womens' },
+            { label: 'Denim', icon: <FaCreditCard />, url: '/womens' },
+            { label: 'Vintage', icon: <FaCreditCard />, url: '/womens' },
+            { label: 'Sale', icon: <FaCreditCard />, url: '/womens' },
+        ],
+    },
+    {
+        page: `Men's`,
+        links: [
+            { label: 'New', icon: <FaBook />, url: '/mens' },
+            { label: 'Shoes', icon: <FaBook />, url: '/mens' },
+            { label: 'Jackets', icon: <FaBook />, url: '/mens' },
+            { label: 'Activewear', icon: <FaBook />, url: '/mens' },
+            { label: 'Bottoms', icon: <FaBook />, url: '/mens' },
+            { label: 'Vintage', icon: <FaBook />, url: '/mens' },
+            { label: 'Sale', icon: <FaBook />, url: '/mens' },
+        ],
+    },
+    {
+        page: 'Lifestyle',
+        links: [
+            { label: 'Accessories', icon: <FaBriefcase />, url: '/lifestyle' },
+            { label: 'Lifestyle Blog', icon: <FaBriefcase />, url: '/lifestyle' },
+            { label: 'Music', icon: <FaBriefcase />, url: '/lifestyle' },
+            { label: 'Books & Movies', icon: <FaBriefcase />, url: '/lifestyle' },
+            { label: 'Outdoors', icon: <FaBriefcase />, url: '/lifestyle' },
+            { label: 'Trends', icon: <FaBriefcase />, url: '/lifestyle' },
+
+        ],
+    },
 ]
 //=====GRID=====
 export const mainGrid1 = [

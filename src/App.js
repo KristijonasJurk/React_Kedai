@@ -7,7 +7,7 @@ import Cart from './pages/Cart/Cart'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Error from './components/Error'
-import Loading from './components/Loading'
+import Loading from './components/Loading';
 
 
 function App() {
