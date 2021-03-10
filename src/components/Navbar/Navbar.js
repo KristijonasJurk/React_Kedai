@@ -4,6 +4,7 @@ import logo from '../../img/logo/logo.png';
 import { FaBars } from 'react-icons/fa'
 import { IoBagOutline } from 'react-icons/io5';
 import { useGlobalContext } from '../../context';
+// pages
 
 const Navbar = () => {
     const { openSidebar, closeSubmenu, openSubmenu } = useGlobalContext()
@@ -31,7 +32,7 @@ const Navbar = () => {
                         <Link to='/' className="nav-link" onMouseOver={displaySubmenu}>Home</Link>
                     </li>
                     <li>
-                        <Link to='/' className="nav-link" onMouseOver={displaySubmenu}>Women's</Link>
+                        <Link to='/womens' className="nav-link" onMouseOver={displaySubmenu}>Women's</Link>
                     </li>
                     <li>
                         <Link to='/' className="nav-link" onMouseOver={displaySubmenu}>Men's</Link>

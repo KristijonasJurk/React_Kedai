@@ -647,7 +647,7 @@
 .sidebar-sublinks a {
   display: block;
   font-weight: 500;
-  color: var(--mainBlack);
+  color: var(--darkerGray);
   text-transform: capitalize;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -657,13 +657,13 @@
           align-items: center;
 }
 
-.sidebar-sublinks a:hover svg {
+.sidebar-sublinks a:hover {
   color: var(--mainBlack);
 }
 
 .sidebar-sublinks svg {
-  color: var(--darkerGray);
   margin-right: 1rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -724,25 +724,19 @@
       grid-template-columns: repeat(3, 1fr);
 }
 
-.col-4 {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
 .submenu-center a {
   width: 10rem;
   display: block;
-  color: var(--mainBlack);
+  color: var(--darkerGray);
   text-transform: capitalize;
   font-weight: 500;
 }
 
-.submenu-center a:hover svg {
+.submenu-center a:hover {
   color: var(--mainBlack);
 }
 
 .submenu-center svg {
-  color: var(--darkerGray);
   margin-right: 1rem;
 }
 

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 // import pages
 import Home from './pages/Home/Home'
 import Cart from './pages/Cart/Cart'
+import Womens from './pages/Womens/Womens'
 // import components
 import Nav from './components/Navbar/Nav'
 import Footer from './components/Footer'
@@ -19,6 +20,8 @@ function App() {
           <Route path={["/", "/React_Kedai", "/React_Kedai/"]} exact component={Home} />
           <Route path="/loading" component={Loading} />
           <Route path="/cart" component={Cart} />
+          <Route path="/womens" component={Womens} />
+          {/* ERROR EINA PASKUTINIS */}
           <Route path="*" component={Error} />
         </Switch>
         <Footer />

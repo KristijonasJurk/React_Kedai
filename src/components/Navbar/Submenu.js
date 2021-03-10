@@ -5,6 +5,7 @@ const Submenu = () => {
     const { isSubmenuOpen, location, page: { page, links } } = useGlobalContext()
     const container = useRef(null)
     const [columns, setColumns] = useState('col-2')
+
     useEffect(() => {
         setColumns('col-2')
         const submenu = container.current;
