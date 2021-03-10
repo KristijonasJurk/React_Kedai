@@ -1,11 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../img/logo/logo.png';
 import { IoBagOutline } from 'react-icons/io5';
 import { FaBars } from 'react-icons/fa'
 import { FaTimes } from 'react-icons/fa'
-import { navLinks } from './data'
-import { useGlobalContext } from '../context'
+import { navLinks } from '../data'
+import { useGlobalContext } from '../../context'
 
 import Nav from './Nav'
 import Sidebar from './Sidebar'
