@@ -1,6 +1,7 @@
 @import "./home/home";
 @import "./cart/cart";
 @import "./error/error";
+@import "./womens/womens";
 
 //  =====VARIABLES=====
 :root {
@@ -14,8 +15,8 @@
   --mainOverlay: rgba(35, 10, 36, 0.4);
 
   --grey: #ddd;
-  --lightGrey: #ececec;
-  --darkGrey: #afafaf;
+  --lightGray: #ececec;
+  --darkGray: #afafaf;
   --darkerGray: #767676;
   --darkestGray: #3a3a3a;
 
