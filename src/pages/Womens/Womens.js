@@ -37,7 +37,7 @@ function Womens() {
                         <li>
                             <img src={`https://s7d5.scene7.com/is/image/UrbanOutfitters/59155721_010_d?$medium$&qlt=80&fit=constrain`} alt="shirt" />
                             <div className="womens-product-footer">
-                                <p>Project Social T Rose Infused Oversized Tee</p>
+                                <p className='womens-product-title'>Project Social T Rose Infused Oversized Tee</p>
                                 <p>$39.00</p>
                                 <div className="product-colors">
                                     <div className="product-color"></div>

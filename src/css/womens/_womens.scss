@@ -60,3 +60,50 @@
         }
     }
 }
+
+.womens-products-container {
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        li {
+            img {
+                cursor: pointer;
+            }
+            .womens-product-footer {
+                display: flex;
+                flex-direction: column;
+                p {
+                    font-size: 0.75rem;
+                    margin: 5px 0 0;
+                }
+                .womens-product-title {
+                    cursor: pointer;
+                    &:hover {
+                        color: var(--darkerGray);
+                    }
+                }
+                .product-colors {
+                    display: flex;
+                    margin: 5px 0;
+                    .product-color {
+                        cursor: pointer;
+                        margin: 0 5px 0 0;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: grey;
+                        &:last-of-type {
+                            background-color: rgb(53, 87, 53);
+                        }
+                    }
+                }
+                span {
+                    margin: 5px 0;
+                    font-size: 0.7rem;
+                    color: var(--darkerGray);
+                }
+            }
+        }
+    }
+}

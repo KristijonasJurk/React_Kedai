@@ -1807,6 +1807,67 @@ footer {
   padding: 0 10px;
 }
 
+.womens-products-container ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.womens-products-container ul li img {
+  cursor: pointer;
+}
+
+.womens-products-container ul li .womens-product-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.womens-products-container ul li .womens-product-footer p {
+  font-size: 0.75rem;
+  margin: 5px 0 0;
+}
+
+.womens-products-container ul li .womens-product-footer .womens-product-title {
+  cursor: pointer;
+}
+
+.womens-products-container ul li .womens-product-footer .womens-product-title:hover {
+  color: var(--darkerGray);
+}
+
+.womens-products-container ul li .womens-product-footer .product-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0;
+}
+
+.womens-products-container ul li .womens-product-footer .product-colors .product-color {
+  cursor: pointer;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+.womens-products-container ul li .womens-product-footer .product-colors .product-color:last-of-type {
+  background-color: #355735;
+}
+
+.womens-products-container ul li .womens-product-footer span {
+  margin: 5px 0;
+  font-size: 0.7rem;
+  color: var(--darkerGray);
+}
+
 :root {
   --primaryLightColor: #d4e6a5;
   --mainWhite: #fff;
