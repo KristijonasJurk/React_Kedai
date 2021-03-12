@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Cart from './pages/Cart/Cart'
 import Womens from './pages/Womens/Womens'
+import Product from './pages/Product';
 // import components
 import Nav from './components/Navbar/Nav'
 import Footer from './components/Footer'
@@ -21,6 +22,7 @@ function App() {
           <Route path="/loading" component={Loading} />
           <Route path="/cart" component={Cart} />
           <Route path="/womens" component={Womens} />
+          <Route path="/product/:id" component={Product} />
           {/* ERROR EINA PASKUTINIS */}
           <Route path="*" component={Error} />
         </Switch>

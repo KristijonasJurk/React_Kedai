@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { womensBrowse, womensProducts } from '../../components/data';
 import { useGlobalContext } from '../../context'
 
 function Womens() {
     const { closeSubmenu } = useGlobalContext();
+
+    const [products, setProducts] = useState(womensProducts)
 
     const [mouseOver, setMouseOver] = useState(-1);
     const [secondColor, setSecondColor] = useState({ isActive: false, id: null })
@@ -24,7 +27,7 @@ function Womens() {
             </section>
             <section className="womens-products-container">
                 <header className='womens-products-header'>
-                    <h3>Women's Clothing <span>4864 results</span></h3>
+                    <h3>Women's Clothing <span>{womensProducts.length} results</span></h3>
                     <div className="womens-sort-container">
                         <label htmlFor="womens-sort">Sort:</label>
                         <select name="womens sort" id="womens-sort">
@@ -38,28 +41,30 @@ function Womens() {
                 </header>
                 <div className="womens-products-container">
                     <ul>
-                        {womensProducts.map((product, index) => {
-                            const { id, title, price, color, text, material, img, img2, categories } = product;
+                        {products.map((product, index) => {
+                            const { id, title, price, color, text, material, img, img2, categories, tags } = product;
                             return (
-                                <li key={id} onMouseEnter={() => setMouseOver(id)}
-                                    onMouseLeave={() => setMouseOver(-1)}>
-                                    {
-                                        secondColor.id === id && secondColor.isActive ?
-                                            <img src={`${mouseOver === id ? img2[1] : img2[0]}`} alt="product" /> :
-                                            <img src={`${mouseOver === id ? img[1] : img[0]}`} alt="product" />
-                                    }
-                                    <div className="womens-product-footer">
-                                        <p className='womens-product-title'>{title}</p>
-                                        <p>€{price}</p>
-                                        <div className="product-colors">
+                                <Link to={`product/${id}`}>
+                                    <li key={id} onMouseEnter={() => setMouseOver(id)}
+                                        onMouseLeave={() => setMouseOver(-1)}>
+                                        {
+                                            secondColor.id === id && secondColor.isActive ?
+                                                <img src={`${mouseOver === id ? img2[1] : img2[0]}`} alt="product" /> :
+                                                <img src={`${mouseOver === id ? img[1] : img[0]}`} alt="product" />
+                                        }
+                                        <div className="womens-product-footer">
+                                            <p className='womens-product-title'>{title}</p>
+                                            <p>€{price}</p>
+                                            <div className="product-colors">
 
-                                            <div style={img2 ? { backgroundColor: color[0] } : { backgroundColor: color }} className="product-color product-color2" onClick={() => setSecondColor({ isActive: false, id: id })}></div>
-                                            {img2 && <div style={{ backgroundColor: color[1] }} className="product-color product-color2" onClick={() => setSecondColor({ isActive: true, id: id })}></div>}
+                                                <div style={img2 ? { backgroundColor: color[0] } : { backgroundColor: color }} className="product-color product-color2" onClick={() => setSecondColor({ isActive: false, id: id })}></div>
+                                                {img2 && <div style={{ backgroundColor: color[1] }} className="product-color product-color2" onClick={() => setSecondColor({ isActive: true, id: id })}></div>}
 
+                                            </div>
+                                            <span>{tags}</span>
                                         </div>
-                                        <span>Back in Stock</span>
-                                    </div>
-                                </li>
+                                    </li>
+                                </Link>
                             )
                         })}
                     </ul>
