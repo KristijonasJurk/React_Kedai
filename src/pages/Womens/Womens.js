@@ -1,5 +1,5 @@
 import React from 'react';
-import { womensBrowse } from '../../components/data';
+import { womensBrowse, womensProducts } from '../../components/data';
 import { useGlobalContext } from '../../context'
 
 function Womens() {

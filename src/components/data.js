@@ -81,7 +81,7 @@ export const slide1 = [
 
 export const aboutData = 'Kedai is a lifestyle retailer dedicated to inspiring customers through a unique combination of product, creativity and cultural understanding. Founded in 1970 in a small space across the street from Sapiegos Rumai, Kedai now operates in over 200 stores in Lithuania, United States and Europe, offering experiential retail environments and a well-curated mix of on-trend women’s and men’s shoes, from sneakers, boots and sandals to shoes with fur on them, hats, and backpacks, as well as beauty, intimates, swim and a collection of handpicked vintage clothing. Our Music + Tech collection is a go-to destination for vinyl, record players and tech accessories. Visit our stores, where all are welcome and there’s always something new to see, or shop online at kristijonokedai.com and get free shipping on LT orders over 50eu. For special offers, one-of-a-kind prizes and more, download the our app and join Kedai Rewards! Want to be part of the conversation? Follow, share and shop @KedaiShop.';
 
-export const womensBrowse = ['New', 'Shoes', 'Tops', 'Jackets', 'Denim', 'Bottoms', 'Activewear', 'Vintage', 'Summer']
+export const womensBrowse = ['New', 'Shoes', 'Tops', 'Coars & Jackets', 'Swimwear', 'Bottoms', 'Activewear', 'Vintage', 'Summer']
 
 export const womensProducts = [
     {
@@ -183,5 +183,128 @@ export const womensProducts = [
         material: 'Cotton, Rubber, Mixed metal',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_f?$redesign-zoom-5x$='],
         categories: ['shoes', 'womens']
+    },
+    {
+        id: 111,
+        title: 'Colorado Springs Baby T-Shirt',
+        price: '29.00',
+        color: ['Chocolate', 'Light Grey'],
+        text: 'Iconic canvas high-top from the experts at Converse. Fitted with a cushioned footbed, sturdy rubber sole and toe-cap. Finished with cotton laces and metal eyelets.',
+        material: '100% Cotton',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_e?$redesign-zoom-5x$='],
+        img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_d?$redesign-zoom-5x$='],
+        categories: ['tops', 'womens']
+    },
+    {
+        id: 112,
+        title: 'White Izzy Smocked Blouse',
+        price: '39.00',
+        color: 'White',
+        text: 'Delicate and femme smocked detailing blouse from Kedai. Features a v-neckline and puff sleeves with elasticated accents. Finished with a cropped peplum-inspired hem.',
+        material: '100% Cotton',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_f?$redesign-zoom-5x$='],
+        categories: ['tops', 'womens']
+    },
+    {
+        id: 113,
+        title: 'Kedai frans... Cropped Pique Polo Shirt',
+        price: '32.00',
+        color: 'Pink',
+        text: 'Updated polo shirt by iets frans... designed with a cropped stretch hem. Features a polo collar with quarter-button placket and short sleeves, finished with a contrast logo detail to chest. Exclusive to Kedai.',
+        material: '100% Cotton',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0112347826537_066_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0112347826537_066_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0112347826537_066_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0112347826537_066_f?$redesign-zoom-5x$='],
+        categories: ['tops', 'womens']
+    },
+    {
+        id: 114,
+        title: 'Kedai Knitted Cricket Vest',
+        price: '49.00',
+        color: ['Green', 'Red'],
+        text: 'Oversized cricket vest with a slouchy fit. Sleeveless style Ft. a deep V-neck and tipped rib trims. Finished with an embroidered crest design and a textured knit fabrication.',
+        material: '60% Cotton, 40% Acrylic',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0114345141496_030_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0114345141496_030_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0114345141496_030_e?$redesign-zoom-5x$='],
+        img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0114345141496_060_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0114345141496_060_d?$redesign-zoom-5x$='],
+        categories: ['tops', 'womens']
+    },
+    {
+        id: 115,
+        title: 'Kedai Nancy Button-Through Blouse',
+        price: '49.00',
+        color: 'Blue',
+        text: 'Lightweight blouse with a woven fabrication and cut-out lace detailing. Boxy fit Ft. a button-through construction with revere collar, three-quarter-length sleeves and a cropped length hem.',
+        material: 'Viscose',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_f?$redesign-zoom-5x$='],
+        categories: ['tops', 'summer', 'womens']
+    },
+    {
+        id: 116,
+        title: 'Carhartt WIP Provence Hooded Chase Sweatshirt',
+        price: '95.00',
+        color: 'Purple',
+        text: 'Staple hoodie by Carhartt WIP. Features a plain design and pullover style Ft. an adjustable drawstring hood, raglan sleeves, ribbed trims and a slouchy pouch pocket. Finished with a gold logo detail embroidered to cuff.',
+        material: '58% Cotton, 42% Polyester',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180621400150_050_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180621400150_050_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180621400150_050_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180621400150_050_f?$redesign-zoom-5x$='],
+        categories: ['tops', 'womens']
+    },
+    {
+        id: 117,
+        title: 'BDG Patchwork Corduroy Harrington Jacket',
+        price: '99.00',
+        color: 'Brown',
+        text: 'Classic Harrington jacket by BDG. Designed with a cord fabrication and patchwork style. Zip-through construction Ft. a spread collar, drop shoulders, long sleeves and stretch trims, finished with an embroidered BDG crest. Exclusive to Kedai.',
+        material: '100% Cotton',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_e?$redesign-zoom-5x$='],
+        categories: ['jackets', 'womens']
+    },
+    {
+        id: 118,
+        title: 'BDG Lucia Lavender Corduroy Shacket',
+        price: '115.00',
+        color: 'Lavender',
+        text: 'Effortless shacket by BDG, cut from a heavyweight cord fabrication. Features a button-through construction Ft. spread collar, long sleeves, adjustable cuffs and four side pockets to front. Exclusive to Kedai.',
+        material: '100% Cotton',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_f?$redesign-zoom-5x$='],
+        categories: ['jackets', 'womens']
+    },
+    {
+        id: 119,
+        title: 'Ivy Patchwork Quilted Jacket',
+        price: '179.00',
+        color: 'Brown',
+        text: 'Mid-length coat with a quilted fabrication and all-over patchwork print. Features an open front with volume sleeves, tie-up belt and two oversized side pockets.',
+        material: 'Main: 100% Viscose, Fill: 100% Polyester',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_f?$redesign-zoom-5x$='],
+        categories: ['jackets', 'womens']
+    },
+    {
+        id: 120,
+        title: 'MINKPINK Davina Wrap Bikini Top',
+        price: '39.00',
+        color: 'Brown',
+        text: 'Skimpy bikini top by MINKPINK, finished with a vintage-inspired paisley print. Features non-wired triangle cups with adjustable spaghetti straps, backstrap and a tie-up wrap-around detail.',
+        material: 'Hand wash',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_f?$redesign-zoom-5x$='],
+        categories: ['swimwear', 'summer', 'womens']
+    },
+    {
+        id: 121,
+        title: 'Out From Under Seamless Bandeau Bikini Top',
+        price: '22.00',
+        color: ['Brown', 'Lightgreen'],
+        text: 'Seamless swim top by Out From Under & only at Urban Outfitters. Classic bandeau silhouette with a straight neckline & cropped fit.',
+        material: '93% Polyamide, 7% spandex',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_f?$redesign-zoom-5x$='],
+        img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_f?$redesign-zoom-5x$='],
+        categories: ['swimwear', 'summer', 'womens']
+    },
+    {
+        id: 122,
+        title: 'MINKPINK Pink Tamworth Bikini Top',
+        price: '65.00',
+        color: 'Pink',
+        text: 'Bikini bra by MINKPINK, designed with an all-over check print. Balcony-style bra with underwired cups and adjustable straps, finished with a clasp closure to reverse.',
+        material: '80% Polyamide, 20% Elastane',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_f?$redesign-zoom-5x$='],
+        categories: ['swimwear', 'summer', 'womens']
     },
 ]
