@@ -81,4 +81,107 @@ export const slide1 = [
 
 export const aboutData = 'Kedai is a lifestyle retailer dedicated to inspiring customers through a unique combination of product, creativity and cultural understanding. Founded in 1970 in a small space across the street from Sapiegos Rumai, Kedai now operates in over 200 stores in Lithuania, United States and Europe, offering experiential retail environments and a well-curated mix of on-trend women’s and men’s shoes, from sneakers, boots and sandals to shoes with fur on them, hats, and backpacks, as well as beauty, intimates, swim and a collection of handpicked vintage clothing. Our Music + Tech collection is a go-to destination for vinyl, record players and tech accessories. Visit our stores, where all are welcome and there’s always something new to see, or shop online at kristijonokedai.com and get free shipping on LT orders over 50eu. For special offers, one-of-a-kind prizes and more, download the our app and join Kedai Rewards! Want to be part of the conversation? Follow, share and shop @KedaiShop.';
 
-export const womensBrowse = ['New', 'Shoes', 'Tops', 'Jackets', 'Denim', 'Bottoms', 'Activewear', 'Vintage']
+export const womensBrowse = ['New', 'Shoes', 'Tops', 'Jackets', 'Denim', 'Bottoms', 'Activewear', 'Vintage', 'Summer']
+
+export const womensProducts = [
+    {
+        id: 101,
+        title: 'New Balance 530 Silver & Red Trainers',
+        price: '99.00',
+        color: 'silver',
+        text: 'Throw it back to the 90s in these vibrant New Balance runners. Patched leather, suede and mesh allow for breathability in all the right places. Equipped with New Balance Enerp technology and grip rubber soles for lightweight stability and optimal traction.',
+        material: ' Leather, Rubber',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531641_007_e?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531641_007_f?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531641_007_g?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720'],
+        categories: ['shoes', 'vintage', 'womens']
+    },
+    {
+        id: 102,
+        title: 'Birkenstock Boston Mocha Suede Clogs',
+        price: '115.00',
+        color: 'Brown',
+        text: 'The classic Boston clogs by Birkenstock with a mink suede upper. Ft. an adjustable buckle at the strap and finished with a padded foam footbed that offers long-lasting cushioning with high rebound capacity.',
+        material: 'Suede, Cork, Rubber',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_f?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_g?$redesign-zoom-5x$='],
+        categories: ['shoes', 'vintage', 'womens']
+    },
+    {
+        id: 103,
+        title: 'Birkenstock Arizona Black EVA Sandals',
+        price: '49.00',
+        color: 'Black',
+        text: 'The Birkenstock Arizona is the classic summer sandal, now available in super lightweight and flexible EVA. The high-quality, odour-neutral material is also waterproof, washable and extremely easy to care for. Complete with an anatomically-shaped footbed with a deep heel, arch support and toe grip.',
+        material: 'EVA (ethylene vinyl acetate)',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_f?$redesign-zoom-5x$='],
+        categories: ['shoes', 'summer', 'womens']
+    },
+    {
+        id: 104,
+        title: 'Converse Chuck Taylor All Star Black Canvas High Top Trainers',
+        price: '69.00',
+        color: 'Black & White',
+        text: 'Iconic canvas high-top from the experts at Converse. Fitted with a cushioned footbed, sturdy rubber sole and toe-cap. Finished with cotton laces + metal eyelets.',
+        material: 'Cotton, rubber, mixed metal',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451220111_018_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451220111_018_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451220111_018_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451220111_018_f?$redesign-zoom-5x$='],
+        categories: ['shoes', 'summer', 'womens', 'mens']
+    },
+    {
+        id: 105,
+        title: 'New Balance 574 Grey Trainers',
+        price: '99.00',
+        color: 'Grey',
+        text: 'Leather trainers by New Balance with a retro runner look. Features a lace-up front and finished with a grippy rubber sole.',
+        material: 'Leather, tectile, rubber',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455535560_004_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455535560_004_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455535560_004_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455535560_004_f?$redesign-zoom-5x$='],
+        categories: ['shoes', 'womens', 'mens']
+    },
+    {
+        id: 106,
+        title: 'Dr. Martens Clarissa Quad Sandals',
+        price: '169.00',
+        color: 'Black',
+        text: 'The Clarissa by Dr. Martens is the same classic gladiator sandal we love, with three straps, an adjustable ankle buckle and all the Docs DNA, but now set on an empowering Quad extra-high platform sole.',
+        material: 'Leather, Rubber',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314428570203_001_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314428570203_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314428570203_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314428570203_001_f?$redesign-zoom-5x$='],
+        categories: ['shoes', 'summer', 'womens']
+    },
+    {
+        id: 107,
+        title: 'New Balance 452 White & Orange Trainers',
+        price: '85.00',
+        color: 'White',
+        text: 'Throwback dad trainers from New Balance. Features leather uppers with perforated detailing and logo accents throughout. Finished with a grippy rubber sole.',
+        material: 'Leather, Rubber',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_f?$redesign-zoom-5x$='],
+        categories: ['shoes', 'mens', 'womens']
+    },
+    {
+        id: 108,
+        title: 'Vagabond Cosmo 2.0 Loafers',
+        price: '139.00',
+        color: 'Black',
+        text: 'Chunky leather loafer style from Vagabond. Featuring all-black upper set on a solid sole for a subtle lift. Finished with classic, visible stitching and contoured penny strap.',
+        material: 'Leather',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_f?$redesign-zoom-5x$='],
+        categories: ['shoes', 'womens']
+    },
+    {
+        id: 109,
+        title: 'New Balance 452 White & Red Trainers',
+        price: '79.00',
+        color: 'Assorted',
+        text: 'Retro feel dad trainers from New Balance. Features leather uppers with perforated detailing and logo accents throughout. Finished with a grippy rubber sole.',
+        material: 'Leather, Rubber',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_f?$redesign-zoom-5x$='],
+        categories: ['shoes', 'womens']
+    },
+    {
+        id: 110,
+        title: 'Converse Chuck Taylor All Star Ceramic Green Canvas High Top Trainers',
+        price: '69.00',
+        color: 'Green',
+        text: 'Iconic canvas high-top from the experts at Converse. Fitted with a cushioned footbed, sturdy rubber sole and toe-cap. Finished with cotton laces and metal eyelets.',
+        material: 'Cotton, Rubber, Mixed metal',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_f?$redesign-zoom-5x$='],
+        categories: ['shoes', 'womens']
+    },
+]
