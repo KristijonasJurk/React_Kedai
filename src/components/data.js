@@ -81,7 +81,7 @@ export const slide1 = [
 
 export const aboutData = 'Kedai is a lifestyle retailer dedicated to inspiring customers through a unique combination of product, creativity and cultural understanding. Founded in 1970 in a small space across the street from Sapiegos Rumai, Kedai now operates in over 200 stores in Lithuania, United States and Europe, offering experiential retail environments and a well-curated mix of on-trend women’s and men’s shoes, from sneakers, boots and sandals to shoes with fur on them, hats, and backpacks, as well as beauty, intimates, swim and a collection of handpicked vintage clothing. Our Music + Tech collection is a go-to destination for vinyl, record players and tech accessories. Visit our stores, where all are welcome and there’s always something new to see, or shop online at kristijonokedai.com and get free shipping on LT orders over 50eu. For special offers, one-of-a-kind prizes and more, download the our app and join Kedai Rewards! Want to be part of the conversation? Follow, share and shop @KedaiShop.';
 
-export const womensBrowse = ['New', 'Shoes', 'Tops', 'Coars & Jackets', 'Swimwear', 'Bottoms', 'Activewear', 'Vintage', 'Summer']
+export const womensBrowse = ['New', 'Shoes', 'Tops', 'Coars & Jackets', 'Swimwear', 'Bottoms', 'Vintage', 'Summer']
 
 export const womensProducts = [
     {
@@ -306,5 +306,65 @@ export const womensProducts = [
         material: '80% Polyamide, 20% Elastane',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_f?$redesign-zoom-5x$='],
         categories: ['swimwear', 'summer', 'womens']
+    },
+    {
+        id: 123,
+        title: 'BDG White Roll Hem Denim Mom Shorts',
+        price: '39.00',
+        color: 'White',
+        text: 'High-rise denim shorts by BDG with classic five-pocket styling and Mom fit. Finished with rolled hems and a brand patch to reverse hem. Only at Urban Outfitters.',
+        material: '100% Cotton',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0125593370049_010_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0125593370049_010_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0125593370049_010_e?$redesign-zoom-5x$='],
+        categories: ['bottoms', 'summer', 'womens']
+    },
+    {
+        id: 124,
+        title: 'Urban Outfitters Archive Tan Tailored Flared Trousers',
+        price: '55.00',
+        color: 'Brown',
+        text: 'Throwback flared trousers by the team at Urban Renewal. Cut with a high-rise waistband, belt loops, classic pocket silhouette, slim fit and flared silhouette.',
+        material: '100% Cotton',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0418643730075_023_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0418643730075_023_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0418643730075_023_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0418643730075_023_f?$redesign-zoom-5x$='],
+        categories: ['bottoms', 'womens']
+    },
+    {
+        id: 125,
+        title: 'Dickies Elizaville Pink Workwear Trousers',
+        price: '69.00',
+        color: 'Pink',
+        text: 'Skate style trousers by Dickies. Made from a durable twill construction Ft. a mid-rise, belt loops, button and zip fly, four-pocket design and straight-leg silhouette. Finished with creases and a brand patch at reverse.',
+        material: '100% Cotton',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180902470034_066_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180902470034_066_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180902470034_066_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180902470034_066_f?$redesign-zoom-5x$='],
+        categories: ['bottoms', 'womens']
+    },
+    {
+        id: 126,
+        title: 'Urban Renewal Vintage Black Boxing Shorts',
+        price: '49.00',
+        color: 'Black',
+        text: 'Branded vintage boxing shorts, sourced by the team at Urban Renewal. Each pair features an elasticated waist, a relaxed fit and a branded design.',
+        material: '100% Vintage fibres',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_f?$redesign-zoom-5x$='],
+        categories: ['bottoms', 'vintage', 'womens']
+    },
+    {
+        id: 126,
+        title: 'Urban Renewal Vintage Black Boxing Shorts',
+        price: '49.00',
+        color: 'Black',
+        text: 'Branded vintage boxing shorts, sourced by the team at Urban Renewal. Each pair features an elasticated waist, a relaxed fit and a branded design.',
+        material: '100% Vintage fibres',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_f?$redesign-zoom-5x$='],
+        categories: ['bottoms', 'vintage', 'womens']
+    },
+    {
+        id: 127,
+        title: 'Urban Renewal Remade From Vintage Embroidered Pink Stripe Shirt',
+        price: '39.00',
+        color: 'Pink',
+        text: 'True vintage shirt with an upcycled addition, customised and brought to you by Urban Renewal. Each unique piece features a spread collar, button-through construction and long sleeves. Finished with a striped fabrication and embroidered logo detail.',
+        material: '100% Vintage fibres',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0414621551115_066_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0414621551115_066_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0414621551115_066_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0414621551115_066_f?$redesign-zoom-5x$='],
+        categories: ['vintage', 'womens']
     },
 ]

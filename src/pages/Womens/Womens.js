@@ -34,18 +34,23 @@ function Womens() {
                 </header>
                 <div className="womens-products-container">
                     <ul>
-                        <li>
-                            <img src={`https://s7d5.scene7.com/is/image/UrbanOutfitters/59155721_010_d?$medium$&qlt=80&fit=constrain`} alt="shirt" />
-                            <div className="womens-product-footer">
-                                <p className='womens-product-title'>Project Social T Rose Infused Oversized Tee</p>
-                                <p>$39.00</p>
-                                <div className="product-colors">
-                                    <div className="product-color"></div>
-                                    <div className="product-color"></div>
-                                </div>
-                                <span>Back in Stock</span>
-                            </div>
-                        </li>
+                        {womensProducts.map((product, index) => {
+                            const { id, title, price, color, text, material, img, img2, categories } = product;
+                            return (
+                                <li>
+                                    <img src={img[0]} alt="product" />
+                                    <div className="womens-product-footer">
+                                        <p className='womens-product-title'>{title}</p>
+                                        <p>€{price}</p>
+                                        <div className="product-colors">
+                                            <div className="product-color"></div>
+                                            <div className="product-color"></div>
+                                        </div>
+                                        <span>Back in Stock</span>
+                                    </div>
+                                </li>
+                            )
+                        })}
                     </ul>
                 </div>
             </section>
