@@ -86,7 +86,7 @@
             width: 22px;
             height: 22px;
             border-radius: 50%;
-            border: 1px solid black;
+            border: 1px solid var(--grey);
             &:hover {
                 border: 1px double var(--darkerGray);
             }
@@ -98,12 +98,14 @@
     flex-direction: column;
     .product-sizes {
         display: flex;
+        flex-wrap: wrap;
         div {
             margin: 0 5px 0 0;
             border: 1px solid var(--grey);
             width: 44px;
             height: 38px;
             font-size: 0.75rem;
+            font-weight: 400;
             color: var(--darkerGray);
             display: flex;
             justify-content: center;
@@ -143,6 +145,7 @@
     color: white;
     font-size: 1.2rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .product-info-details,

@@ -166,7 +166,7 @@ export const womensProducts = [
         id: 108,
         title: 'UO Phoenix Plunging Tie-Back Tank Top',
         price: '29.00',
-        color: ['Lilac', 'Gold'],
+        color: ['Plum', 'Gold'],
         text: 'Noughties-inspired tank top with a summer-ready style. Sleeveless silhouette Ft. a plunging V-neck, wide shoulder straps, ruched chest, cropped length and a tie-up fastening to reverse.',
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0148265380020_055_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0148265380020_055_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0148265380020_055_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0148265380020_055_f?$redesign-zoom-5x$='],

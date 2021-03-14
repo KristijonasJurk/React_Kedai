@@ -1855,6 +1855,11 @@ footer {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  border: 1px solid var(--grey);
+}
+
+.womens-products-container ul li .womens-product-footer .product-colors .product-color:hover {
+  border: 1px solid var(--darkerGray);
 }
 
 .womens-products-container ul li .womens-product-footer span {
@@ -2001,7 +2006,7 @@ footer {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid var(--grey);
 }
 
 .product-colors-container .product-color-bubbles .product-color:hover {
@@ -2022,6 +2027,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .product-size-container .product-sizes div {
@@ -2030,6 +2037,7 @@ footer {
   width: 44px;
   height: 38px;
   font-size: 0.75rem;
+  font-weight: 400;
   color: var(--darkerGray);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2077,6 +2085,7 @@ footer {
   color: white;
   font-size: 1.2rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .product-info-details,

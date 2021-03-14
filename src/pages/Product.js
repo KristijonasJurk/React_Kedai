@@ -14,9 +14,9 @@ function Product() {
 
     const [secondColor, setSecondColor] = useState(false)
 
-    useEffect(() => {
+    const [mainPhoto, setMainPhoto] = useState(0);
 
-    }, [])
+    const [pickedSize, setPickedSize] = useState(0)
 
     return (
         <div className='product-whole' onMouseOver={closeSubmenu}>
@@ -25,15 +25,31 @@ function Product() {
             </div>
             <div className="product-container">
                 <section className="product-photo-container">
-                    <div className="product-vertical-slide">
-                        {data.img.map((image, index) => {
-                            return (
-                                <img src={image} key={index} alt={data.title} />
-                            )
-                        })}
-                    </div>
+                    {secondColor
+                        ?
+                        <div className="product-vertical-slide">
+                            {data.img2.map((image, index) => {
+                                return (
+                                    <img src={image} key={index} alt={data.title} onClick={() => setMainPhoto(index)} />
+                                )
+                            })}
+                        </div>
+                        :
+                        <div className="product-vertical-slide">
+                            {data.img.map((image, index) => {
+                                return (
+                                    <img src={image} key={index} alt={data.title} onClick={() => setMainPhoto(index)} />
+                                )
+                            })}
+                        </div>
+                    }
                     <div className="product-image-container">
-                        <img src={data.img[0]} alt={data.title} />
+                        {secondColor
+                            ?
+                            <img src={data.img2[mainPhoto]} alt={data.title} />
+                            :
+                            <img src={data.img[mainPhoto]} alt={data.title} />
+                        }
                     </div>
                 </section>
                 <section className="product-info-container">
@@ -41,13 +57,16 @@ function Product() {
                         <h2>{data.title}</h2>
                         <h2>€{data.price}</h2>
                         <div className="product-colors-container">
-                            <p className='product-bold-text'>Color: {data.color.map((clr, index) =>
-                            // if the color is an array, it renders multiple
-                            {
-                                return (
-                                    <span>{clr}</span>
-                                )
-                            })}</p>
+                            <p className='product-bold-text'>Color: {data.img2
+                                ?
+                                data.color.map((clr, index) => {
+                                    return (
+                                        <span>{clr}</span>
+                                    )
+                                })
+                                :
+                                <span>{data.color}</span>
+                            }</p>
                             <div className="product-color-bubbles">
                                 <div style={data.img2 ? { backgroundColor: data.color[0] } : { backgroundColor: data.color }} className="product-color product-color2" onClick={() => setSecondColor(false)}></div>
 
@@ -61,13 +80,21 @@ function Product() {
                                     // for shoes display shoe sizes, and for clothes clothe sizes
                                     shoeSizes.map((size, i) => {
                                         return (
-                                            <div>{size}</div>
+                                            <div onClick={() => setPickedSize(i)}
+                                                style={pickedSize === i ? { color: 'black', border: '2px solid black' } : {
+                                                    color: '#767676', border: '1px solid #767676'
+                                                }}
+                                            >{size}</div>
                                         )
                                     })
                                     :
                                     clothesSizes.map((size, i) => {
                                         return (
-                                            <div>{size}</div>
+                                            <div onClick={() => setPickedSize(i)}
+                                                style={pickedSize === i ? { color: 'black', border: '2px solid black' } : {
+                                                    color: '#767676', border: '1px solid #767676'
+                                                }}
+                                            >{size}</div>
                                         )
                                     })
                                 }
