@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { womensBrowse, womensProducts } from '../components/data';
 import { Link, useParams } from 'react-router-dom';
+import { useGlobalContext } from '../context'
 
 const shoeSizes = [38, 39, 40, 41, 42, 43, 44, 45];
 const clothesSizes = ['XS', 'S', 'M', 'L', 'XL']
 
 function Product() {
+    const { closeSubmenu } = useGlobalContext();
+
     const { id } = useParams();
     const [data,] = useState(womensProducts.find((product) => product.id === parseInt(id)));
 
@@ -16,8 +19,10 @@ function Product() {
     }, [])
 
     return (
-        <div className='product-whole'>
-            <p>Women's <span>/</span> Tops</p>
+        <div className='product-whole' onMouseOver={closeSubmenu}>
+            <div className="product-category-location">
+                <p>{data.categories[data.categories.length - 1]}</p> <span>/</span><p> {data.categories[0]}</p>
+            </div>
             <div className="product-container">
                 <section className="product-photo-container">
                     <div className="product-vertical-slide">
@@ -88,6 +93,11 @@ function Product() {
                         <h4>Details</h4>
                         <p>{data.text}</p>
                         <b>Material</b>
+                        <p>{data.material}</p>
+                    </section>
+                    <section className="product-info-returns">
+                        <h4>Details</h4>
+                        ...
                     </section>
                 </section>
             </div>

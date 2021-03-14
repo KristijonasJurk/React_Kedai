@@ -92,7 +92,7 @@ export const womensProducts = [
         text: 'Throw it back to the 90s in these vibrant New Balance runners. Patched leather, suede and mesh allow for breathability in all the right places. Equipped with New Balance Enerp technology and grip rubber soles for lightweight stability and optimal traction.',
         material: ' Leather, Rubber',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531641_007_e?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531641_007_f?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531641_007_g?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720'],
-        categories: ['shoes', 'vintage', 'womens'],
+        categories: ['shoes', 'vintage', `women's`],
         tags: ''
     },
     {
@@ -103,7 +103,7 @@ export const womensProducts = [
         text: 'The classic Boston clogs by Birkenstock with a mink suede upper. Ft. an adjustable buckle at the strap and finished with a padded foam footbed that offers long-lasting cushioning with high rebound capacity.',
         material: 'Suede, Cork, Rubber',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_f?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_g?$redesign-zoom-5x$='],
-        categories: ['shoes', 'vintage', 'womens'],
+        categories: ['shoes', 'vintage', `women's`],
         tags: ''
     },
     {
@@ -114,7 +114,7 @@ export const womensProducts = [
         text: 'The Birkenstock Arizona is the classic summer sandal, now available in super lightweight and flexible EVA. The high-quality, odour-neutral material is also waterproof, washable and extremely easy to care for. Complete with an anatomically-shaped footbed with a deep heel, arch support and toe grip.',
         material: 'EVA (ethylene vinyl acetate)',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_f?$redesign-zoom-5x$='],
-        categories: ['shoes', 'summer', 'womens'],
+        categories: ['shoes', 'summer', `women's`],
         tags: 'Back in Stock'
     },
     {
@@ -126,7 +126,7 @@ export const womensProducts = [
         material: 'Cotton, rubber, mixed metal',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451220111_018_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451220111_018_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451220111_018_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451220111_018_f?$redesign-zoom-5x$='],
         img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451221002_010_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=640', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451221002_010_d?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=640', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451221002_010_e?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=640', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451221002_010_f?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=640'],
-        categories: ['shoes', 'summer', 'womens', 'mens'],
+        categories: ['shoes', 'summer', `women's`, `men's`],
         tags: ''
     },
     {
@@ -137,7 +137,7 @@ export const womensProducts = [
         text: 'Leather trainers by New Balance with a retro runner look. Features a lace-up front and finished with a grippy rubber sole.',
         material: 'Leather, tectile, rubber',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455535560_004_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455535560_004_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455535560_004_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455535560_004_f?$redesign-zoom-5x$='],
-        categories: ['shoes', 'womens', 'mens'],
+        categories: ['shoes', `women's`, `men's`],
         tags: ''
     },
     {
@@ -148,7 +148,7 @@ export const womensProducts = [
         text: 'The Clarissa by Dr. Martens is the same classic gladiator sandal we love, with three straps, an adjustable ankle buckle and all the Docs DNA, but now set on an empowering Quad extra-high platform sole.',
         material: 'Leather, Rubber',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314428570203_001_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314428570203_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314428570203_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314428570203_001_f?$redesign-zoom-5x$='],
-        categories: ['shoes', 'summer', 'womens'],
+        categories: ['shoes', 'summer', `women's`],
         tags: ''
     },
     {
@@ -159,7 +159,7 @@ export const womensProducts = [
         text: 'Throwback dad trainers from New Balance. Features leather uppers with perforated detailing and logo accents throughout. Finished with a grippy rubber sole.',
         material: 'Leather, Rubber',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_f?$redesign-zoom-5x$='],
-        categories: ['shoes', 'mens', 'womens'],
+        categories: ['shoes', `men's`, `women's`],
         tags: ''
     },
     {
@@ -171,7 +171,7 @@ export const womensProducts = [
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0148265380020_055_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0148265380020_055_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0148265380020_055_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0148265380020_055_f?$redesign-zoom-5x$='],
         img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0148265380020_072_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0148265380020_072_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0148265380020_072_e?$redesign-zoom-5x$='],
-        categories: ['tops', 'womens'],
+        categories: ['tops', `women's`],
         tags: ''
     },
     {
@@ -182,7 +182,7 @@ export const womensProducts = [
         text: 'Retro feel dad trainers from New Balance. Features leather uppers with perforated detailing and logo accents throughout. Finished with a grippy rubber sole.',
         material: 'Leather, Rubber',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_f?$redesign-zoom-5x$='],
-        categories: ['shoes', 'womens'],
+        categories: ['shoes', `women's`],
         tags: ''
     },
     {
@@ -193,7 +193,7 @@ export const womensProducts = [
         text: 'Iconic canvas high-top from the experts at Converse. Fitted with a cushioned footbed, sturdy rubber sole and toe-cap. Finished with cotton laces and metal eyelets.',
         material: 'Cotton, Rubber, Mixed metal',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_f?$redesign-zoom-5x$='],
-        categories: ['shoes', 'womens'],
+        categories: ['shoes', `women's`],
         tags: 'Back in Stock'
     },
     {
@@ -205,7 +205,7 @@ export const womensProducts = [
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_e?$redesign-zoom-5x$='],
         img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_d?$redesign-zoom-5x$='],
-        categories: ['tops', 'womens'],
+        categories: ['tops', `women's`],
         tags: 'Back in Stock'
     },
     {
@@ -216,7 +216,7 @@ export const womensProducts = [
         text: 'Delicate and femme smocked detailing blouse from Kedai. Features a v-neckline and puff sleeves with elasticated accents. Finished with a cropped peplum-inspired hem.',
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_f?$redesign-zoom-5x$='],
-        categories: ['tops', 'womens'],
+        categories: ['tops', `women's`],
         tags: ''
     },
     {
@@ -227,7 +227,7 @@ export const womensProducts = [
         text: 'Updated polo shirt by iets frans... designed with a cropped stretch hem. Features a polo collar with quarter-button placket and short sleeves, finished with a contrast logo detail to chest. Exclusive to Kedai.',
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0112347826537_066_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0112347826537_066_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0112347826537_066_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0112347826537_066_f?$redesign-zoom-5x$='],
-        categories: ['tops', 'womens'],
+        categories: ['tops', `women's`],
         tags: ''
     },
     {
@@ -239,7 +239,7 @@ export const womensProducts = [
         material: '60% Cotton, 40% Acrylic',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0114345141496_030_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0114345141496_030_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0114345141496_030_e?$redesign-zoom-5x$='],
         img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0114345141496_060_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0114345141496_060_d?$redesign-zoom-5x$='],
-        categories: ['tops', 'womens'],
+        categories: ['tops', `women's`],
         tags: 'Back in Stock'
     },
     {
@@ -250,7 +250,7 @@ export const womensProducts = [
         text: 'Lightweight blouse with a woven fabrication and cut-out lace detailing. Boxy fit Ft. a button-through construction with revere collar, three-quarter-length sleeves and a cropped length hem.',
         material: 'Viscose',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_f?$redesign-zoom-5x$='],
-        categories: ['tops', 'summer', 'womens'],
+        categories: ['tops', 'summer', `women's`],
         tags: ''
     },
     {
@@ -261,7 +261,7 @@ export const womensProducts = [
         text: 'Staple hoodie by Carhartt WIP. Features a plain design and pullover style Ft. an adjustable drawstring hood, raglan sleeves, ribbed trims and a slouchy pouch pocket. Finished with a gold logo detail embroidered to cuff.',
         material: '58% Cotton, 42% Polyester',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180621400150_050_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180621400150_050_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180621400150_050_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180621400150_050_f?$redesign-zoom-5x$='],
-        categories: ['tops', 'womens'],
+        categories: ['tops', `women's`],
         tags: ''
     },
     {
@@ -272,7 +272,7 @@ export const womensProducts = [
         text: 'Classic Harrington jacket by BDG. Designed with a cord fabrication and patchwork style. Zip-through construction Ft. a spread collar, drop shoulders, long sleeves and stretch trims, finished with an embroidered BDG crest. Exclusive to Kedai.',
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_e?$redesign-zoom-5x$='],
-        categories: ['jackets', 'womens'],
+        categories: ['jackets', `women's`],
         tags: 'Back in Stock'
     },
     {
@@ -283,7 +283,7 @@ export const womensProducts = [
         text: 'Effortless shacket by BDG, cut from a heavyweight cord fabrication. Features a button-through construction Ft. spread collar, long sleeves, adjustable cuffs and four side pockets to front. Exclusive to Kedai.',
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_f?$redesign-zoom-5x$='],
-        categories: ['jackets', 'womens'],
+        categories: ['jackets', `women's`],
         tags: ''
     },
     {
@@ -294,7 +294,7 @@ export const womensProducts = [
         text: 'Mid-length coat with a quilted fabrication and all-over patchwork print. Features an open front with volume sleeves, tie-up belt and two oversized side pockets.',
         material: 'Main: 100% Viscose, Fill: 100% Polyester',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_f?$redesign-zoom-5x$='],
-        categories: ['jackets', 'womens'],
+        categories: ['jackets', `women's`],
         tags: ''
     },
     {
@@ -305,7 +305,7 @@ export const womensProducts = [
         text: 'Skimpy bikini top by MINKPINK, finished with a vintage-inspired paisley print. Features non-wired triangle cups with adjustable spaghetti straps, backstrap and a tie-up wrap-around detail.',
         material: 'Hand wash',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_f?$redesign-zoom-5x$='],
-        categories: ['swimwear', 'summer', 'womens'],
+        categories: ['swimwear', 'summer', `women's`],
         tags: ''
     },
     {
@@ -317,7 +317,7 @@ export const womensProducts = [
         material: '93% Polyamide, 7% spandex',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_f?$redesign-zoom-5x$='],
         img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_f?$redesign-zoom-5x$='],
-        categories: ['swimwear', 'summer', 'womens'],
+        categories: ['swimwear', 'summer', `women's`],
         tags: ''
     },
     {
@@ -328,7 +328,7 @@ export const womensProducts = [
         text: 'Bikini bra by MINKPINK, designed with an all-over check print. Balcony-style bra with underwired cups and adjustable straps, finished with a clasp closure to reverse.',
         material: '80% Polyamide, 20% Elastane',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_f?$redesign-zoom-5x$='],
-        categories: ['swimwear', 'summer', 'womens'],
+        categories: ['swimwear', 'summer', `women's`],
         tags: 'Back in Stock'
     },
     {
@@ -339,7 +339,7 @@ export const womensProducts = [
         text: 'High-rise denim shorts by BDG with classic five-pocket styling and Mom fit. Finished with rolled hems and a brand patch to reverse hem. Only at Urban Outfitters.',
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0125593370049_010_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0125593370049_010_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0125593370049_010_e?$redesign-zoom-5x$='],
-        categories: ['bottoms', 'summer', 'womens'],
+        categories: ['bottoms', 'summer', `women's`],
         tags: ''
     },
     {
@@ -350,7 +350,7 @@ export const womensProducts = [
         text: 'Throwback flared trousers by the team at Urban Renewal. Cut with a high-rise waistband, belt loops, classic pocket silhouette, slim fit and flared silhouette.',
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0418643730075_023_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0418643730075_023_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0418643730075_023_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0418643730075_023_f?$redesign-zoom-5x$='],
-        categories: ['bottoms', 'womens'],
+        categories: ['bottoms', `women's`],
         tags: ''
     },
     {
@@ -361,7 +361,7 @@ export const womensProducts = [
         text: 'Skate style trousers by Dickies. Made from a durable twill construction Ft. a mid-rise, belt loops, button and zip fly, four-pocket design and straight-leg silhouette. Finished with creases and a brand patch at reverse.',
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180902470034_066_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180902470034_066_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180902470034_066_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180902470034_066_f?$redesign-zoom-5x$='],
-        categories: ['bottoms', 'womens'],
+        categories: ['bottoms', `women's`],
         tags: ''
     },
     {
@@ -372,7 +372,7 @@ export const womensProducts = [
         text: 'Branded vintage boxing shorts, sourced by the team at Urban Renewal. Each pair features an elasticated waist, a relaxed fit and a branded design.',
         material: '100% Vintage fibres',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_f?$redesign-zoom-5x$='],
-        categories: ['bottoms', 'vintage', 'womens'],
+        categories: ['bottoms', 'vintage', `women's`],
         tags: 'Vintage look'
     },
     {
@@ -383,7 +383,7 @@ export const womensProducts = [
         text: 'Branded vintage boxing shorts, sourced by the team at Urban Renewal. Each pair features an elasticated waist, a relaxed fit and a branded design.',
         material: '100% Vintage fibres',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_f?$redesign-zoom-5x$='],
-        categories: ['bottoms', 'vintage', 'womens'],
+        categories: ['bottoms', 'vintage', `women's`],
         tags: ''
     },
     {
@@ -394,7 +394,7 @@ export const womensProducts = [
         text: 'True vintage shirt with an upcycled addition, customised and brought to you by Urban Renewal. Each unique piece features a spread collar, button-through construction and long sleeves. Finished with a striped fabrication and embroidered logo detail.',
         material: '100% Vintage fibres',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0414621551115_066_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0414621551115_066_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0414621551115_066_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0414621551115_066_f?$redesign-zoom-5x$='],
-        categories: ['vintage', 'womens'],
+        categories: ['vintage', `women's`],
         tags: 'Vintage look'
     },
     {
@@ -406,7 +406,7 @@ export const womensProducts = [
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_020_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_020_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_020_f?$redesign-zoom-5x$='],
         img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_065_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_065_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_065_e?$redesign-zoom-5x$='],
-        categories: ['bottoms', 'vintage', 'womens'],
+        categories: ['bottoms', 'vintage', `women's`],
         tags: ''
     },
     {
@@ -417,7 +417,7 @@ export const womensProducts = [
         text: 'Chunky leather loafer style from Vagabond. Featuring all-black upper set on a solid sole for a subtle lift. Finished with classic, visible stitching and contoured penny strap.',
         material: 'Leather',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_f?$redesign-zoom-5x$='],
-        categories: ['shoes', 'womens'],
+        categories: ['shoes', `women's`],
         tags: 'Back in Stock'
     },
 ]
