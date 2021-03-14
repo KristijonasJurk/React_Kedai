@@ -48,8 +48,11 @@ function Product() {
                                     <span>{clr}</span>
                                 )
                             })}</p>
-                            <div style={data.img2 ? { backgroundColor: data.color[0] } : { backgroundColor: data.color }} className="product-color product-color2" onClick={() => setSecondColor(false)}></div>
-                            {data.img2 && <div style={{ backgroundColor: data.color[1] }} className="product-color product-color2" onClick={() => setSecondColor(true)}></div>}
+                            <div className="product-color-bubbles">
+                                <div style={data.img2 ? { backgroundColor: data.color[0] } : { backgroundColor: data.color }} className="product-color product-color2" onClick={() => setSecondColor(false)}></div>
+
+                                {data.img2 && <div style={{ backgroundColor: data.color[1] }} className="product-color product-color2" onClick={() => setSecondColor(true)}></div>}
+                            </div>
                         </div>
                         <div className="product-size-container">
                             <p className='product-bold-text'>Size*</p>
@@ -70,7 +73,7 @@ function Product() {
                                 }
                             </div>
                         </div>
-                        <div className="quantity-container">
+                        <div className="product-quantity-container">
                             <p className='product-bold-text'>Qty*</p>
                             <select name="product sort" id="product-sort">
                                 <option value="1units">1</option>
@@ -92,12 +95,51 @@ function Product() {
                     <section className="product-info-details">
                         <h4>Details</h4>
                         <p>{data.text}</p>
-                        <b>Material</b>
-                        <p>{data.material}</p>
+                        <br />
+                        <b>Material + Care</b>
+                        <p>-{data.material}</p>
+                        <p>-Machine wash</p>
+                        <p>-Imported</p>
                     </section>
                     <section className="product-info-returns">
-                        <h4>Details</h4>
-                        ...
+                        <h4>Shipping + Returns</h4>
+                        <b>Shipping</b>
+                        <table>
+                            <tr>
+                                <th>Method</th>
+                                <th>Shipping Time</th>
+                                <th>Cost</th>
+                            </tr>
+                            <tr>
+                                <td>Standard</td>
+                                <td>Arrives in 5-8 business days</td>
+                                <td>Orders up to $49.99: $4.95
+                                    Orders $50 and over: FREE</td>
+                            </tr>
+                            <tr>
+                                <td>Express</td>
+                                <td>Arrives in 2-3 business days</td>
+                                <td>$14.95</td>
+                            </tr>
+                            <tr>
+                                <td>Rush</td>
+                                <td>Arrives in 1-2 business days</td>
+                                <td>$21.95</td>
+                            </tr>
+                            <tr>
+                                <td>Truck</td>
+                                <td>Arrives in 2-4 weeks once shipped</td>
+                                <td>Cost may vary</td>
+                            </tr>
+                        </table>
+                        <div className="product-info-returns-footer">
+                            <p>Rush Shipping may not be available for all orders depending on fulfillment location.</p>
+                            <p>Shipping outside of the US? See our <span>international shipping</span> rates.</p>
+                            <p>This item is available for delivery to one of our convenient Collection Points.</p>
+                            <p className='bold-text'>Returns</p>
+                            <p>Free pre-paid returns and exchanges for orders shipped to the US. Get refunded faster with easy online returns and print a FREE pre-paid return SmartLabel® online! Return or exchange any unused or defective merchandise by mail or at one of our US or Canada store locations. Made to order items cannot be canceled, exchanged or returned.</p>
+                            <p>Visit <span>Returns + Exchanges</span> for more information on completing a return.</p>
+                        </div>
                     </section>
                 </section>
             </div>
