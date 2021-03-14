@@ -1855,17 +1855,28 @@ footer {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: grey;
-}
-
-.womens-products-container ul li .womens-product-footer .product-colors .product-color:last-of-type {
-  background-color: #355735;
 }
 
 .womens-products-container ul li .womens-product-footer span {
+  justify-items: end;
   margin: 5px 0;
   font-size: 0.7rem;
   color: var(--darkerGray);
+}
+
+.product-colors-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0;
+}
+
+.product-colors-container .product-color {
+  cursor: pointer;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 :root {
