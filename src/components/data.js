@@ -94,14 +94,15 @@ export const womensProducts = [
     },
     {
         id: 102,
-        title: 'Birkenstock Boston Mocha Suede Clogs',
-        price: '115.00',
-        color: 'Bisque',
-        text: 'The classic Boston clogs by Birkenstock with a mink suede upper. Ft. an adjustable buckle at the strap and finished with a padded foam footbed that offers long-lasting cushioning with high rebound capacity.',
-        material: 'Suede, Cork, Rubber',
-        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_f?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_g?$redesign-zoom-5x$='],
-        categories: ['shoes', 'vintage', `women's`],
-        tags: ''
+        title: 'Colorado Springs Baby T-Shirt',
+        price: '29.00',
+        color: ['Chocolate', 'Light Grey'],
+        text: 'Iconic canvas high-top from the experts at Converse. Fitted with a cushioned footbed, sturdy rubber sole and toe-cap. Finished with cotton laces and metal eyelets.',
+        material: '100% Cotton',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_e?$redesign-zoom-5x$='],
+        img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_d?$redesign-zoom-5x$='],
+        categories: ['tops', `women's`],
+        tags: 'Back in Stock'
     },
     {
         id: 103,
@@ -161,7 +162,7 @@ export const womensProducts = [
     },
     {
         id: 108,
-        title: 'UO Phoenix Plunging Tie-Back Tank Top',
+        title: 'Kedai Phoenix Plunging Tie-Back Tank Top',
         price: '29.00',
         color: ['Plum', 'Gold'],
         text: 'Noughties-inspired tank top with a summer-ready style. Sleeveless silhouette Ft. a plunging V-neck, wide shoulder straps, ruched chest, cropped length and a tie-up fastening to reverse.',
@@ -195,15 +196,14 @@ export const womensProducts = [
     },
     {
         id: 111,
-        title: 'Colorado Springs Baby T-Shirt',
-        price: '29.00',
-        color: ['Chocolate', 'Light Grey'],
-        text: 'Iconic canvas high-top from the experts at Converse. Fitted with a cushioned footbed, sturdy rubber sole and toe-cap. Finished with cotton laces and metal eyelets.',
-        material: '100% Cotton',
-        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_e?$redesign-zoom-5x$='],
-        img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_d?$redesign-zoom-5x$='],
-        categories: ['tops', `women's`],
-        tags: 'Back in Stock'
+        title: 'Birkenstock Boston Mocha Suede Clogs',
+        price: '115.00',
+        color: 'Bisque',
+        text: 'The classic Boston clogs by Birkenstock with a mink suede upper. Ft. an adjustable buckle at the strap and finished with a padded foam footbed that offers long-lasting cushioning with high rebound capacity.',
+        material: 'Suede, Cork, Rubber',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_f?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_g?$redesign-zoom-5x$='],
+        categories: ['shoes', 'vintage', `women's`],
+        tags: ''
     },
     {
         id: 112,

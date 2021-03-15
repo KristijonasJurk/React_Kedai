@@ -175,3 +175,6 @@ function Product() {
 }
 
 export default Product
+
+
+// TODO add repsonsive to products, create a modal
