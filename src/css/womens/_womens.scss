@@ -46,18 +46,19 @@
             margin: 0 10px;
         }
     }
-    .womens-sort-container {
-        label {
-            font-size: 0.75rem;
-            margin: 0 20px;
-        }
-        select {
-            width: 140px;
-            height: 38px;
-            border-radius: 5px;
-            border: 1px solid var(--darkGray);
-            padding: 0 10px;
-        }
+}
+.womens-sort-container,
+.womens-filters {
+    label {
+        font-size: 0.75rem;
+        margin: 0 20px;
+    }
+    select {
+        width: 140px;
+        height: 38px;
+        border-radius: 5px;
+        border: 1px solid var(--darkGray);
+        padding: 0 10px;
     }
 }
 
@@ -105,6 +106,81 @@
                     font-size: 0.7rem;
                     color: var(--darkerGray);
                 }
+            }
+        }
+    }
+}
+
+// ====== RESPONSIVE ======
+
+@media only screen and (max-width: 1000px) {
+    .womens-products-container {
+        ul {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+@media only screen and (max-width: 750px) {
+    .womens-container {
+        padding: 60px 30px;
+        grid-template-columns: 3fr 8fr 3fr;
+    }
+    .womens-products-container {
+        ul {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .womens-products-header {
+        .womens-sort-container {
+            label {
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 660px) {
+    .womens-container {
+        padding: 30px 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        position: relative;
+    }
+    .womens-filters {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        margin: 10px 5px;
+        ul {
+            li {
+                margin: 20px 0;
+                font-size: 0.75rem;
+                font-weight: 400;
+                a {
+                    &:hover {
+                        color: var(--darkerGray);
+                    }
+                }
+            }
+        }
+    }
+    .womens-products-container {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        ul {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .womens-products-header {
+        .womens-sort-container {
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            label {
+                font-size: 0.8rem;
+                font-weight: 500;
+                padding: 10px 5px;
+                margin: 0;
             }
         }
     }

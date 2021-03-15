@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { womensBrowse, womensProducts } from '../../components/data';
 import { useGlobalContext } from '../../context'
@@ -6,23 +6,44 @@ import { useGlobalContext } from '../../context'
 function Womens() {
     const { closeSubmenu } = useGlobalContext();
 
-    const [products, setProducts] = useState(womensProducts)
+    const [products,] = useState(womensProducts)
 
     const [mouseOver, setMouseOver] = useState(-1);
     const [secondColor, setSecondColor] = useState({ isActive: false, id: null })
+
+    const [screenWidth, setScreenWidth] = useState(0)
+
+    useLayoutEffect(() => {
+        function updateSize() {
+            setScreenWidth(window.innerWidth);
+        }
+        window.addEventListener('resize', updateSize);
+        updateSize();
+        return () => window.removeEventListener('resize', updateSize);
+    }, [])
 
     return (
         <div className='womens-container' onMouseOver={closeSubmenu}>
             <section className="womens-filter-container">
                 <p>Browse by:</p>
                 <div className="womens-filters">
-                    <ul>
-                        {womensBrowse.map((category, index) => {
-                            return (
-                                <li><a href="#">{category}</a></li>
-                            )
-                        })}
-                    </ul>
+                    {screenWidth < 660 ?
+                        <select>
+                            {womensBrowse.map((category, index) => {
+                                return (
+                                    <option>{category}</option>
+                                )
+                            })}
+                        </select>
+                        :
+                        <ul>
+                            {womensBrowse.map((category, index) => {
+                                return (
+                                    <li><a href="/">{category}</a></li>
+                                )
+                            })}
+                        </ul>
+                    }
                 </div>
             </section>
             <section className="womens-products-container">

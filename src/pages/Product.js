@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import { womensBrowse, womensProducts } from '../components/data';
-import { Link, useParams } from 'react-router-dom';
+import React, { useState } from 'react'
+import { womensProducts } from '../components/data';
+import { useParams } from 'react-router-dom';
 import { useGlobalContext } from '../context'
 
 const shoeSizes = [38, 39, 40, 41, 42, 43, 44, 45];

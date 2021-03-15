@@ -7,7 +7,7 @@ const Home = () => {
             <section className="cart-item-container">
                 <div className="cart-header">
                     <h4>Shopping Bag</h4>
-                    <a href="#">Delivery Options</a>
+                    <a href="/">Delivery Options</a>
                 </div>
                 <div className="cart-items">
                     Your bag is currently empty. <span>Continue Shopping.</span>
@@ -16,7 +16,7 @@ const Home = () => {
             <section className="cart-order-container">
                 <div className="cart-order-header">
                     <h5>Order Summary</h5>
-                    <a href="#">
+                    <a href="/">
                         800.282.2200
                 </a>
                 </div>

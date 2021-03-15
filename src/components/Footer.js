@@ -10,8 +10,8 @@ const data = [
 ]
 
 function Footer() {
-    const [screenWidth, setScreenWidth] = useState(0)
     const [showLinks, setShowLinks] = useState(-1);
+    const [screenWidth, setScreenWidth] = useState(0)
 
     useLayoutEffect(() => {
         function updateSize() {
@@ -57,7 +57,7 @@ function Footer() {
                                         {links.map((link) => {
                                             return (
                                                 <li>
-                                                    <a href="#">{link}</a>
+                                                    <a href="/">{link}</a>
                                                 </li>
                                             )
                                         })}
@@ -70,7 +70,7 @@ function Footer() {
                                         {links.map((link) => {
                                             return (
                                                 <li>
-                                                    <a href="#">{link}</a>
+                                                    <a href="/">{link}</a>
                                                 </li>
                                             )
                                         })}

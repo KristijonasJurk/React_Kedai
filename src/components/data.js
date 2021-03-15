@@ -1,6 +1,3 @@
-import { FaCreditCard, FaBook, FaBriefcase } from 'react-icons/fa';
-import { MdNewReleases } from 'react-icons/md';
-import { GiConverseShoe, GiLifeJacket, GiArmoredPants, GiUnderwear } from 'react-icons/gi';
 import { FcOldTimeCamera, FcMusic, FcFilmReel, FcLandscape, FcEditImage, FcBullish, FcHome, FcGoogle, FcHeadset, FcHighPriority, FcLike, FcOk, FcElectricity, FcBinoculars, FcAdvertising, FcDebian, FcRating, FcSlrBackSide, FcUp, FcSportsMode, FcCheckmark, FcIdea } from "react-icons/fc";
 import React from 'react';
 
@@ -81,7 +78,7 @@ export const slide1 = [
 
 export const aboutData = 'Kedai is a lifestyle retailer dedicated to inspiring customers through a unique combination of product, creativity and cultural understanding. Founded in 1970 in a small space across the street from Sapiegos Rumai, Kedai now operates in over 200 stores in Lithuania, United States and Europe, offering experiential retail environments and a well-curated mix of on-trend women’s and men’s shoes, from sneakers, boots and sandals to shoes with fur on them, hats, and backpacks, as well as beauty, intimates, swim and a collection of handpicked vintage clothing. Our Music + Tech collection is a go-to destination for vinyl, record players and tech accessories. Visit our stores, where all are welcome and there’s always something new to see, or shop online at kristijonokedai.com and get free shipping on LT orders over 50eu. For special offers, one-of-a-kind prizes and more, download the our app and join Kedai Rewards! Want to be part of the conversation? Follow, share and shop @KedaiShop.';
 
-export const womensBrowse = ['New', 'Shoes', 'Tops', 'Coars & Jackets', 'Swimwear', 'Bottoms', 'Vintage', 'Summer']
+export const womensBrowse = ['New', 'Shoes', 'Tops', 'Coats & Jackets', 'Swimwear', 'Bottoms', 'Vintage', 'Summer']
 
 export const womensProducts = [
     {
