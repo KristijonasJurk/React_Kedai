@@ -101,7 +101,7 @@ export const womensProducts = [
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_021_e?$redesign-zoom-5x$='],
         img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_d?$redesign-zoom-5x$='],
-        categories: ['tops', `women's`],
+        categories: ['tops', `women's`, 'new'],
         tags: 'Back in Stock'
     },
     {
@@ -112,7 +112,7 @@ export const womensProducts = [
         text: 'The Birkenstock Arizona is the classic summer sandal, now available in super lightweight and flexible EVA. The high-quality, odour-neutral material is also waterproof, washable and extremely easy to care for. Complete with an anatomically-shaped footbed with a deep heel, arch support and toe grip.',
         material: 'EVA (ethylene vinyl acetate)',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_f?$redesign-zoom-5x$='],
-        categories: ['shoes', 'summer', `women's`],
+        categories: ['shoes', 'summer', `women's`, 'new'],
         tags: 'Back in Stock'
     },
     {
@@ -157,7 +157,7 @@ export const womensProducts = [
         text: 'Throwback dad trainers from New Balance. Features leather uppers with perforated detailing and logo accents throughout. Finished with a grippy rubber sole.',
         material: 'Leather, Rubber',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_f?$redesign-zoom-5x$='],
-        categories: ['shoes', `men's`, `women's`],
+        categories: ['shoes', `men's`, `women's`, 'new'],
         tags: ''
     },
     {
@@ -180,7 +180,7 @@ export const womensProducts = [
         text: 'Retro feel dad trainers from New Balance. Features leather uppers with perforated detailing and logo accents throughout. Finished with a grippy rubber sole.',
         material: 'Leather, Rubber',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_f?$redesign-zoom-5x$='],
-        categories: ['shoes', `women's`],
+        categories: ['shoes', `women's`, 'new'],
         tags: ''
     },
     {
@@ -191,7 +191,7 @@ export const womensProducts = [
         text: 'Iconic canvas high-top from the experts at Converse. Fitted with a cushioned footbed, sturdy rubber sole and toe-cap. Finished with cotton laces and metal eyelets.',
         material: 'Cotton, Rubber, Mixed metal',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_f?$redesign-zoom-5x$='],
-        categories: ['shoes', `women's`],
+        categories: ['shoes', `women's`, 'new'],
         tags: 'Back in Stock'
     },
     {
@@ -213,7 +213,7 @@ export const womensProducts = [
         text: 'Delicate and femme smocked detailing blouse from Kedai. Features a v-neckline and puff sleeves with elasticated accents. Finished with a cropped peplum-inspired hem.',
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_f?$redesign-zoom-5x$='],
-        categories: ['tops', `women's`],
+        categories: ['tops', `women's`, 'new'],
         tags: ''
     },
     {
@@ -247,7 +247,7 @@ export const womensProducts = [
         text: 'Lightweight blouse with a woven fabrication and cut-out lace detailing. Boxy fit Ft. a button-through construction with revere collar, three-quarter-length sleeves and a cropped length hem.',
         material: 'Viscose',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_f?$redesign-zoom-5x$='],
-        categories: ['tops', 'summer', `women's`],
+        categories: ['tops', 'summer', `women's`, 'new'],
         tags: ''
     },
     {
@@ -269,7 +269,7 @@ export const womensProducts = [
         text: 'Classic Harrington jacket by BDG. Designed with a cord fabrication and patchwork style. Zip-through construction Ft. a spread collar, drop shoulders, long sleeves and stretch trims, finished with an embroidered BDG crest. Exclusive to Kedai.',
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_e?$redesign-zoom-5x$='],
-        categories: ['jackets', `women's`],
+        categories: ['jackets', `women's`, 'new'],
         tags: 'Back in Stock'
     },
     {
@@ -280,7 +280,7 @@ export const womensProducts = [
         text: 'Effortless shacket by BDG, cut from a heavyweight cord fabrication. Features a button-through construction Ft. spread collar, long sleeves, adjustable cuffs and four side pockets to front. Exclusive to Kedai.',
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_f?$redesign-zoom-5x$='],
-        categories: ['jackets', `women's`],
+        categories: ['jackets', `women's`, 'new'],
         tags: ''
     },
     {
@@ -302,7 +302,7 @@ export const womensProducts = [
         text: 'Skimpy bikini top by MINKPINK, finished with a vintage-inspired paisley print. Features non-wired triangle cups with adjustable spaghetti straps, backstrap and a tie-up wrap-around detail.',
         material: 'Hand wash',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_f?$redesign-zoom-5x$='],
-        categories: ['swimwear', 'summer', `women's`],
+        categories: ['swimwear', 'summer', `women's`, 'new'],
         tags: ''
     },
     {
@@ -325,7 +325,7 @@ export const womensProducts = [
         text: 'Bikini bra by MINKPINK, designed with an all-over check print. Balcony-style bra with underwired cups and adjustable straps, finished with a clasp closure to reverse.',
         material: '80% Polyamide, 20% Elastane',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_f?$redesign-zoom-5x$='],
-        categories: ['swimwear', 'summer', `women's`],
+        categories: ['swimwear', 'summer', `women's`, 'new'],
         tags: 'Back in Stock'
     },
     {
@@ -369,7 +369,7 @@ export const womensProducts = [
         text: 'Branded vintage boxing shorts, sourced by the team at Urban Renewal. Each pair features an elasticated waist, a relaxed fit and a branded design.',
         material: '100% Vintage fibres',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_f?$redesign-zoom-5x$='],
-        categories: ['bottoms', 'vintage', `women's`],
+        categories: ['bottoms', 'vintage', `women's`, 'new'],
         tags: 'Vintage look'
     },
     {
@@ -403,7 +403,7 @@ export const womensProducts = [
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_020_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_020_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_020_f?$redesign-zoom-5x$='],
         img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_065_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_065_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_065_e?$redesign-zoom-5x$='],
-        categories: ['bottoms', 'vintage', `women's`],
+        categories: ['bottoms', 'vintage', `women's`, 'new'],
         tags: ''
     },
     {
@@ -414,7 +414,96 @@ export const womensProducts = [
         text: 'Chunky leather loafer style from Vagabond. Featuring all-black upper set on a solid sole for a subtle lift. Finished with classic, visible stitching and contoured penny strap.',
         material: 'Leather',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_f?$redesign-zoom-5x$='],
-        categories: ['shoes', `women's`],
+        categories: ['shoes', `women's`, 'new'],
         tags: 'Back in Stock'
     },
+]
+
+
+export const mensBrowse = ['New', 'Shoes', 'Jackets', 'Activewear', 'Bottoms', 'Vintage', 'Sale']
+
+export const mensProducts = [
+
+    {
+        id: 150,
+        title: 'Salomon XA-Pro 1 Sneaker',
+        price: '170.00',
+        color: 'Purple',
+        text: 'Hiking sneaker by Salomon with a drawcord style lace-up front. Features overlays at the uppers for an outdoorsy look. Supportive shoe with cushioning throughout and finished with a textured rubber sole.',
+        material: 'Mesh, rubber',
+        img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/59158618_050_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/59158618_050_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/59158618_050_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/59158618_050_f?$redesign-zoom-5x$'],
+        categories: ['shoes', 'new', `men's`],
+        tags: 'Back in Stock'
+    },
+    {
+        id: 151,
+        title: 'HOKA ONE ONE® Kaha GORE-TEX Boot',
+        price: '220.00',
+        color: ['Black', 'Cream'],
+        text: 'Lightweight waterproof hiking boot from HOKA ONE ONE®. The GTX full-grain leather upper offers support and comfort while the EVA, classic HOKA ONE ONE® foam and Vibram Megagrip high-traction soles and tread make sure you are steady on your feet all day long. Complete with 5mm multi-directional lugs.',
+        material: 'GORE-TEX waterproofing, leather, EVA, rubber',
+        img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/53787446_001_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/53787446_001_f?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/53787446_001_g?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/53787446_001_d?$redesign-zoom-5x$'],
+        img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/53787446_003_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/53787446_003_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/53787446_003_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/53787446_003_f?$redesign-zoom-5x$'],
+        categories: ['shoes', 'activewear', `men's`],
+        tags: ''
+    },
+    {
+        id: 152,
+        title: 'Out From Under Seamless Bandeau Bikini Top',
+        price: '22.00',
+        color: ['Chocolate', 'Ivory'],
+        text: 'Seamless swim top by Out From Under & only at Urban Outfitters. Classic bandeau silhouette with a straight neckline & cropped fit.',
+        material: '93% Polyamide, 7% spandex',
+        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_f?$redesign-zoom-5x$='],
+        img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_f?$redesign-zoom-5x$='],
+        categories: ['swimwear', 'summer', 'new', `women's`],
+        tags: ''
+    },
+    {
+        id: 153,
+        title: 'Nike Air Force 1 ’07 Stitch Sneaker',
+        price: '90.00',
+        color: ['Black ', 'Green'],
+        text: 'A bold take on the Air Force 1 ’07 CV1724 sneaker by Nike with a contrast stitch style. Padded low-top silhouette with swoosh detailing to the sides and perforation at the toe. Finished with a durable rubber outsole.',
+        material: 'Leather, rubber',
+        img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/58877572_018_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/58877572_018_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/58877572_018_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/58877572_018_f?$redesign-zoom-5x$'],
+        img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/58877572_030_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/58877572_030_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/58877572_030_e?$redesign-zoom-5x$'],
+        categories: ['shoes', `men's`],
+        tags: ''
+    },
+    {
+        id: 154,
+        title: 'Nike Challenger OG Sneaker',
+        price: '90.00',
+        color: 'SkyBlue',
+        text: 'The classic athletic sneaker by Nike with a low-profile upper and lace-up front. Features a leather & textile upper with essential Nike swoosh detailing to the sides. Finished with a grippy rubber outsole.',
+        material: 'Leather, mesh, nylon, rubber',
+        img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/56521503_045_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56521503_045_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56521503_045_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56521503_045_f?$redesign-zoom-5x$'],
+        categories: ['shoes', 'vintage', `men's`],
+        tags: 'Vintage Look'
+    },
+    {
+        id: 155,
+        title: 'Dr. Martens Core 1460 8-Eye Boot',
+        price: '150.00',
+        color: ['Black', 'Maroon'],
+        text: 'Classic 8-eye boot from the experts at Dr. Martens. Smooth leather outer with 8-eye lace closure. Complete with branded pull-tab + rubber. Goodyear-welted sole with iconic yellow stitching.',
+        material: 'Leather, rubber',
+        img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/46604476_001_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/46604476_001_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/46604476_001_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/46604476_001_f?$redesign-zoom-5x$'],
+        img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/46604476_061_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/46604476_061_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/46604476_061_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/46604476_061_f?$redesign-zoom-5x$'],
+        categories: ['shoes', 'sale', `men's`],
+        tags: ''
+    },
+    {
+        id: 156,
+        title: 'adidas Adilette Slide Sandal',
+        price: '45.00',
+        color: ['White', 'Black'],
+        text: 'Favorite pool slides from adidas. Slip-on silhouette offers a textured three-stripe foot strap and a contoured footbed for comfort. Finished with a grippy rubber outsole.',
+        material: 'Rubber',
+        img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/48975288_010_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/48975288_010_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/48975288_010_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/48975288_010_f?$redesign-zoom-5x$'],
+        img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/48975288_001_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/48975288_001_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/48975288_001_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/48975288_001_f?$redesign-zoom-5x$'],
+        categories: ['shoes', `men's`],
+        tags: ''
+    }
 ]

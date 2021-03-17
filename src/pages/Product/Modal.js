@@ -45,20 +45,10 @@ function Modal({ closeModal, modal, data, secondColor }) {
                 {!secondColor ?
                     <div className="modal-photo-container">
                         <img src={data.img[currentImage]} alt="" />
-                        {/* {data.img.map((image, index) => {
-                            return (
-                                <img src={image} key={index} alt={data.title} />
-                            )
-                        })} */}
                     </div>
                     :
                     <div className="modal-photo-container">
                         <img src={data.img2[currentImage]} alt="" />
-                        {/* {data.img2.map((image, index) => {
-                            return (
-                                <img src={image} key={index} alt={data.title} />
-                            )
-                        })} */}
                     </div>
 
                 }
