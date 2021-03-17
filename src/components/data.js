@@ -449,14 +449,14 @@ export const mensProducts = [
     },
     {
         id: 152,
-        title: 'Out From Under Seamless Bandeau Bikini Top',
-        price: '22.00',
-        color: ['Chocolate', 'Ivory'],
-        text: 'Seamless swim top by Out From Under & only at Urban Outfitters. Classic bandeau silhouette with a straight neckline & cropped fit.',
-        material: '93% Polyamide, 7% spandex',
-        img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_020_f?$redesign-zoom-5x$='],
-        img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_f?$redesign-zoom-5x$='],
-        categories: ['swimwear', 'summer', 'new', `women's`],
+        title: 'HOKA ONE ONE® Speedgoat 4 Running Shoe',
+        price: '145.00',
+        color: ['Red', 'Navy'],
+        text: 'Speedgoat 4 runners from HOKA ONE ONE®. Updated mesh upper provides breathability while 3D printed overlays offer additional midfoot support and lockdown for a more secure feel. Complete with gusseted tongue with strategic cutouts for breathability, lacing eye-rows with a small winged component to ensure a secure fit and lightweight foam midsole for a more responsive ride. Wider forefoot offers an accommodating fit while Vibram® Megagrip rubber outsole provides grip in wet and dry conditions. Finished with 5mm “stepped” lugs and zonal rubber placement adds support and stability.',
+        material: 'Textile, rubber',
+        img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/56135288_060_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56135288_060_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56135288_060_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56135288_060_f?$redesign-zoom-5x$'],
+        img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/56135288_040_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56135288_040_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56135288_040_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56135288_040_f?$redesign-zoom-5x$'],
+        categories: ['shoes', 'activewear', 'new', `men's`],
         tags: ''
     },
     {
