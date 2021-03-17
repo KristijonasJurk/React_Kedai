@@ -1,13 +1,12 @@
 import React, { useState, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { womensBrowse, womensProducts, mensProducts, mensBrowse } from '../../components/data';
+import { mensProducts, mensBrowse } from '../../components/data';
 import { useGlobalContext } from '../../context'
 
 function Womens() {
     const { closeSubmenu } = useGlobalContext();
 
-    const [products,] = useState(womensProducts)
-    const [products2,] = useState(mensProducts)
+    const [products,] = useState(mensProducts)
 
     const [mouseOver, setMouseOver] = useState(-1);
     const [secondColor, setSecondColor] = useState({ isActive: false, id: null })
@@ -31,7 +30,7 @@ function Womens() {
                 <div className="womens-filters">
                     {screenWidth < 660 ?
                         <select>
-                            {womensBrowse.map((category, index) => {
+                            {mensBrowse.map((category, index) => {
                                 return (
                                     <option>{category}</option>
                                 )
@@ -39,7 +38,7 @@ function Womens() {
                         </select>
                         :
                         <ul>
-                            {womensBrowse.map((category, index) => {
+                            {mensBrowse.map((category, index) => {
                                 return (
                                     <li><a href="/">{category}</a></li>
                                 )
@@ -50,7 +49,7 @@ function Womens() {
             </section>
             <section className="womens-products-container">
                 <header className='womens-products-header'>
-                    <h3>Women's Clothing <span>{womensProducts.length} results</span></h3>
+                    <h3>Women's Clothing <span>{mensProducts.length} results</span></h3>
                     <div className="womens-sort-container">
                         <label htmlFor="womens-sort">Sort:</label>
                         <select name="womens sort" id="womens-sort">
@@ -64,7 +63,7 @@ function Womens() {
                 </header>
                 <div className="womens-products-container">
                     <ul>
-                        {products2.map((product, index) => {
+                        {products.map((product, index) => {
                             const { id, title, price, color, text, material, img, img2, categories, tags } = product;
                             return (
                                 // <Link to={`product/${id}`}>

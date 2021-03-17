@@ -2285,6 +2285,10 @@ footer {
     -ms-grid-column-span: 1;
     grid-column: 1/2;
   }
+  .product-photo-container .product-image-container img {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+  }
   .product-info-container {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;

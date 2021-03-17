@@ -1,6 +1,6 @@
 import React, { useState, useLayoutEffect } from 'react'
 import Modal from './Modal'
-import { womensProducts } from '../../components/data';
+import { womensProducts, mensProducts } from '../../components/data';
 import { useParams } from 'react-router-dom';
 import { useGlobalContext } from '../../context'
 
@@ -11,7 +11,8 @@ function Product() {
     const { closeSubmenu } = useGlobalContext();
 
     const { id } = useParams();
-    const [data,] = useState(womensProducts.find((product) => product.id === parseInt(id)));
+    const [data,] = useState(womensProducts.find((product) => product.id === parseInt(id)) || mensProducts.find((product) => product.id === parseInt(id)));
+
 
     const [secondColor, setSecondColor] = useState(false)
 

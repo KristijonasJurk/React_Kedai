@@ -35,7 +35,7 @@ const Navbar = () => {
                         <Link to='/womens' className="nav-link" onMouseOver={displaySubmenu}>Women's</Link>
                     </li>
                     <li>
-                        <Link to='/' className="nav-link" onMouseOver={displaySubmenu}>Men's</Link>
+                        <Link to='/mens' className="nav-link" onMouseOver={displaySubmenu}>Men's</Link>
                     </li>
                     <li>
                         <Link to='/' className="nav-link" onMouseOver={displaySubmenu}>Lifestyle</Link>

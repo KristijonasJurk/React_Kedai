@@ -1,13 +1,12 @@
 import React, { useState, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { womensBrowse, womensProducts, mensProducts, mensBrowse } from '../../components/data';
+import { womensBrowse, womensProducts } from '../../components/data';
 import { useGlobalContext } from '../../context'
 
 function Womens() {
     const { closeSubmenu } = useGlobalContext();
 
     const [products,] = useState(womensProducts)
-    const [products2,] = useState(mensProducts)
 
     const [mouseOver, setMouseOver] = useState(-1);
     const [secondColor, setSecondColor] = useState({ isActive: false, id: null })
@@ -64,7 +63,7 @@ function Womens() {
                 </header>
                 <div className="womens-products-container">
                     <ul>
-                        {products2.map((product, index) => {
+                        {products.map((product, index) => {
                             const { id, title, price, color, text, material, img, img2, categories, tags } = product;
                             return (
                                 // <Link to={`product/${id}`}>

@@ -228,6 +228,9 @@
         }
         .product-image-container {
             grid-column: 1/2;
+            img {
+                cursor: zoom-in;
+            }
         }
     }
     .product-info-container {
