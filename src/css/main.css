@@ -2022,6 +2022,9 @@ footer {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+}
+
+.product-photo-container .product-image-container img {
   cursor: crosshair;
 }
 
@@ -2051,7 +2054,8 @@ footer {
   border: none;
 }
 
-.product-info-main h2 {
+.product-info-main h2,
+.product-title-price h2 {
   font-weight: 400;
   font-size: 1.4rem;
   letter-spacing: 0px;
@@ -2245,6 +2249,186 @@ footer {
 .product-info-returns .product-info-returns-footer .bold-text {
   font-weight: 600;
   margin: 20px 0 10px;
+}
+
+@media only screen and (max-width: 750px) {
+  .product-whole .product-category-location {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .product-container {
+    padding: 0 20px;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1561px;
+    margin: 0 auto;
+  }
+  .product-photo-container {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-column-gap: calc(1.5vw + 5px);
+  }
+  .product-photo-container .product-vertical-slide {
+    display: none;
+  }
+  .product-photo-container .product-image-container {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .product-info-container {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-info-container section {
+    border-bottom: 1px solid var(--grey);
+  }
+  .product-info-container section:last-of-type {
+    border: none;
+  }
+}
+
+/*
+=============== 
+Modal
+===============
+*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  visibility: hidden;
+  z-index: -1;
+}
+
+/* OPEN/CLOSE MODAL */
+.show-modal {
+  visibility: visible;
+  z-index: 10;
+}
+
+.modal-container {
+  background: var(--mainWhite);
+  border-radius: var(--mainBorderRadius);
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  background: var(--grey);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  border-color: transparent;
+  cursor: pointer;
+  -webkit-transition: var(--mainTransition);
+  transition: var(--mainTransition);
+}
+
+.close-modal-btn:hover {
+  background: transparent;
+}
+
+.next-modal-btn,
+.prev-modal-btn {
+  position: absolute;
+  font-size: 1.5rem;
+  background: var(--grey);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  border-color: transparent;
+  cursor: pointer;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.next-modal-btn:hover,
+.prev-modal-btn:hover {
+  background: transparent;
+}
+
+.next-modal-btn {
+  top: 50%;
+  right: 2rem;
+}
+
+.prev-modal-btn {
+  top: 50%;
+  left: 2rem;
+}
+
+.modal-buttons .disabled {
+  opacity: 0.2;
+}
+
+.modal-photo-container img {
+  height: 100vh;
+  width: calc(100vh / 1.5);
+}
+
+@media only screen and (max-width: 530px) {
+  .modal-photo-container img {
+    height: unset;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    width: 100%;
+    min-width: 100%;
+  }
 }
 
 :root {

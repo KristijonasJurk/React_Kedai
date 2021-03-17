@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Cart from './pages/Cart/Cart'
 import Womens from './pages/Womens/Womens'
-import Product from './pages/Product';
+import Product from './pages/Product/Product';
 // import components
 import Nav from './components/Navbar/Nav'
 import Footer from './components/Footer'
