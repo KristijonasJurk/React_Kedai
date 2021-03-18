@@ -3,7 +3,7 @@
 ## React Kedai
 This is an updated React version of my original Kedai website. See if you spot the difference :v:
 
-Only the main page for now, but lots of other cool updates coming soon :shoe:
+Only the main, women's & men's page for now, but lots of other cool updates coming soon :shoe:
 
 ## Project Page
 
