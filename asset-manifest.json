@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React_Kedai/static/css/main.4e94ac02.chunk.css",
-    "main.js": "/React_Kedai/static/js/main.f6bf88e7.chunk.js",
-    "main.js.map": "/React_Kedai/static/js/main.f6bf88e7.chunk.js.map",
+    "main.css": "/React_Kedai/static/css/main.635e9de9.chunk.css",
+    "main.js": "/React_Kedai/static/js/main.5680a678.chunk.js",
+    "main.js.map": "/React_Kedai/static/js/main.5680a678.chunk.js.map",
     "runtime-main.js": "/React_Kedai/static/js/runtime-main.bc262a5a.js",
     "runtime-main.js.map": "/React_Kedai/static/js/runtime-main.bc262a5a.js.map",
-    "static/js/2.332c31f3.chunk.js": "/React_Kedai/static/js/2.332c31f3.chunk.js",
-    "static/js/2.332c31f3.chunk.js.map": "/React_Kedai/static/js/2.332c31f3.chunk.js.map",
+    "static/js/2.b044c5c1.chunk.js": "/React_Kedai/static/js/2.b044c5c1.chunk.js",
+    "static/js/2.b044c5c1.chunk.js.map": "/React_Kedai/static/js/2.b044c5c1.chunk.js.map",
     "index.html": "/React_Kedai/index.html",
-    "static/css/main.4e94ac02.chunk.css.map": "/React_Kedai/static/css/main.4e94ac02.chunk.css.map",
-    "static/js/2.332c31f3.chunk.js.LICENSE.txt": "/React_Kedai/static/js/2.332c31f3.chunk.js.LICENSE.txt",
+    "static/css/main.635e9de9.chunk.css.map": "/React_Kedai/static/css/main.635e9de9.chunk.css.map",
+    "static/js/2.b044c5c1.chunk.js.LICENSE.txt": "/React_Kedai/static/js/2.b044c5c1.chunk.js.LICENSE.txt",
     "static/media/0.57f6c393.png": "/React_Kedai/static/media/0.57f6c393.png",
     "static/media/1.dcaca9f4.png": "/React_Kedai/static/media/1.dcaca9f4.png",
     "static/media/2.7592d7f0.png": "/React_Kedai/static/media/2.7592d7f0.png",
@@ -18,8 +18,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bc262a5a.js",
-    "static/js/2.332c31f3.chunk.js",
-    "static/css/main.4e94ac02.chunk.css",
-    "static/js/main.f6bf88e7.chunk.js"
+    "static/js/2.b044c5c1.chunk.js",
+    "static/css/main.635e9de9.chunk.css",
+    "static/js/main.5680a678.chunk.js"
   ]
 }
