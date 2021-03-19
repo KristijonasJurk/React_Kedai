@@ -23,14 +23,6 @@
                 font-size: 0.75rem;
             }
         }
-        .cart-items {
-            margin: 20px 0;
-            color: var(--darkerGray);
-            font-size: 0.75rem;
-            span {
-                text-decoration: underline;
-            }
-        }
     }
     .cart-order-container {
         display: flex;
@@ -99,4 +91,18 @@
             }
         }
     }
+}
+
+// ===== CART ITEMS =====
+
+.cart-items-empty {
+    margin: 20px 0;
+    color: var(--darkerGray);
+    font-size: 0.75rem;
+    span {
+        text-decoration: underline;
+    }
+}
+
+.cart-items {
 }
