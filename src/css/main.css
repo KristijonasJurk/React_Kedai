@@ -910,7 +910,7 @@
 .total-amount {
   color: white;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 @media only screen and (max-width: 800px) {
@@ -1715,6 +1715,18 @@ footer {
   cursor: pointer;
 }
 
+.cart-container .cart-order-container .cart-order .cart-order-content .clear-cart-container {
+  font-size: 0.7rem;
+  color: var(--darkerGray);
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: right;
+}
+
+.cart-container .cart-order-container .cart-order .cart-order-content .clear-cart-container:hover {
+  color: var(--mainBlack);
+}
+
 .cart-container .cart-order-container .cart-order .cart-order-content button {
   width: 100%;
   height: 45px;
@@ -1725,6 +1737,12 @@ footer {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
+  border: none;
+}
+
+.cart-container .cart-order-container .cart-order .cart-order-content button:hover {
+  background-color: var(--darkerGray);
 }
 
 .cart-items-empty {

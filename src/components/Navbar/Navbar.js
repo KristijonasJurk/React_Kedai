@@ -7,7 +7,7 @@ import { useGlobalContext } from '../../context';
 // pages
 
 const Navbar = () => {
-    const { openSidebar, closeSubmenu, openSubmenu } = useGlobalContext()
+    const { openSidebar, closeSubmenu, openSubmenu, amount } = useGlobalContext()
 
     const displaySubmenu = (e) => {
         const page = e.target.textContent;
@@ -49,7 +49,7 @@ const Navbar = () => {
                 <Link to='/cart' className='cart-link'>
                     <IoBagOutline />
                     <div className='amount-container'>
-                        <p className='total-amount'>0</p>
+                        <p className='total-amount'>{amount}</p>
                     </div>
                 </Link>
             </section>

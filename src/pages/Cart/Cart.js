@@ -4,10 +4,7 @@ import { BsChevronCompactDown, BsChevronCompactUp } from 'react-icons/bs'
 import { useGlobalContext } from '../../context'
 
 const Home = () => {
-    const { closeSubmenu } = useGlobalContext();
-
-    const [cartIsEmpty, setCartIsEmpty] = useState(false)
-
+    const { closeSubmenu, total, clearCart, cart } = useGlobalContext();
     return (
         <div className="cart-container" onMouseOver={closeSubmenu}>
             <section className="cart-item-container">
@@ -15,7 +12,7 @@ const Home = () => {
                     <h4>Shopping Bag</h4>
                     <a href="/">Delivery Options</a>
                 </div>
-                {cartIsEmpty ?
+                {cart.length === 0 ?
                     <div className="cart-items-empty">
                         Your bag is currently empty. <span>Continue Shopping.</span>
                     </div>
@@ -27,72 +24,45 @@ const Home = () => {
                             <p>Quantity</p>
                             <p>Total Price</p>
                         </div>
-                        <div className="cart-item">
-                            <div className="cart-item-item">
-                                <img src={`https://s7d5.scene7.com/is/image/UrbanOutfitters/43319946_001_b?fit=constrain&fmt=webp&hei=444&qlt=80&wid=296`} alt="product" />
-                                <div className="cart-item-details">
-                                    <p>Birkenstock Arizona Leather Sandal</p>
-                                    <p><span>Color</span> Black</p>
-                                    <p><span>Size</span> M8</p>
-                                    <u>Edit</u>
+                        {cart.map((cartItem, index) => {
+                            cartItem = { ...cartItem }
+                            const { id, title, price, color, text, material, img, categories, tags } = cartItem;
+                            return (
+                                <div className="cart-item">
+                                    <div className="cart-item-item">
+                                        <img src={img[0]} alt={title} />
+                                        <div className="cart-item-details">
+                                            <p>{title}</p>
+                                            <p><span>Color</span> {color}</p>
+                                            <p><span>Size</span> M8</p>
+                                            <u>Edit</u>
+                                        </div>
+                                    </div>
+                                    <div className="cart-item-price">
+                                        ${price}
+                                    </div>
+                                    <div className="cart-item-quantity">
+                                        <button className='item-amount-btn'>
+                                            <BsChevronCompactUp />
+                                        </button>
+                                        {/* amount */}
+                                        <p className='item-amount'>5</p>
+                                        {/* decrease amount */}
+                                        <button className='-item-amount-btn'>
+                                            <BsChevronCompactDown />
+                                        </button>
+                                        <div className="cart-item-remove">
+                                            <button className="remove-btn">
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div className="cart-item-total-price">
+                                        ${price}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="cart-item-price">
-                                $125.00
-                            </div>
-                            <div className="cart-item-quantity">
-                                <button className='item-amount-btn'>
-                                    <BsChevronCompactUp />
-                                </button>
-                                {/* amount */}
-                                <p className='item-amount'>2</p>
-                                {/* decrease amount */}
-                                <button className='-item-amount-btn'>
-                                    <BsChevronCompactDown />
-                                </button>
-                                <div className="cart-item-remove">
-                                    <button className="remove-btn">
-                                        Remove
-                                    </button>
-                                </div>
-                            </div>
-                            <div className="cart-item-total-price">
-                                $250.00
-                            </div>
-                        </div>
-                        <div className="cart-item">
-                            <div className="cart-item-item">
-                                <img src={`https://s7d5.scene7.com/is/image/UrbanOutfitters/43319946_001_b?fit=constrain&fmt=webp&hei=444&qlt=80&wid=296`} alt="product" />
-                                <div className="cart-item-details">
-                                    <p>Birkenstock Arizona Leather Sandal</p>
-                                    <p><span>Color</span> Black</p>
-                                    <p><span>Size</span> M8</p>
-                                    <u>Edit</u>
-                                </div>
-                            </div>
-                            <div className="cart-item-price">
-                                $125.00
-                            </div>
-                            <div className="cart-item-quantity">
-                                <button className='item-amount-btn'>
-                                    <BsChevronCompactUp />
-                                </button>
-                                {/* amount */}
-                                <p className='item-amount'>2</p>
-                                {/* decrease amount */}
-                                <button className='-item-amount-btn'>
-                                    <BsChevronCompactDown />
-                                </button>
-                                <div className="cart-item-remove">
-                                    <button className="remove-btn">
-                                        Remove
-                                    </button>
-                                </div>
-                            </div>
-                            <div className="cart-item-total-price">
-                                $250.00
-                            </div>
-                        </div>
+                            )
+                        })}
                     </div>
                 }
             </section>
@@ -111,15 +81,18 @@ const Home = () => {
                         </div>
                         <div className="cart-tax">
                             <p>Estimated Tax</p>
-                            <p>$0.00</p>
+                            <p>${total * 0.002}</p>
                         </div>
                         <div className="cart-total">
                             <b>Total</b>
-                            <b>$0.00</b>
+                            <b>${total}</b>
                         </div>
                         <div className="cart-order-footer-container">
                             <p className='cart-order-footer'>Available orders up to $3,500.00. No debit.</p>
                             <IoMdInformationCircleOutline />
+                        </div>
+                        <div className="clear-cart-container" onClick={clearCart}>
+                            <p>Clear Cart</p>
                         </div>
                         <button>Proceed to Checkout</button>
                     </div>
