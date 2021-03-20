@@ -48,6 +48,9 @@ const Navbar = () => {
                 </button>
                 <Link to='/cart' className='cart-link'>
                     <IoBagOutline />
+                    <div className='amount-container'>
+                        <p className='total-amount'>0</p>
+                    </div>
                 </Link>
             </section>
         </div>

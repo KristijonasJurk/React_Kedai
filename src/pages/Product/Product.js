@@ -8,7 +8,7 @@ const shoeSizes = [38, 39, 40, 41, 42, 43, 44, 45];
 const clothesSizes = ['XS', 'S', 'M', 'L', 'XL']
 
 function Product() {
-    const { closeSubmenu } = useGlobalContext();
+    const { closeSubmenu, addToCart } = useGlobalContext();
 
     const { id } = useParams();
     const [data,] = useState(womensProducts.find((product) => product.id === parseInt(id)) || mensProducts.find((product) => product.id === parseInt(id)));
@@ -149,9 +149,9 @@ function Product() {
                                         <option value="10units">10</option>
                                     </select>
                                 </div>
-                                <button className="product-add-to-cart-btn">
+                                <button className="product-add-to-cart-btn" onClick={() => addToCart(data)}>
                                     Add to Cart
-                    </button>
+                                 </button>
                             </section>
                             <section className="product-info-details">
                                 <h4>Details</h4>
@@ -211,6 +211,3 @@ function Product() {
 }
 
 export default Product
-
-
-// TODO add repsonsive to products, create a modal
