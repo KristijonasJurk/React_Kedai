@@ -13,7 +13,6 @@ function Product() {
     const { id } = useParams();
     const [data,] = useState(womensProducts.find((product) => product.id === parseInt(id)) || mensProducts.find((product) => product.id === parseInt(id)));
 
-
     const [secondColor, setSecondColor] = useState(false)
 
     const [mainPhoto, setMainPhoto] = useState(0);

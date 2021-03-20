@@ -4,7 +4,7 @@ import { BsChevronCompactDown, BsChevronCompactUp } from 'react-icons/bs'
 import { useGlobalContext } from '../../context'
 
 const Home = () => {
-    const { closeSubmenu, total, clearCart, cart } = useGlobalContext();
+    const { closeSubmenu, total, amount, clearCart, cart, removeItem, increaseAmount, decreaseAmount } = useGlobalContext();
     return (
         <div className="cart-container" onMouseOver={closeSubmenu}>
             <section className="cart-item-container">
@@ -42,17 +42,17 @@ const Home = () => {
                                         ${price}
                                     </div>
                                     <div className="cart-item-quantity">
-                                        <button className='item-amount-btn'>
+                                        <button className='item-amount-btn' onClick={() => increaseAmount(id)}>
                                             <BsChevronCompactUp />
                                         </button>
                                         {/* amount */}
-                                        <p className='item-amount'>5</p>
+                                        <p className='item-amount'>{cartItem ? cartItem.amount : 1}</p>
                                         {/* decrease amount */}
-                                        <button className='-item-amount-btn'>
+                                        <button className='-item-amount-btn' onClick={() => decreaseAmount(id)}>
                                             <BsChevronCompactDown />
                                         </button>
                                         <div className="cart-item-remove">
-                                            <button className="remove-btn">
+                                            <button className="remove-btn" onClick={() => removeItem(id)}>
                                                 Remove
                                             </button>
                                         </div>
@@ -77,15 +77,15 @@ const Home = () => {
                     <div className="cart-order-content">
                         <div className="cart-shipping">
                             <p>Shipping</p>
-                            <p>TBD</p>
+                            <p>${(total * 0.05).toFixed(2)}</p>
                         </div>
                         <div className="cart-tax">
                             <p>Estimated Tax</p>
-                            <p>${total * 0.002}</p>
+                            <p>${(total * 0.002).toFixed(2)}</p>
                         </div>
                         <div className="cart-total">
                             <b>Total</b>
-                            <b>${total}</b>
+                            <b>${(total).toFixed(2)}</b>
                         </div>
                         <div className="cart-order-footer-container">
                             <p className='cart-order-footer'>Available orders up to $3,500.00. No debit.</p>
