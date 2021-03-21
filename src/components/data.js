@@ -91,7 +91,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531641_007_e?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531641_007_f?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531641_007_g?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=720'],
         categories: ['shoes', 'vintage', `women's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 102,
@@ -104,7 +105,8 @@ export const womensProducts = [
         img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0119477795100_006_d?$redesign-zoom-5x$='],
         categories: ['tops', `women's`, 'new'],
         tags: 'Back in Stock',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 103,
@@ -116,7 +118,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250064_001_f?$redesign-zoom-5x$='],
         categories: ['shoes', 'summer', `women's`, 'new'],
         tags: 'Back in Stock',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 104,
@@ -129,7 +132,8 @@ export const womensProducts = [
         img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451221002_010_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=640', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451221002_010_d?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=640', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451221002_010_e?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=640', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451221002_010_f?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=640'],
         categories: ['shoes', 'summer', `women's`, `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 105,
@@ -141,7 +145,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455535560_004_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455535560_004_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455535560_004_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455535560_004_f?$redesign-zoom-5x$='],
         categories: ['shoes', `women's`, `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 106,
@@ -153,7 +158,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314428570203_001_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314428570203_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314428570203_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314428570203_001_f?$redesign-zoom-5x$='],
         categories: ['shoes', 'summer', `women's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 107,
@@ -165,7 +171,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531679_010_f?$redesign-zoom-5x$='],
         categories: ['shoes', `men's`, `women's`, 'new'],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 108,
@@ -178,7 +185,8 @@ export const womensProducts = [
         img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0148265380020_072_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0148265380020_072_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0148265380020_072_e?$redesign-zoom-5x$='],
         categories: ['tops', `women's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 109,
@@ -190,7 +198,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_f?$redesign-zoom-5x$='],
         categories: ['shoes', `women's`, 'new'],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 110,
@@ -202,7 +211,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315451225009_030_f?$redesign-zoom-5x$='],
         categories: ['shoes', `women's`, 'new'],
         tags: 'Back in Stock',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 111,
@@ -214,7 +224,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_f?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0314619250140_020_g?$redesign-zoom-5x$='],
         categories: ['shoes', 'vintage', `women's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 112,
@@ -226,7 +237,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111657781612_010_f?$redesign-zoom-5x$='],
         categories: ['tops', `women's`, 'new'],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 113,
@@ -238,7 +250,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0112347826537_066_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0112347826537_066_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0112347826537_066_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0112347826537_066_f?$redesign-zoom-5x$='],
         categories: ['tops', `women's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 114,
@@ -251,7 +264,8 @@ export const womensProducts = [
         img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0114345141496_060_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0114345141496_060_d?$redesign-zoom-5x$='],
         categories: ['tops', `women's`],
         tags: 'Back in Stock',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 115,
@@ -263,7 +277,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0111742881311_040_f?$redesign-zoom-5x$='],
         categories: ['tops', 'summer', `women's`, 'new'],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 116,
@@ -275,7 +290,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180621400150_050_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180621400150_050_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180621400150_050_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180621400150_050_f?$redesign-zoom-5x$='],
         categories: ['tops', `women's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 117,
@@ -287,7 +303,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_e?$redesign-zoom-5x$='],
         categories: ['jackets', `women's`, 'new'],
         tags: 'Back in Stock',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 118,
@@ -299,7 +316,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_f?$redesign-zoom-5x$='],
         categories: ['jackets', `women's`, 'new'],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 119,
@@ -311,7 +329,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_f?$redesign-zoom-5x$='],
         categories: ['jackets', `women's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 120,
@@ -323,7 +342,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464888019_020_f?$redesign-zoom-5x$='],
         categories: ['swimwear', 'summer', `women's`, 'new'],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 121,
@@ -336,7 +356,8 @@ export const womensProducts = [
         img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145341872036_237_f?$redesign-zoom-5x$='],
         categories: ['swimwear', 'summer', `women's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 122,
@@ -348,7 +369,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0145464880098_066_f?$redesign-zoom-5x$='],
         categories: ['swimwear', 'summer', `women's`, 'new'],
         tags: 'Back in Stock',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 123,
@@ -360,7 +382,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0125593370049_010_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0125593370049_010_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0125593370049_010_e?$redesign-zoom-5x$='],
         categories: ['bottoms', 'summer', `women's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 124,
@@ -372,7 +395,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0418643730075_023_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0418643730075_023_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0418643730075_023_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0418643730075_023_f?$redesign-zoom-5x$='],
         categories: ['bottoms', `women's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 125,
@@ -384,7 +408,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180902470034_066_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180902470034_066_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180902470034_066_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0180902470034_066_f?$redesign-zoom-5x$='],
         categories: ['bottoms', `women's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 126,
@@ -396,7 +421,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_f?$redesign-zoom-5x$='],
         categories: ['bottoms', 'vintage', `women's`, 'new'],
         tags: 'Vintage look',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 127,
@@ -408,7 +434,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0413652650007_001_f?$redesign-zoom-5x$='],
         categories: ['bottoms', 'vintage', `women's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 128,
@@ -420,7 +447,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0414621551115_066_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0414621551115_066_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0414621551115_066_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0414621551115_066_f?$redesign-zoom-5x$='],
         categories: ['vintage', `women's`],
         tags: 'Vintage look',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 129,
@@ -433,7 +461,8 @@ export const womensProducts = [
         img2: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_065_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_065_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0142264849005_065_e?$redesign-zoom-5x$='],
         categories: ['bottoms', 'vintage', `women's`, 'new'],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 130,
@@ -445,7 +474,8 @@ export const womensProducts = [
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0311432520010_001_f?$redesign-zoom-5x$='],
         categories: ['shoes', `women's`, 'new'],
         tags: 'Back in Stock',
-        amount: 1
+        amount: 1,
+        size: 0
     },
 ]
 
@@ -464,7 +494,8 @@ export const mensProducts = [
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/59158618_050_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/59158618_050_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/59158618_050_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/59158618_050_f?$redesign-zoom-5x$'],
         categories: ['shoes', 'new', `men's`],
         tags: 'Back in Stock',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 151,
@@ -477,7 +508,8 @@ export const mensProducts = [
         img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/53787446_003_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/53787446_003_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/53787446_003_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/53787446_003_f?$redesign-zoom-5x$'],
         categories: ['shoes', 'activewear', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 152,
@@ -490,7 +522,8 @@ export const mensProducts = [
         img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/56135288_040_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56135288_040_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56135288_040_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56135288_040_f?$redesign-zoom-5x$'],
         categories: ['shoes', 'activewear', 'new', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 153,
@@ -503,7 +536,8 @@ export const mensProducts = [
         img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/58877572_030_b?$xlarge$&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/58877572_030_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/58877572_030_e?$redesign-zoom-5x$'],
         categories: ['shoes', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 154,
@@ -515,7 +549,8 @@ export const mensProducts = [
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/56521503_045_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56521503_045_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56521503_045_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56521503_045_f?$redesign-zoom-5x$'],
         categories: ['shoes', 'vintage', `men's`],
         tags: 'Vintage Look',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 155,
@@ -528,7 +563,8 @@ export const mensProducts = [
         img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/46604476_061_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/46604476_061_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/46604476_061_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/46604476_061_f?$redesign-zoom-5x$'],
         categories: ['shoes', 'sale', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 156,
@@ -541,7 +577,8 @@ export const mensProducts = [
         img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/48975288_001_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/48975288_001_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/48975288_001_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/48975288_001_f?$redesign-zoom-5x$'],
         categories: ['shoes', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 157,
@@ -553,7 +590,8 @@ export const mensProducts = [
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/60030509_060_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/60030509_060_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/60030509_060_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/60030509_060_f?$redesign-zoom-5x$'],
         categories: ['jackets', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 158,
@@ -565,7 +603,8 @@ export const mensProducts = [
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/73285868_001_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73285868_001_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73285868_001_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73285868_001_f?$redesign-zoom-5x$'],
         categories: ['jackets', 'new', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 159,
@@ -578,7 +617,8 @@ export const mensProducts = [
         img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/61010054_105_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/61010054_105_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/61010054_105_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/61010054_105_f?$redesign-zoom-5x$'],
         categories: ['jackets', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 160,
@@ -591,7 +631,8 @@ export const mensProducts = [
         img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/55648349_021_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/55648349_021_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/55648349_021_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/55648349_021_f?$redesign-zoom-5x$'],
         categories: ['bottoms', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 161,
@@ -604,7 +645,8 @@ export const mensProducts = [
         img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/54994322_023_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/54994322_023_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/54994322_023_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/54994322_023_f?$redesign-zoom-5x$'],
         categories: ['bottoms', 'vintage', `men's`],
         tags: 'Back in Stock',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 162,
@@ -617,7 +659,8 @@ export const mensProducts = [
         img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/57974701_023_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/57974701_023_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/57974701_023_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/57974701_023_f?$redesign-zoom-5x$'],
         categories: ['bottoms', 'vintage', `men's`],
         tags: 'Vintage Look',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 163,
@@ -629,7 +672,8 @@ export const mensProducts = [
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/72903784_001_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/72903784_001_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/72903784_001_e?$redesign-zoom-5x$'],
         categories: ['bottoms', 'activewear', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 164,
@@ -641,7 +685,8 @@ export const mensProducts = [
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/58910928_106_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/58910928_106_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/58910928_106_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/58910928_106_g?$redesign-zoom-5x$'],
         categories: ['bottoms', 'vintage', `men's`],
         tags: 'Vintage Look',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 165,
@@ -653,7 +698,8 @@ export const mensProducts = [
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/58730631_001_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/58730631_001_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/58730631_001_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/58730631_001_f?$redesign-zoom-5x$'],
         categories: ['bottoms', 'activewear', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 166,
@@ -665,7 +711,8 @@ export const mensProducts = [
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/62058672_044_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/62058672_044_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/62058672_044_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/62058672_044_f?$redesign-zoom-5x$'],
         categories: ['vintage', `men's`],
         tags: 'Vintage Look',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 167,
@@ -677,7 +724,8 @@ export const mensProducts = [
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/73382822_040_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73382822_040_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73382822_040_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73382822_040_f?$redesign-zoom-5x$'],
         categories: ['jackets', 'vintage', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 168,
@@ -689,7 +737,8 @@ export const mensProducts = [
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/73908550_072_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73908550_072_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73908550_072_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73908550_072_f?$redesign-zoom-5x$'],
         categories: ['jackets', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 169,
@@ -701,7 +750,8 @@ export const mensProducts = [
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/46604351_001_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/46604351_001_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/46604351_001_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/46604351_001_f?$redesign-zoom-5x$'],
         categories: ['shoes', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
     {
         id: 170,
@@ -714,6 +764,7 @@ export const mensProducts = [
         img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/56966211_031_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56966211_031_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56966211_031_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56966211_031_f?$redesign-zoom-5x$'],
         categories: ['shoes', 'activewear', `men's`],
         tags: '',
-        amount: 1
+        amount: 1,
+        size: 0
     },
 ]

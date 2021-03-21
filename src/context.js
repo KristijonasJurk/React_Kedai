@@ -9,36 +9,11 @@ const AppProvider = ({ children }) => {
     // ====== CART ======
     const initialState = {
         loading: false,
-        cart: [
-            {
-                id: 109,
-                title: 'New Balance 452 White & Red Trainers',
-                price: '79.00',
-                color: 'White',
-                text: 'Retro feel dad trainers from New Balance. Features leather uppers with perforated detailing and logo accents throughout. Finished with a grippy rubber sole.',
-                material: 'Leather, Rubber',
-                img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_f?$redesign-zoom-5x$='],
-                categories: ['shoes', `women's`, 'new'],
-                tags: '',
-                amount: 1
-            },
-            // {
-            //     id: 110,
-            //     title: 'New Balance 452 White & Red Trainers',
-            //     price: '79.00',
-            //     color: 'White',
-            //     text: 'Retro feel dad trainers from New Balance. Features leather uppers with perforated detailing and logo accents throughout. Finished with a grippy rubber sole.',
-            //     material: 'Leather, Rubber',
-            //     img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0315455531012_000_f?$redesign-zoom-5x$='],
-            //     categories: ['shoes', `women's`, 'new'],
-            //     tags: '',
-            //     amount: 1
-            // },
-        ],
+        cart: [],
         total: 100,
         amount: 5
     }
-    const addToCart = (data) => {
+    const addToCart = (data, pickedSize) => {
         dispatch({ type: 'ADD_TO_CART', payload: data })
     }
     const [state, dispatch] = useReducer(reducer, initialState)

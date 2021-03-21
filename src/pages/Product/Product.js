@@ -148,7 +148,7 @@ function Product() {
                                         <option value="10units">10</option>
                                     </select>
                                 </div>
-                                <button className="product-add-to-cart-btn" onClick={() => addToCart(data)}>
+                                <button className="product-add-to-cart-btn" onClick={() => addToCart(data, pickedSize)}>
                                     Add to Cart
                                  </button>
                             </section>
