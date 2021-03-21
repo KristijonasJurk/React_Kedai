@@ -4,7 +4,7 @@ import { BsChevronCompactDown, BsChevronCompactUp } from 'react-icons/bs'
 import { useGlobalContext } from '../../context'
 
 const Home = () => {
-    const { closeSubmenu, total, amount, clearCart, cart, removeItem, increaseAmount, decreaseAmount } = useGlobalContext();
+    const { closeSubmenu, total, amount, cartId, clearCart, cart, removeItem, increaseAmount, decreaseAmount } = useGlobalContext();
     return (
         <div className="cart-container" onMouseOver={closeSubmenu}>
             <section className="cart-item-container">
@@ -26,16 +26,16 @@ const Home = () => {
                         </div>
                         {cart.map((cartItem, index) => {
                             cartItem = { ...cartItem }
-                            const { id, title, price, color, text, material, img, categories, tags } = cartItem;
+                            const { id, title, price, color, text, material, img, categories, tags, size } = cartItem;
                             return (
                                 <div className="cart-item">
                                     <div className="cart-item-item">
                                         <img src={img[0]} alt={title} />
                                         <div className="cart-item-details">
                                             <p>{title}</p>
-                                            <p><span>Color</span> {color}</p>
-                                            <p><span>Size</span> M8</p>
-                                            <u>Edit</u>
+                                            <p><span>Color</span> {color + ' '}</p>
+                                            <p><span>Size</span> {size}</p>
+                                            {/* <u>Edit</u> */}
                                         </div>
                                     </div>
                                     <div className="cart-item-price">
@@ -70,8 +70,9 @@ const Home = () => {
                 <div className="cart-order-header">
                     <h5>Order Summary</h5>
                     <a href="/">
-                        800.282.2200
-                </a>
+                        {/* renders a random cart ID */}
+                        {cartId.toString().replace(/\B(?=(\d{4})+(?!\d))/g, '.')}
+                    </a>
                 </div>
                 <div className="cart-order">
                     <div className="cart-order-content">

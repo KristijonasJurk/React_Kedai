@@ -14,10 +14,13 @@ function Product() {
     const [data,] = useState(womensProducts.find((product) => product.id === parseInt(id)) || mensProducts.find((product) => product.id === parseInt(id)));
 
     const [secondColor, setSecondColor] = useState(false)
+    const [pickedColor, setPickedColor] = useState(data.color[0])
 
     const [mainPhoto, setMainPhoto] = useState(0);
 
-    const [pickedSize, setPickedSize] = useState(0)
+    const [pickedSize, setPickedSize] = useState(1)
+    const [realSize, setRealSize] = useState(2)
+    const [pickedQuantity, setPickedQuantity] = useState(1)
 
     const [modal, setModal] = useState(false)
 
@@ -39,6 +42,13 @@ function Product() {
         setModal(false)
     }
 
+    React.useEffect(() => {
+        if (secondColor) {
+            setPickedColor(data.color[1])
+        } else {
+            setPickedColor(data.color[0])
+        }
+    }, [secondColor, setSecondColor, data.color])
     return (
         <>
             {modal ? <Modal closeModal={closeModal} modal={modal} data={data} secondColor={secondColor} /> :
@@ -113,7 +123,11 @@ function Product() {
                                             // for shoes display shoe sizes, and for clothes clothe sizes
                                             shoeSizes.map((size, i) => {
                                                 return (
-                                                    <div onClick={() => setPickedSize(i)}
+                                                    <div onClick={() => {
+                                                        setPickedSize(i);
+                                                        setRealSize(shoeSizes[i])
+                                                    }
+                                                    }
                                                         style={pickedSize === i ? { color: 'black', border: '2px solid black' } : {
                                                             color: '#767676', border: '1px solid #767676'
                                                         }}
@@ -123,7 +137,11 @@ function Product() {
                                             :
                                             clothesSizes.map((size, i) => {
                                                 return (
-                                                    <div onClick={() => setPickedSize(i)}
+                                                    <div onClick={() => {
+                                                        setPickedSize(i);
+                                                        setRealSize(clothesSizes[i])
+                                                    }
+                                                    }
                                                         style={pickedSize === i ? { color: 'black', border: '2px solid black' } : {
                                                             color: '#767676', border: '1px solid #767676'
                                                         }}
@@ -135,20 +153,20 @@ function Product() {
                                 </div>
                                 <div className="product-quantity-container">
                                     <p className='product-bold-text'>Qty*</p>
-                                    <select name="product sort" id="product-sort">
-                                        <option value="1units">1</option>
-                                        <option value="2units">2</option>
-                                        <option value="3units">3</option>
-                                        <option value="4units">4</option>
-                                        <option value="5units">5</option>
-                                        <option value="6units">6</option>
-                                        <option value="7units">7</option>
-                                        <option value="8units">8</option>
-                                        <option value="9units">9</option>
-                                        <option value="10units">10</option>
+                                    <select name="product sort" id="product-sort" onChange={(e) => setPickedQuantity(parseInt(e.target.value))}>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
                                     </select>
                                 </div>
-                                <button className="product-add-to-cart-btn" onClick={() => addToCart(data, pickedSize)}>
+                                <button className="product-add-to-cart-btn" onClick={() => addToCart(data, realSize, pickedQuantity, pickedColor)}>
                                     Add to Cart
                                  </button>
                             </section>

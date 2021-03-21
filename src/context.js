@@ -11,10 +11,12 @@ const AppProvider = ({ children }) => {
         loading: false,
         cart: [],
         total: 100,
-        amount: 5
+        amount: 5,
+        cartId: new Date().getTime().toString()
     }
-    const addToCart = (data, pickedSize) => {
-        dispatch({ type: 'ADD_TO_CART', payload: data })
+    const addToCart = (data, realSize, pickedQuantity, pickedColor) => {
+        const product = { data: data, size: realSize, amount: pickedQuantity, color: pickedColor }
+        dispatch({ type: 'ADD_TO_CART', payload: product })
     }
     const [state, dispatch] = useReducer(reducer, initialState)
     const clearCart = () => {

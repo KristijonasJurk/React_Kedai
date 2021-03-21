@@ -4,14 +4,15 @@ const reducer = (state, action) => {
     if (action.type === 'ADD_TO_CART') {
         let cartProducts = [...state.cart];
         let products = [...womensProducts, ...mensProducts];
-        let alreadyInCart = cartProducts.find(item => item.id === action.payload.id)
-        let pickedProduct = products.find(item => item.id === action.payload.id)
+        let alreadyInCart = cartProducts.find(item => item.id === action.payload.data.id)
+        let pickedProduct = products.find(item => item.id === action.payload.data.id)
         if (!alreadyInCart) {
-            let newProducts = [...cartProducts, pickedProduct]
+            let productSize = { ...pickedProduct, size: action.payload.size, amount: action.payload.amount, color: action.payload.color };
+            let newProducts = [...cartProducts, productSize]
             return { ...state, cart: newProducts }
         } else {
             let tempCart = state.cart.map((cartItem) => {
-                if (cartItem.id === action.payload.id) {
+                if (cartItem.id === action.payload.data.id) {
                     return { ...cartItem, amount: cartItem.amount + 1 }
                 }
                 return cartItem;
