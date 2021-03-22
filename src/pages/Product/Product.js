@@ -13,11 +13,11 @@ function Product() {
     const { id } = useParams();
     const [data,] = useState(womensProducts.find((product) => product.id === parseInt(id)) || mensProducts.find((product) => product.id === parseInt(id)));
 
-    const [secondColor, setSecondColor] = useState(false)
-    const [pickedColor, setPickedColor] = useState(data.color[0])
 
     const [mainPhoto, setMainPhoto] = useState(0);
 
+    const [secondColor, setSecondColor] = useState(false)
+    const [pickedColor, setPickedColor] = useState(data.color[0])
     const [pickedSize, setPickedSize] = useState(1)
     const [realSize, setRealSize] = useState(2)
     const [pickedQuantity, setPickedQuantity] = useState(1)
@@ -104,7 +104,7 @@ function Product() {
                                         ?
                                         data.color.map((clr, index) => {
                                             return (
-                                                <span>{clr}</span>
+                                                <span key={index}>{clr}</span>
                                             )
                                         })
                                         :
@@ -123,7 +123,7 @@ function Product() {
                                             // for shoes display shoe sizes, and for clothes clothe sizes
                                             shoeSizes.map((size, i) => {
                                                 return (
-                                                    <div onClick={() => {
+                                                    <div key={i} onClick={() => {
                                                         setPickedSize(i);
                                                         setRealSize(shoeSizes[i])
                                                     }
@@ -137,7 +137,7 @@ function Product() {
                                             :
                                             clothesSizes.map((size, i) => {
                                                 return (
-                                                    <div onClick={() => {
+                                                    <div key={i} onClick={() => {
                                                         setPickedSize(i);
                                                         setRealSize(clothesSizes[i])
                                                     }

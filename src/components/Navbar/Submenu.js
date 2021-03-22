@@ -16,13 +16,16 @@ const Submenu = () => {
             setColumns('col-3')
         }
     }, [location, links])
-    return <aside className={`${isSubmenuOpen ? 'submenu show' : 'submenu'}`} ref={container}>
+    return <aside className={`${isSubmenuOpen ? 'submenu show' : 'submenu'}`} style={{
+        display: links.length === 0 && 'none'
+    }}
+        ref={container}>
         <h4>{page}</h4>
         <div className={`submenu-center ${columns}`}>
-            {links.map((link) => {
+            {links.map((link, i) => {
                 const { label, icon, url } = link;
                 return (
-                    <a href={url}>
+                    <a href={url} key={i}>
                         {icon}
                         {label}
                     </a>

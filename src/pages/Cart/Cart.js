@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { IoMdInformationCircleOutline } from 'react-icons/io'
 import { BsChevronCompactDown, BsChevronCompactUp } from 'react-icons/bs'
 import { useGlobalContext } from '../../context'
 
 const Home = () => {
-    const { closeSubmenu, total, amount, cartId, clearCart, cart, removeItem, increaseAmount, decreaseAmount } = useGlobalContext();
+    const { closeSubmenu, total, cartId, clearCart, cart, removeItem, increaseAmount, decreaseAmount } = useGlobalContext();
     return (
         <div className="cart-container" onMouseOver={closeSubmenu}>
             <section className="cart-item-container">
@@ -26,9 +26,9 @@ const Home = () => {
                         </div>
                         {cart.map((cartItem, index) => {
                             cartItem = { ...cartItem }
-                            const { id, title, price, color, text, material, img, categories, tags, size } = cartItem;
+                            const { id, title, price, color, img, size } = cartItem;
                             return (
-                                <div className="cart-item">
+                                <div key={index} className="cart-item">
                                     <div className="cart-item-item">
                                         <img src={img[0]} alt={title} />
                                         <div className="cart-item-details">

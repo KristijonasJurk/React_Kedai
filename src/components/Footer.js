@@ -54,9 +54,9 @@ function Footer() {
                                 {/* screen size under 800 */}
                                 {showLinks === index && screenWidth < 800 ?
                                     <ul>
-                                        {links.map((link) => {
+                                        {links.map((link, i) => {
                                             return (
-                                                <li>
+                                                <li key={i}>
                                                     <a href="/">{link}</a>
                                                 </li>
                                             )
@@ -67,9 +67,9 @@ function Footer() {
                                 {/* screen size over 800 */}
                                 {screenWidth > 800 ?
                                     <ul>
-                                        {links.map((link) => {
+                                        {links.map((link, i) => {
                                             return (
-                                                <li>
+                                                <li key={i}>
                                                     <a href="/">{link}</a>
                                                 </li>
                                             )

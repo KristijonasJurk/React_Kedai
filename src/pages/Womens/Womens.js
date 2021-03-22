@@ -6,7 +6,7 @@ import { useGlobalContext } from '../../context'
 function Womens() {
     const { closeSubmenu } = useGlobalContext();
 
-    const [products,] = useState(womensProducts)
+    const [products, setProducts] = useState(womensProducts)
 
     const [mouseOver, setMouseOver] = useState(-1);
     const [secondColor, setSecondColor] = useState({ isActive: false, id: null })
@@ -22,6 +22,14 @@ function Womens() {
         return () => window.removeEventListener('resize', updateSize);
     }, [])
 
+    const filterItems = (category) => {
+        if (category === 'All') {
+            setProducts(womensProducts);
+            return;
+        }
+        const newItems = womensProducts.filter((item) => item.categories.includes(category));
+        setProducts(newItems);
+    };
 
     return (
         <div className='womens-container' onMouseOver={closeSubmenu}>
@@ -32,7 +40,7 @@ function Womens() {
                         <select>
                             {womensBrowse.map((category, index) => {
                                 return (
-                                    <option>{category}</option>
+                                    <option onClick={() => filterItems(category)} key={index}>{category}</option>
                                 )
                             })}
                         </select>
@@ -40,7 +48,7 @@ function Womens() {
                         <ul>
                             {womensBrowse.map((category, index) => {
                                 return (
-                                    <li><a href="/">{category}</a></li>
+                                    <li onClick={() => filterItems(category)} key={index}>{category}</li>
                                 )
                             })}
                         </ul>
@@ -63,8 +71,8 @@ function Womens() {
                 </header>
                 <div className="womens-products-container">
                     <ul>
-                        {products.map((product, index) => {
-                            const { id, title, price, color, text, material, img, img2, categories, tags } = product;
+                        {products.map((product) => {
+                            const { id, title, price, color, img, img2, tags } = product;
                             return (
                                 // <Link to={`product/${id}`}>
                                 <li key={id} onMouseEnter={() => setMouseOver(id)}

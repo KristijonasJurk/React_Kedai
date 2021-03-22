@@ -22,7 +22,7 @@ function Community() {
                             <img src={img} alt="community" />
                             <div className="community-footer">
                                 <h4>{text}</h4>
-                                <a href="#">
+                                <a href="/">
                                     Read More
                             </a>
                             </div>
