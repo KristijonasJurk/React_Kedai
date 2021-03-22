@@ -30,6 +30,33 @@ function Womens() {
         const newItems = womensProducts.filter((item) => item.categories.includes(category));
         setProducts(newItems);
     };
+    const sortData = type => {
+        const types = {
+            fromHigh: 'price',
+            AZ: 'title',
+            fromLow: 'price',
+            ZA: 'title',
+        };
+        const sortProperty = types[type];
+        if (type === 'fromHigh') {
+            const sortedData = [...womensProducts].sort((a, b) => b[sortProperty] - a[sortProperty]);
+            setProducts(sortedData)
+        } if (type === 'fromLow') {
+            const sortedData = [...womensProducts].sort((a, b) => a[sortProperty] - b[sortProperty]);
+            setProducts(sortedData)
+        } else {
+            const sortedData = [...womensProducts].sort(function (a, b) {
+                if (a[sortProperty] < b[sortProperty]) { return -1; }
+                if (a[sortProperty] > b[sortProperty]) { return 1; }
+                return 0;
+            })
+            if (type === 'AZ') {
+                setProducts(sortedData)
+            } else {
+                setProducts(sortedData.reverse())
+            }
+        }
+    }
 
     return (
         <div className='womens-container' onMouseOver={closeSubmenu}>
@@ -60,12 +87,12 @@ function Womens() {
                     <h3>Women's Clothing <span>{womensProducts.length} results</span></h3>
                     <div className="womens-sort-container">
                         <label htmlFor="womens-sort">Sort:</label>
-                        <select name="womens sort" id="womens-sort">
+                        <select name="womens sort" id="womens-sort" onChange={(e) => sortData(e.target.value)}>
                             <option hidden value="Featured">Featured</option>
-                            <option value="Low-to-High">Low to High</option>
-                            <option value="High-to-Low">High to Low</option>
-                            <option value="A-Z">A-Z</option>
-                            <option value="Z-A">Z-A</option>
+                            <option value="fromLow">Low to High</option>
+                            <option value="fromHigh">High to Low</option>
+                            <option value="AZ">A-Z</option>
+                            <option value="ZA">Z-A</option>
                         </select>
                     </div>
                 </header>

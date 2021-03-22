@@ -2019,6 +2019,7 @@ footer {
 }
 
 .womens-filters ul li {
+  cursor: pointer;
   margin: 20px 0;
   font-size: 0.75rem;
   font-weight: 400;
