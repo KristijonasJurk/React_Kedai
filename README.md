@@ -3,7 +3,11 @@
 ## React Kedai
 This is an updated React version of my original Kedai website. See if you spot the difference :v:
 
-Only the main, women's & men's page for now, but lots of other cool updates coming soon :shoe:
+The page includes a main page, product pages and a working shopping cart :shoe:
+
+Hooks used: useState, useEffect, useContext, useReducer, useLayoutEffect.
+
+More functionality in the future!
 
 ## Project Page
 
