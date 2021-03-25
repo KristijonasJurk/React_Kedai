@@ -6,7 +6,7 @@ import Cart from './pages/Cart/Cart'
 import Womens from './pages/Womens/Womens'
 import Mens from './pages/Mens/Mens'
 import Product from './pages/Product/Product';
-import Sneekers from './pages/Sneekers/Sneekers';
+import Sneekers from './pages/Sneekers/Sneeker';
 import SingleSneeker from './pages/Sneekers/SingleSneeker';
 // import components
 import Nav from './components/Navbar/Nav'

@@ -33,17 +33,17 @@ export const sublinks = [
             { label: 'Sale', icon: <FcBinoculars />, url: '/mens' },
         ],
     },
-    // {
-    //     page: 'Lifestyle',
-    //     links: [
-    // { label: 'Accessories', icon: <FcOldTimeCamera />, url: '/lifestyle' },
-    // { label: 'Lifestyle & Blog', icon: <FcEditImage />, url: '/lifestyle' },
-    // { label: 'Music', icon: <FcMusic />, url: '/lifestyle' },
-    // { label: 'Books & Movies', icon: <FcFilmReel />, url: '/lifestyle' },
-    // { label: 'Outdoors', icon: <FcLandscape />, url: '/lifestyle' },
-    // { label: 'Trends', icon: <FcBullish />, url: '/lifestyle' },
-    //     ],
-    // },
+    {
+        page: 'Sneekers',
+        links: [
+            // { label: 'Accessories', icon: <FcOldTimeCamera />, url: '/lifestyle' },
+            // { label: 'Lifestyle & Blog', icon: <FcEditImage />, url: '/lifestyle' },
+            // { label: 'Music', icon: <FcMusic />, url: '/lifestyle' },
+            // { label: 'Books & Movies', icon: <FcFilmReel />, url: '/lifestyle' },
+            // { label: 'Outdoors', icon: <FcLandscape />, url: '/lifestyle' },
+            // { label: 'Trends', icon: <FcBullish />, url: '/lifestyle' },
+        ],
+    },
 ]
 //=====GRID=====
 export const mainGrid1 = [
