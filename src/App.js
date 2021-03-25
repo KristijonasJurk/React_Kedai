@@ -6,6 +6,8 @@ import Cart from './pages/Cart/Cart'
 import Womens from './pages/Womens/Womens'
 import Mens from './pages/Mens/Mens'
 import Product from './pages/Product/Product';
+import Sneekers from './pages/Sneekers/Sneekers';
+import SingleSneeker from './pages/Sneekers/SingleSneeker';
 // import components
 import Nav from './components/Navbar/Nav'
 import Footer from './components/Footer'
@@ -24,6 +26,9 @@ function App() {
           <Route path="/cart" component={Cart} />
           <Route path="/womens" component={Womens} />
           <Route path="/mens" component={Mens} />
+          <Route path="/product/:id" component={Product} />
+          <Route path="/sneekers" component={Sneekers} />
+          <Route path="/sneekers/:id" component={SingleSneeker} />
           <Route path="/product/:id" component={Product} />
           {/* ERROR EINA PASKUTINIS */}
           <Route path="*" component={Error} />
