@@ -28,8 +28,7 @@ function App() {
           <Route path="/mens" component={Mens} />
           <Route path="/product/:id" component={Product} />
           <Route path="/sneekers" component={Sneekers} />
-          <Route path="/sneekers/:id" component={SingleSneeker} />
-          <Route path="/product/:id" component={Product} />
+          <Route path="/sneeker/:id" component={SingleSneeker} />
           {/* ERROR EINA PASKUTINIS */}
           <Route path="*" component={Error} />
         </Switch>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import Loading from '../../components/Loading'
 import { useGlobalContext } from '../../context'
+import { Link } from 'react-router-dom'
 
 const url = 'https://api.thesneakerdatabase.com/v1/sneakers?limit=100&name='
 
@@ -25,10 +26,10 @@ const Sneeker = () => {
             const { results } = data;
             if (results) {
                 const newSneekers = results.map((item) => {
-                    const { id, title, retailPrice, colorway, media } = item;
+                    const { styleId, title, retailPrice, colorway, media } = item;
 
                     return {
-                        id: id,
+                        id: styleId,
                         title: title,
                         price: retailPrice,
                         colors: colorway,
@@ -36,7 +37,6 @@ const Sneeker = () => {
                     }
                 })
                 setSneekers(newSneekers)
-                console.log(sneekers);
             } else {
                 setSneekers([])
             }
@@ -80,14 +80,16 @@ const Sneeker = () => {
                             return '';
                         }
                         return (
-                            <li key={id} className='sneeker-block'>
-                                <img src={image} alt={title} />
-                                <div className="sneeker-footer">
-                                    <p>{title}</p>
-                                    <p>€{price}</p>
-                                    <p>{colors}</p>
-                                </div>
-                            </li>
+                            <Link to={`sneeker/${id}`}>
+                                <li key={id} className='sneeker-block'>
+                                    <img src={image} alt={title} />
+                                    <div className="sneeker-footer">
+                                        <p>{title}</p>
+                                        <p>€{price}</p>
+                                        <p>{colors}</p>
+                                    </div>
+                                </li>
+                            </Link>
                         )
                     })}
                 </ul>
