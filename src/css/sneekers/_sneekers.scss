@@ -1,5 +1,7 @@
 .sneekers-whole {
     padding: 60px;
+    display: flex;
+    flex-direction: column;
     h3 {
         grid-column: 1/4;
         letter-spacing: 0px;
@@ -11,6 +13,58 @@
         }
     }
 }
+
 .sneekers-container {
-    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    li {
+        img {
+            cursor: pointer;
+        }
+        .sneeker-footer {
+            display: flex;
+            flex-direction: column;
+            p {
+                font-size: 0.75rem;
+                margin: 5px 0 0;
+            }
+            .womens-product-title {
+                cursor: pointer;
+                &:hover {
+                    color: var(--darkerGray);
+                }
+            }
+            span {
+                justify-items: end;
+                margin: 5px 0;
+                font-size: 0.7rem;
+                color: var(--darkerGray);
+            }
+        }
+    }
+}
+
+.sneeker-search-form {
+    width: 85vw;
+    max-width: 40rem;
+    margin: 0 0 20px;
+}
+.form-control {
+    display: flex;
+    align-items: center;
+}
+.form-control label {
+    display: block;
+    margin-bottom: 0.75em;
+    font-weight: 400;
+    letter-spacing: 0rem;
+    margin: 0 1rem 0 0;
+}
+.form-control input {
+    width: 50%;
+    border: 1px solid black;
+    border-radius: var(--mainBorderRadius);
+    padding: 0.3rem;
+    font-size: 1.2rem;
 }

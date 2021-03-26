@@ -1,13 +1,21 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import Loading from '../../components/Loading'
+import { useGlobalContext } from '../../context'
 
 const url = 'https://api.thesneakerdatabase.com/v1/sneakers?limit=100&name='
 
 const Sneeker = () => {
+    const { closeSubmenu } = useGlobalContext();
 
     const [loading, setLoading] = useState(false)
     const [searchTerm, setSearchTerm] = useState('a')
     const [sneekers, setSneekers] = useState([])
+
+    const searchValue = React.useRef('')
+
+    React.useEffect(() => {
+        searchValue.current.focus()
+    }, [])
 
     const fetchData = useCallback(async () => {
         setLoading(true)
@@ -41,28 +49,49 @@ const Sneeker = () => {
     useEffect(() => {
         fetchData()
     }, [searchTerm, fetchData])
-    if (loading) {
-        return <Loading />
-    }
-    return (
-        <div className='sneekers-whole'>
-            <h3>Search for your favourite sneeker <span>{sneekers.length} results</span></h3>
-            <ul className="sneekers-container">
-                {sneekers.map((sneeker) => {
-                    const { id, title, price, colors, image } = sneeker;
-                    return (
-                        <li key={id} className='sneeker-block'>
-                            <img src={image} alt={title} />
-                            <div className="sneeker-footer">
-                                <p>{title}</p>
-                                <p>€{price}</p>
-                                <p>{colors}</p>
-                            </div>
-                        </li>
-                    )
-                })}
-            </ul>
 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
+    const searchSneeker = () => {
+        setSearchTerm(searchValue.current.value)
+    }
+
+
+    return (
+        <div className='sneekers-whole' onMouseOver={closeSubmenu}>
+            <h3>Sneeker search <span>{sneekers.length} results</span></h3>
+            <section className='sneeker-search-container'>
+                <form className="sneeker-search-form" onSubmit={handleSubmit}>
+                    <div className="form-control">
+                        <label htmlFor="name">Search for your favourite sneeker</label>
+                        <input type="text" id='name' ref={searchValue} onChange={searchSneeker} />
+                    </div>
+                </form>
+            </section>
+            {loading
+                ?
+                <Loading />
+                :
+                <ul className="sneekers-container">
+                    {sneekers.map((sneeker) => {
+                        const { id, title, price, colors, image } = sneeker;
+                        if (!image) {
+                            return '';
+                        }
+                        return (
+                            <li key={id} className='sneeker-block'>
+                                <img src={image} alt={title} />
+                                <div className="sneeker-footer">
+                                    <p>{title}</p>
+                                    <p>€{price}</p>
+                                    <p>{colors}</p>
+                                </div>
+                            </li>
+                        )
+                    })}
+                </ul>
+            }
         </div>
     )
 }
