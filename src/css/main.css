@@ -2713,6 +2713,8 @@ Modal
   grid-column: 1/4;
   letter-spacing: 0px;
   font-weight: 400;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--grey);
 }
 
 .sneekers-whole h3 span {
@@ -2780,18 +2782,67 @@ Modal
 
 .form-control label {
   display: block;
-  margin-bottom: 0.75em;
   font-weight: 400;
   letter-spacing: 0rem;
   margin: 0 1rem 0 0;
 }
 
 .form-control input {
-  width: 50%;
   border: 1px solid black;
   border-radius: var(--mainBorderRadius);
   padding: 0.3rem;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .sneekers-container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .sneekers-whole {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .sneekers-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .sneeker-search-form {
+    width: 87vw;
+  }
+  .form-control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .form-control label {
+    margin: 0 1rem 0.75rem 0;
+  }
+  .form-control input {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .sneekers-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .sneeker-search-form {
+    width: 82vw;
+  }
 }
 
 :root {
