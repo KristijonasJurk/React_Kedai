@@ -41,16 +41,28 @@ const Sneeker = () => {
     useEffect(() => {
         fetchData()
     }, [searchTerm, fetchData])
-
+    if (loading) {
+        return <Loading />
+    }
     return (
-        <div>
-            {sneekers.map((sneeker, i) => {
-                const { id, title, price, colors, image } = sneeker;
-                return (
-                    // <p>{id}</p>
-                    <p>hmm</p>
-                )
-            })}
+        <div className='sneekers-whole'>
+            <h3>Search for your favourite sneeker <span>{sneekers.length} results</span></h3>
+            <ul className="sneekers-container">
+                {sneekers.map((sneeker) => {
+                    const { id, title, price, colors, image } = sneeker;
+                    return (
+                        <li key={id} className='sneeker-block'>
+                            <img src={image} alt={title} />
+                            <div className="sneeker-footer">
+                                <p>{title}</p>
+                                <p>€{price}</p>
+                                <p>{colors}</p>
+                            </div>
+                        </li>
+                    )
+                })}
+            </ul>
+
         </div>
     )
 }
