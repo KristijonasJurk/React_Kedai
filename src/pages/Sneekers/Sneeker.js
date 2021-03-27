@@ -14,7 +14,7 @@ const Sneeker = () => {
 
     const searchValue = React.useRef('')
 
-    React.useEffect(() => {
+    useEffect(() => {
         searchValue.current.focus()
     }, [])
 
