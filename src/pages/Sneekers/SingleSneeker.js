@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
+import Loading from '../../components/Loading'
+import { RiArrowGoBackFill } from 'react-icons/ri'
 
 const url = 'https://api.thesneakerdatabase.com/v1/sneakers?limit=100&styleId='
 
@@ -18,12 +20,11 @@ const SingleSneeker = () => {
             const { results } = data;
             if (results) {
                 const newSneekers = results.map((item) => {
-                    const { styleId, brand, name, releaseDate, title, retailPrice, colorway, media } = item;
+                    const { styleId, brand, releaseDate, title, retailPrice, colorway, media } = item;
 
                     return {
                         id: styleId,
                         brand: brand,
-                        name: name,
                         releaseDate: releaseDate,
                         title: title,
                         price: retailPrice,
@@ -46,25 +47,33 @@ const SingleSneeker = () => {
     }, [searchTerm, fetchData])
 
     return (
-        <div>
-            <ul className="sneekers-container">
-                {sneekers.map((sneeker) => {
-                    const { id, title, price, colors, image, brand, name, releaseDate } = sneeker;
-                    if (!image) {
-                        return '';
-                    }
-                    return (
-                        <li key={id} className='sneeker-block'>
-                            <img src={image} alt={title} />
-                            <div className="sneeker-footer">
-                                <p>{title}</p>
-                                <p>€{price}</p>
-                                <p>{colors}</p>
+        <div className='single-sneeker-container'>
+            <Link to='/sneekers'>Go Back  <RiArrowGoBackFill /></Link>
+            {loading
+                ?
+                <Loading />
+                :
+                <div>
+                    {sneekers.map((sneeker) => {
+                        const { id, title, price, colors, image, brand, releaseDate } = sneeker;
+                        return (
+                            <div className="single-sneeker" key={id}>
+                                <section className='single-sneeker-image'>
+                                    <img src={image} alt={title} />
+                                </section>
+                                <section className="single-sneeker-info">
+                                    <p>Brand: <span>{brand}</span></p>
+                                    <p>Full name: <span>{title}</span></p>
+                                    <p>Retail price: <span>€{price}</span></p>
+                                    <p>Available colors: <span>{colors}</span></p>
+                                    <p>Release date: <span>{releaseDate}</span></p>
+                                    <p>For inquiries please contact our sales department at sales@kedai.lt</p>
+                                </section>
                             </div>
-                        </li>
-                    )
-                })}
-            </ul>
+                        )
+                    })}
+                </div>
+            }
         </div>
     )
 }

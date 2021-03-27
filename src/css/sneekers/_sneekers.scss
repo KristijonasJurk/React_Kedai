@@ -106,3 +106,45 @@
         width: 82vw;
     }
 }
+
+// ====== SINGLE SNEEKER ======
+
+.single-sneeker-container {
+    a {
+        margin: 10px 0 0 10px;
+        display: flex;
+        align-items: center;
+        svg {
+            margin-left: 10px;
+        }
+    }
+    div {
+        padding: 60px;
+    }
+}
+.single-sneeker {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+}
+.single-sneeker-info {
+    display: flex;
+    flex-direction: column;
+    p {
+        padding: 10px 0;
+        font-size: 0.8rem;
+        font-weight: 600;
+        span {
+            font-weight: 400;
+            margin-left: 20px;
+        }
+        &:last-of-type {
+            font-size: 0.6rem;
+            color: var(--darkerGray);
+            font-weight: 300;
+            text-decoration: underline;
+        }
+    }
+}
+
+// TODO RESPONSIVE DESIGN OF SINGLE SNEEKERS

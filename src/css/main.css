@@ -2845,6 +2845,60 @@ Modal
   }
 }
 
+.single-sneeker-container a {
+  margin: 10px 0 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single-sneeker-container a svg {
+  margin-left: 10px;
+}
+
+.single-sneeker-container div {
+  padding: 60px;
+}
+
+.single-sneeker {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 60px;
+}
+
+.single-sneeker-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.single-sneeker-info p {
+  padding: 10px 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.single-sneeker-info p span {
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.single-sneeker-info p:last-of-type {
+  font-size: 0.6rem;
+  color: var(--darkerGray);
+  font-weight: 300;
+  text-decoration: underline;
+}
+
 :root {
   --primaryLightColor: #d4e6a5;
   --mainWhite: #fff;
