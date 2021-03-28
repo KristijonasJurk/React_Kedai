@@ -3,7 +3,7 @@ import Loading from '../../components/Loading'
 import { useGlobalContext } from '../../context'
 import { Link } from 'react-router-dom'
 
-const url = 'https://api.thesneakerdatabase.com/v1/sneakers?limit=100&name='
+const url = 'https://api.thesneakerdatabase.com/v1/sneakers?limit=100&name=nike-air-max-plus'
 
 const Sneeker = () => {
     const { closeSubmenu } = useGlobalContext();

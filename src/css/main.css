@@ -2860,7 +2860,7 @@ Modal
 }
 
 .single-sneeker-container div {
-  padding: 60px;
+  padding: 40px;
 }
 
 .single-sneeker {
@@ -2869,6 +2869,15 @@ Modal
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-column-gap: 60px;
+}
+
+.single-sneeker-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .single-sneeker-info {
@@ -2885,6 +2894,7 @@ Modal
   padding: 10px 0;
   font-size: 0.8rem;
   font-weight: 600;
+  border-bottom: 1px solid var(--grey);
 }
 
 .single-sneeker-info p span {
@@ -2897,6 +2907,23 @@ Modal
   color: var(--darkerGray);
   font-weight: 300;
   text-decoration: underline;
+  border-bottom: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .single-sneeker-container div {
+    padding: 2vw 20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .single-sneeker {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr auto;
+        grid-template-rows: 1fr auto;
+    grid-row-gap: 30px;
+  }
 }
 
 :root {
