@@ -1,6 +1,7 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useLayoutEffect, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { mensProducts, mensBrowse } from '../../components/data';
+import Pagination from '../../components/Pagination';
 import { useGlobalContext } from '../../context'
 
 function Womens() {
@@ -12,6 +13,21 @@ function Womens() {
     const [secondColor, setSecondColor] = useState({ isActive: false, id: null })
 
     const [screenWidth, setScreenWidth] = useState(0)
+
+    // PAGINATION
+    const [currentPage, setCurrentPage] = useState(1)
+    const [productsPerPage,] = useState(12)
+
+    const indexOfLastProduct = currentPage * productsPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+    const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+    // CHNAGE PAGE
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber)
+    }
+    useEffect(() => {
+        setCurrentPage(1)
+    }, [products, setProducts])
 
     useLayoutEffect(() => {
         function updateSize() {
@@ -83,7 +99,7 @@ function Womens() {
             </section>
             <section className="womens-products-container">
                 <header className='womens-products-header'>
-                    <h3>Women's Clothing <span>{mensProducts.length} results</span></h3>
+                    <h3>Men's Clothing <span>{mensProducts.length} results</span></h3>
                     <div className="womens-sort-container">
                         <label htmlFor="womens-sort">Sort:</label>
                         <select name="womens sort" id="womens-sort" onChange={(e) => sortData(e.target.value)}>
@@ -97,7 +113,7 @@ function Womens() {
                 </header>
                 <div className="womens-products-container">
                     <ul>
-                        {products.map((product, index) => {
+                        {currentProducts.map((product, index) => {
                             const { id, title, price, color, img, img2, tags } = product;
                             return (
                                 // <Link to={`product/${id}`}>
@@ -125,6 +141,7 @@ function Womens() {
                             )
                         })}
                     </ul>
+                    <Pagination productsPerPage={productsPerPage} totalProducts={products.length} paginate={paginate} />
                 </div>
             </section>
         </div>

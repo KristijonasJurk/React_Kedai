@@ -2132,6 +2132,44 @@ footer {
   color: var(--darkerGray);
 }
 
+.page-numbers-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+  margin-top: 30px;
+}
+
+.page-numbers-container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+}
+
+.page-numbers-container ul li:hover {
+  background-color: var(--darkestGray);
+}
+
+.page-numbers-container ul li:hover a {
+  color: white;
+}
+
+.page-numbers-container ul li a {
+  color: var(--mainBlack);
+}
+
 @media only screen and (max-width: 1000px) {
   .womens-products-container ul {
     -ms-grid-columns: 1fr 1fr 1fr;

@@ -111,6 +111,31 @@
         }
     }
 }
+.page-numbers-container {
+    ul {
+        display: flex;
+        justify-content: center;
+        grid-gap: 10px;
+        margin-top: 30px;
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 22px;
+            width: 22px;
+            cursor: pointer;
+            &:hover {
+                background-color: var(--darkestGray);
+            }
+            &:hover a {
+                color: white;
+            }
+            a {
+                color: var(--mainBlack);
+            }
+        }
+    }
+}
 
 // ====== RESPONSIVE ======
 

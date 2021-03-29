@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react'
 import Loading from '../../components/Loading'
 import { useGlobalContext } from '../../context'
 import { Link } from 'react-router-dom'
+import Pagination from '../../components/Pagination';
 
 const url = 'https://api.thesneakerdatabase.com/v1/sneakers?limit=100&name=nike-air-max-plus'
 
@@ -11,6 +12,9 @@ const Sneeker = () => {
     const [loading, setLoading] = useState(false)
     const [searchTerm, setSearchTerm] = useState('a')
     const [sneekers, setSneekers] = useState([])
+    // PAGINATION
+    const [currentPage, setCurrentPage] = useState(1)
+    const [productsPerPage,] = useState(36)
 
     const searchValue = React.useRef('')
 
@@ -56,7 +60,16 @@ const Sneeker = () => {
     const searchSneeker = () => {
         setSearchTerm(searchValue.current.value)
     }
-
+    const indexOfLastProduct = currentPage * productsPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+    const currentProducts = sneekers.slice(indexOfFirstProduct, indexOfLastProduct);
+    // CHNAGE PAGE
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber)
+    }
+    useEffect(() => {
+        setCurrentPage(1)
+    }, [sneekers, setSneekers])
 
     return (
         <div className='sneekers-whole' onMouseOver={closeSubmenu}>
@@ -73,26 +86,29 @@ const Sneeker = () => {
                 ?
                 <Loading />
                 :
-                <ul className="sneekers-container">
-                    {sneekers.map((sneeker) => {
-                        const { id, title, price, colors, image } = sneeker;
-                        if (!image) {
-                            return '';
-                        }
-                        return (
-                            <Link to={`sneeker/${id}`}>
-                                <li key={id} className='sneeker-block'>
-                                    <img src={image} alt={title} />
-                                    <div className="sneeker-footer">
-                                        <p>{title}</p>
-                                        <p>€{price}</p>
-                                        <p>{colors}</p>
-                                    </div>
-                                </li>
-                            </Link>
-                        )
-                    })}
-                </ul>
+                <div>
+                    <ul className="sneekers-container">
+                        {currentProducts.map((sneeker) => {
+                            const { id, title, price, colors, image } = sneeker;
+                            if (!image) {
+                                return '';
+                            }
+                            return (
+                                <Link to={`sneeker/${id}`}>
+                                    <li key={id} className='sneeker-block'>
+                                        <img src={image} alt={title} />
+                                        <div className="sneeker-footer">
+                                            <p>{title}</p>
+                                            <p>€{price}</p>
+                                            <p>{colors}</p>
+                                        </div>
+                                    </li>
+                                </Link>
+                            )
+                        })}
+                    </ul>
+                    <Pagination productsPerPage={productsPerPage} totalProducts={sneekers.length} paginate={paginate} />
+                </div>
             }
         </div>
     )
