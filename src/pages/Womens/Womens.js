@@ -1,6 +1,8 @@
 import React, { useState, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { womensBrowse, womensProducts } from '../../components/data';
+import Pagination from '../../components/Pagination';
+
 import { useGlobalContext } from '../../context'
 
 function Womens() {
@@ -12,6 +14,19 @@ function Womens() {
     const [secondColor, setSecondColor] = useState({ isActive: false, id: null })
 
     const [screenWidth, setScreenWidth] = useState(0)
+
+    // PAGINATION
+    const [currentPage, setCurrentPage] = useState(1)
+    const [productsPerPage, seProductsPerPage] = useState(12)
+
+    const indexOfLastProduct = currentPage * productsPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+    const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+    // CHNAGE PAGE
+
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber)
+    }
 
     useLayoutEffect(() => {
         function updateSize() {
@@ -98,7 +113,7 @@ function Womens() {
                 </header>
                 <div className="womens-products-container">
                     <ul>
-                        {products.map((product) => {
+                        {currentProducts.map((product) => {
                             const { id, title, price, color, img, img2, tags } = product;
                             return (
                                 // <Link to={`product/${id}`}>
@@ -125,12 +140,13 @@ function Womens() {
                                 </li>
                             )
                         })}
+                        <Pagination productsPerPage={productsPerPage} totalProducts={products.length} paginate={paginate} />
                     </ul>
                 </div>
             </section>
         </div>
     )
 }
-
+// TODO ADD SUBMENU FUNCTIONALITY
 // TODO ADD PRODUCT PAGES
 export default Womens
