@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useLayoutEffect, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { womensBrowse, womensProducts } from '../../components/data';
 import Pagination from '../../components/Pagination';
@@ -17,16 +17,18 @@ function Womens() {
 
     // PAGINATION
     const [currentPage, setCurrentPage] = useState(1)
-    const [productsPerPage, seProductsPerPage] = useState(12)
+    const [productsPerPage,] = useState(12)
 
     const indexOfLastProduct = currentPage * productsPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
     const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
     // CHNAGE PAGE
-
     const paginate = (pageNumber) => {
         setCurrentPage(pageNumber)
     }
+    useEffect(() => {
+        setCurrentPage(1)
+    }, [products, setProducts])
 
     useLayoutEffect(() => {
         function updateSize() {
@@ -140,8 +142,8 @@ function Womens() {
                                 </li>
                             )
                         })}
-                        <Pagination productsPerPage={productsPerPage} totalProducts={products.length} paginate={paginate} />
                     </ul>
+                    <Pagination productsPerPage={productsPerPage} totalProducts={products.length} paginate={paginate} />
                 </div>
             </section>
         </div>
