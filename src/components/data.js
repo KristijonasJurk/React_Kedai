@@ -1,9 +1,10 @@
-import { FcHeadset, FcHighPriority, FcLike, FcOk, FcElectricity, FcBinoculars, FcAdvertising, FcDebian, FcRating, FcSlrBackSide, FcUp, FcSportsMode, FcCheckmark, FcIdea } from "react-icons/fc";
+// import { FcHeadset, FcHighPriority, FcLike, FcOk, FcElectricity, FcBinoculars, FcAdvertising, FcDebian, FcRating, FcSlrBackSide, FcUp, FcSportsMode, FcCheckmark, FcIdea } from "react-icons/fc";
 import React from 'react';
 // FcOldTimeCamera, FcMusic, FcFilmReel, FcLandscape, FcEditImage, FcBullish, FcHome, FcGoogle
 export const sublinks = [
     {
         page: `Home`,
+        url: '/',
         links: [
             // { label: 'Main Page', icon: <FcHome />, url: '/' },
             // { label: 'Google', icon: <FcGoogle />, url: '/' },
@@ -11,30 +12,33 @@ export const sublinks = [
     },
     {
         page: `Women's`,
+        url: '/mens',
         links: [
-            { label: 'New', icon: <FcHeadset />, url: '/womens' },
-            { label: 'Shoes', icon: <FcElectricity />, url: '/womens' },
-            { label: 'Tops', icon: <FcLike />, url: '/womens' },
-            { label: 'Jackets', icon: <FcAdvertising />, url: '/womens' },
-            { label: 'Denim', icon: <FcDebian />, url: '/womens' },
-            { label: 'Vintage', icon: <FcOk />, url: '/womens' },
-            { label: 'Sale', icon: <FcHighPriority />, url: '/womens' },
+            // { label: 'New', icon: <FcHeadset />, url: '/womens' },
+            // { label: 'Shoes', icon: <FcElectricity />, url: '/womens' },
+            // { label: 'Tops', icon: <FcLike />, url: '/womens' },
+            // { label: 'Coats & Jackets', icon: <FcAdvertising />, url: '/womens' },
+            // { label: 'Denim', icon: <FcDebian />, url: '/womens' },
+            // { label: 'Vintage', icon: <FcOk />, url: '/womens' },
+            // { label: 'Sale', icon: <FcHighPriority />, url: '/womens' },
         ],
     },
     {
         page: `Men's`,
+        url: '/mens',
         links: [
-            { label: 'New', icon: <FcIdea />, url: '/mens' },
-            { label: 'Shoes', icon: <FcSlrBackSide />, url: '/mens' },
-            { label: 'Jackets', icon: <FcUp />, url: '/mens' },
-            { label: 'Activewear', icon: <FcSportsMode />, url: '/mens' },
-            { label: 'Bottoms', icon: <FcCheckmark />, url: '/mens' },
-            { label: 'Vintage', icon: <FcRating />, url: '/mens' },
-            { label: 'Sale', icon: <FcBinoculars />, url: '/mens' },
+            // { label: 'New', icon: <FcIdea />, url: '/mens' },
+            // { label: 'Shoes', icon: <FcSlrBackSide />, url: '/mens' },
+            // { label: 'Coats & Jackets', icon: <FcUp />, url: '/mens' },
+            // { label: 'Activewear', icon: <FcSportsMode />, url: '/mens' },
+            // { label: 'Bottoms', icon: <FcCheckmark />, url: '/mens' },
+            // { label: 'Vintage', icon: <FcRating />, url: '/mens' },
+            // { label: 'Sale', icon: <FcBinoculars />, url: '/mens' },
         ],
     },
     {
         page: 'Sneekers',
+        url: '/sneekers',
         links: [
             // { label: 'Accessories', icon: <FcOldTimeCamera />, url: '/lifestyle' },
             // { label: 'Lifestyle & Blog', icon: <FcEditImage />, url: '/lifestyle' },
@@ -77,7 +81,7 @@ export const slide1 = [
 
 export const aboutData = 'Kedai is a lifestyle retailer dedicated to inspiring customers through a unique combination of product, creativity and cultural understanding. Founded in 1970 in a small space across the street from Sapiegos Rumai, Kedai now operates in over 200 stores in Lithuania, United States and Europe, offering experiential retail environments and a well-curated mix of on-trend women’s and men’s shoes, from sneakers, boots and sandals to shoes with fur on them, hats, and backpacks, as well as beauty, intimates, swim and a collection of handpicked vintage clothing. Our Music + Tech collection is a go-to destination for vinyl, record players and tech accessories. Visit our stores, where all are welcome and there’s always something new to see, or shop online at kristijonokedai.com and get free shipping on LT orders over 50eu. For special offers, one-of-a-kind prizes and more, download the our app and join Kedai Rewards! Want to be part of the conversation? Follow, share and shop @KedaiShop.';
 
-export const womensBrowse = ['All', 'New', 'Shoes', 'Tops', 'Jackets', 'Swimwear', 'Bottoms', 'Vintage', 'Summer']
+export const womensBrowse = ['All', 'New', 'Shoes', 'Tops', 'Coats & Jackets', 'Swimwear', 'Bottoms', 'Vintage', 'Summer']
 
 export const womensProducts = [
     {
@@ -300,7 +304,7 @@ export const womensProducts = [
         text: 'Classic Harrington jacket by BDG. Designed with a cord fabrication and patchwork style. Zip-through construction Ft. a spread collar, drop shoulders, long sleeves and stretch trims, finished with an embroidered BDG crest. Exclusive to Kedai.',
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_b?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=960', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115593379991_020_e?$redesign-zoom-5x$='],
-        categories: ['Jackets', 'New', `Women's`],
+        categories: ['Coats & Jackets', 'New', `Women's`],
         tags: 'Back in Stock',
         amount: 1,
         size: 0
@@ -313,7 +317,7 @@ export const womensProducts = [
         text: 'Effortless shacket by BDG, cut from a heavyweight cord fabrication. Features a button-through construction Ft. spread collar, long sleeves, adjustable cuffs and four side pockets to front. Exclusive to Kedai.',
         material: '100% Cotton',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115252560565_053_f?$redesign-zoom-5x$='],
-        categories: ['Jackets', 'New', `Women's`],
+        categories: ['Coats & Jackets', 'New', `Women's`],
         tags: '',
         amount: 1,
         size: 0
@@ -326,7 +330,7 @@ export const womensProducts = [
         text: 'Mid-length coat with a quilted fabrication and all-over patchwork print. Features an open front with volume sleeves, tie-up belt and two oversized side pockets.',
         material: 'Main: 100% Viscose, Fill: 100% Polyester',
         img: ['https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_b?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_d?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_e?$redesign-zoom-5x$=', 'https://s7g10.scene7.com/is/image/UrbanOutfittersEU/0115370060002_095_f?$redesign-zoom-5x$='],
-        categories: ['Jackets', `Women's`],
+        categories: ['Coats & Jackets', `Women's`],
         tags: '',
         amount: 1,
         size: 0
@@ -576,7 +580,7 @@ export const womensProducts = [
 ]
 
 
-export const mensBrowse = ['All', 'New', 'Shoes', 'Jackets', 'Activewear', 'Bottoms', 'Vintage', 'Summer']
+export const mensBrowse = ['All', 'New', 'Shoes', 'Coats & Jackets', 'Activewear', 'Bottoms', 'Vintage', 'Summer']
 
 export const mensProducts = [
 
@@ -684,7 +688,7 @@ export const mensProducts = [
         text: 'Cotton cord jacket by streetwear label OBEY. Features a standard fit with a zip-through front and a tab collar. Topped with flap pockets at the waist and elasticated trims at the cuffs & hem. Finished with a logo accent at the left chest.',
         material: '100% Cotton',
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/60030509_060_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/60030509_060_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/60030509_060_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/60030509_060_f?$redesign-zoom-5x$'],
-        categories: ['Jackets', `Men's`],
+        categories: ['Coats & Jackets', `Men's`],
         tags: '',
         amount: 1,
         size: 0
@@ -697,7 +701,7 @@ export const mensProducts = [
         text: 'Sherpa jacket in a classic bomber silhouette. Ft. a full-zip closure topped with a pointed collar, front slip pockets and cinched elasticated at cuffs and hem.',
         material: '100% Polyester',
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/73285868_001_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73285868_001_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73285868_001_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73285868_001_f?$redesign-zoom-5x$'],
-        categories: ['Jackets', 'New', `Men's`],
+        categories: ['Coats & Jackets', 'New', `Men's`],
         tags: '',
         amount: 1,
         size: 0
@@ -711,7 +715,7 @@ export const mensProducts = [
         material: '54% Polyester, 39% acrylic, 7% other',
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/61010054_065_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/61010054_065_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/61010054_065_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/61010054_065_f?$redesign-zoom-5x$'],
         img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/61010054_105_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/61010054_105_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/61010054_105_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/61010054_105_f?$redesign-zoom-5x$'],
-        categories: ['Jackets', `Men's`],
+        categories: ['Coats & Jackets', `Men's`],
         tags: '',
         amount: 1,
         size: 0
@@ -818,7 +822,7 @@ export const mensProducts = [
         text: 'Cozy and warm hooded jacket by BDG. Made from a sturdy canvas fabric with a soft fleece lining. Cut with a fixed hood, zip-up fastening, drop shoulders and long sleeves. Finished with fitted cuffs and a stretch hem.',
         material: 'Shell: 100% Cotton, Lining: 80% Polyester, 20% Acrylic',
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/73382822_040_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73382822_040_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73382822_040_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73382822_040_f?$redesign-zoom-5x$'],
-        categories: ['Jackets', 'Vintage', `Men's`],
+        categories: ['Coats & Jackets', 'Vintage', `Men's`],
         tags: '',
         amount: 1,
         size: 0
@@ -831,7 +835,7 @@ export const mensProducts = [
         text: 'Warm teddy vest, part of Kedai staple collection. Features a mock neck, front zip fastening, sleeveless design and tonal embroidery logo to front chest.',
         material: '100% Polyester',
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/73908550_072_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73908550_072_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73908550_072_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73908550_072_f?$redesign-zoom-5x$'],
-        categories: ['Jackets', `Men's`, 'Summer'],
+        categories: ['Coats & Jackets', `Men's`, 'Summer'],
         tags: '',
         amount: 1,
         size: 0
@@ -912,7 +916,7 @@ export const mensProducts = [
         text: 'Premium nubuck leather jacket from the experts at Schott. Straight-cut silhouette with a button front and fold-down collar. Front welt pockets; chambray lining.',
         material: 'Leather',
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/57794273_020_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/57794273_020_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/57794273_020_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/57794273_020_f?$redesign-zoom-5x$'],
-        categories: ['Jackets', 'Vintage', `Men's`],
+        categories: ['Coats & Jackets', 'Vintage', `Men's`],
         tags: '',
         amount: 1,
         size: 0
@@ -925,7 +929,7 @@ export const mensProducts = [
         text: 'Zip-through hoodie crafted from classic corduroy with warm lining. Ft. front flap pockets and drawstring hood. Finished with tonal brand patch.',
         material: 'Cotton',
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/73366320_011_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73366320_011_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73366320_011_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/73366320_011_e?$redesign-zoom-5x$'],
-        categories: ['Jackets', 'New', 'Vintage', `Men's`],
+        categories: ['Coats & Jackets', 'New', 'Vintage', `Men's`],
         tags: 'Vintage Look',
         amount: 1,
         size: 0
@@ -953,7 +957,7 @@ export const mensProducts = [
         material: 'Cotton, polyester',
         img: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/56625759_001_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56625759_001_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56625759_001_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56625759_001_f?$redesign-zoom-5x$'],
         img2: ['https://s7d5.scene7.com/is/image/UrbanOutfitters/56625759_071_b?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56625759_071_d?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56625759_071_e?$redesign-zoom-5x$', 'https://s7d5.scene7.com/is/image/UrbanOutfitters/56625759_071_f?$redesign-zoom-5x$'],
-        categories: ['Jackets', 'New', 'Activewear', `Men's`],
+        categories: ['Coats & Jackets', 'New', 'Activewear', `Men's`],
         tags: '',
         amount: 1,
         size: 0

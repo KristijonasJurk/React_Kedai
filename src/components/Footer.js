@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect } from 'react'
-import { AiOutlineMail, AiOutlinePlus, AiFillTwitterCircle, AiFillGithub, AiFillAmazonCircle } from 'react-icons/ai';
+import { AiOutlineMail, AiOutlinePlus, AiOutlineMinus, AiFillTwitterCircle, AiFillGithub, AiFillAmazonCircle } from 'react-icons/ai';
 import { FaStoreAlt, FaFacebook, FaPinterest, FaSpotify } from 'react-icons/fa';
 
 const data = [
@@ -49,7 +49,10 @@ function Footer() {
                             links ? <div key={index} className={`footer-link footer-link${index}`}>
                                 <div className='footer-link-title-container'>
                                     <h5>{title}</h5>
-                                    {screenWidth < 800 && <AiOutlinePlus className='footer-link-expand' onClick={() => setShowLinks(index)} />}
+                                    {screenWidth < 800 && (showLinks === index)
+                                        ? <AiOutlineMinus className='footer-link-expand' onClick={() => setShowLinks(-1)} />
+                                        :
+                                        <AiOutlinePlus className='footer-link-expand' onClick={() => setShowLinks(index)} />}
                                 </div>
                                 {/* screen size under 800 */}
                                 {showLinks === index && screenWidth < 800 ?
