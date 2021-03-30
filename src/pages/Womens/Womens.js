@@ -74,15 +74,6 @@ function Womens() {
             }
         }
     }
-    useEffect(() => {
-        const url = window.location.href.split('/');
-        const category = url[url.length - 1];
-        const clickedCategory = womensBrowse.filter((item) => item.includes(category));
-        if (clickedCategory) {
-            filterItems(category)
-        }
-    }, [changedCategory, setChangedCategory])
-
     return (
         <div className='womens-container' onMouseOver={closeSubmenu}>
             <section className="womens-filter-container">
@@ -92,9 +83,9 @@ function Womens() {
                         <select>
                             {womensBrowse.map((category, index) => {
                                 return (
-                                    <Link to={`women/${category}`}>
-                                        <option onClick={() => filterItems(category)} key={index}>{category}</option>
-                                    </Link>
+                                    <option
+                                        onClick={() => filterItems(category)}
+                                        key={index}>{category}</option>
                                 )
                             })}
                         </select>
@@ -102,12 +93,9 @@ function Womens() {
                         <ul>
                             {womensBrowse.map((category, index) => {
                                 return (
-                                    <Link to={`women/${category}`}>
-                                        <li
-                                            // onClick={() => filterItems(category)}
-                                            onClick={() => setChangedCategory(changedCategory + 1)}
-                                            key={index}>{category}</li>
-                                    </Link>
+                                    <li
+                                        onClick={() => filterItems(category)}
+                                        key={index}>{category}</li>
                                 )
                             })}
                         </ul>
