@@ -14,6 +14,7 @@ function Womens() {
     const [secondColor, setSecondColor] = useState({ isActive: false, id: null })
 
     const [screenWidth, setScreenWidth] = useState(0)
+    const [changedCategory, setChangedCategory] = useState(0)
 
     // PAGINATION
     const [currentPage, setCurrentPage] = useState(1)
@@ -38,7 +39,6 @@ function Womens() {
         updateSize();
         return () => window.removeEventListener('resize', updateSize);
     }, [])
-
     const filterItems = (category) => {
         if (category === 'All') {
             setProducts(womensProducts);
@@ -74,6 +74,14 @@ function Womens() {
             }
         }
     }
+    useEffect(() => {
+        const url = window.location.href.split('/');
+        const category = url[url.length - 1];
+        const clickedCategory = womensBrowse.filter((item) => item.includes(category));
+        if (clickedCategory) {
+            filterItems(category)
+        }
+    }, [changedCategory, setChangedCategory])
 
     return (
         <div className='womens-container' onMouseOver={closeSubmenu}>
@@ -84,7 +92,9 @@ function Womens() {
                         <select>
                             {womensBrowse.map((category, index) => {
                                 return (
-                                    <option onClick={() => filterItems(category)} key={index}>{category}</option>
+                                    <Link to={`women/${category}`}>
+                                        <option onClick={() => filterItems(category)} key={index}>{category}</option>
+                                    </Link>
                                 )
                             })}
                         </select>
@@ -92,7 +102,12 @@ function Womens() {
                         <ul>
                             {womensBrowse.map((category, index) => {
                                 return (
-                                    <li onClick={() => filterItems(category)} key={index}>{category}</li>
+                                    <Link to={`women/${category}`}>
+                                        <li
+                                            // onClick={() => filterItems(category)}
+                                            onClick={() => setChangedCategory(changedCategory + 1)}
+                                            key={index}>{category}</li>
+                                    </Link>
                                 )
                             })}
                         </ul>
