@@ -90,7 +90,7 @@ const Sneeker = () => {
                     <ul className="sneekers-container">
                         {currentProducts.map((sneeker) => {
                             const { id, title, price, colors, image } = sneeker;
-                            if (!image) {
+                            if (!image || !id) {
                                 return '';
                             }
                             return (

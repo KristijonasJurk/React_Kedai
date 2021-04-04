@@ -25,8 +25,8 @@ function App() {
           <Route path="/loading" component={Loading} />
           <Route path="/cart" component={Cart} />
           <Route path="/womens" component={Womens} />
-          <Route path="/womens/:category" component={Womens} />
           <Route path="/mens" component={Mens} />
+          <Route path="/product/:id" component={Product} />
           <Route path="/sneekers" component={Sneekers} />
           <Route path="/sneeker/:id" component={SingleSneeker} />
           {/* ERROR EINA PASKUTINIS */}
