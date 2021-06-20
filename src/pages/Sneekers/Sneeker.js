@@ -14,7 +14,7 @@ const Sneeker = () => {
     const [sneekers, setSneekers] = useState([])
     // PAGINATION
     const [currentPage, setCurrentPage] = useState(1)
-    const [productsPerPage,] = useState(36)
+    const [productsPerPage,] = useState(35)
 
     const searchValue = React.useRef('')
 
@@ -94,7 +94,7 @@ const Sneeker = () => {
                                 return '';
                             }
                             return (
-                                <Link to={`sneeker/${id}`}>
+                                <Link to={`kedai/pages/sneeker/${id}`}>
                                     <li key={id} className='sneeker-block'>
                                         <img src={image} alt={title} />
                                         <div className="sneeker-footer">
@@ -113,5 +113,6 @@ const Sneeker = () => {
         </div>
     )
 }
-
+// TODO FIX THE PRODUCTS PER PAGE, MAKE ID AND IMG FILTERING AS A STATE, SO THE FILTERED PRODUCTS ARE PASSED ONTO IN ADVANCE
+// TODO SUBMENU LINKS DONT WORK AND FOOTER MAX SCREENSIZE PLUS ICON IS VISIBLE
 export default Sneeker

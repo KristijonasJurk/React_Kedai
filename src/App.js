@@ -23,12 +23,12 @@ function App() {
         <Switch>
           <Route path={["/", "/React_Kedai", "/React_Kedai/"]} exact component={Home} />
           <Route path="/loading" component={Loading} />
-          <Route path="/cart" component={Cart} />
-          <Route path="/womens" component={Womens} />
-          <Route path="/mens" component={Mens} />
-          <Route path="/product/:id" component={Product} />
-          <Route path="/sneekers" component={Sneekers} />
-          <Route path="/sneeker/:id" component={SingleSneeker} />
+          <Route path="/kedai/pages/cart" component={Cart} />
+          <Route path="/kedai/pages/womens" component={Womens} />
+          <Route path="/kedai/pages/mens" component={Mens} />
+          <Route path="/kedai/pages/product/:id" component={Product} />
+          <Route path="/kedai/pages/sneekers" component={Sneekers} />
+          <Route path="/kedai/pages/sneeker/:id" component={SingleSneeker} />
           {/* ERROR EINA PASKUTINIS */}
           <Route path="*" component={Error} />
         </Switch>

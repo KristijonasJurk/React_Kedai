@@ -48,7 +48,7 @@ const SingleSneeker = () => {
 
     return (
         <div className='single-sneeker-container'>
-            <Link to='/sneekers'>Go Back  <RiArrowGoBackFill /></Link>
+            <Link to='/kedai/pages/sneekers'>Go Back  <RiArrowGoBackFill /></Link>
             {loading
                 ?
                 <Loading />

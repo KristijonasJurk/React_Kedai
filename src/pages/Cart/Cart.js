@@ -58,7 +58,7 @@ const Home = () => {
                                         </div>
                                     </div>
                                     <div className="cart-item-total-price">
-                                        ${price}
+                                        ${cartItem ? cartItem.amount * price + '.00' : price + '.00'}
                                     </div>
                                 </div>
                             )

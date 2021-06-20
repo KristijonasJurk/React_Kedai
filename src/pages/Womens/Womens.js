@@ -152,6 +152,4 @@ function Womens() {
         </div>
     )
 }
-// TODO ADD SUBMENU FUNCTIONALITY
-// TODO ADD PRODUCT PAGES
 export default Womens

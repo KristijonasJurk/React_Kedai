@@ -32,21 +32,21 @@ const Navbar = () => {
                         <Link to='/' className="nav-link" onMouseOver={displaySubmenu}>Home</Link>
                     </li>
                     <li>
-                        <Link to='/womens' className="nav-link" onMouseOver={displaySubmenu}>Women's</Link>
+                        <Link to='/kedai/pages/womens' className="nav-link" onMouseOver={displaySubmenu}>Women's</Link>
                     </li>
                     <li>
-                        <Link to='/mens' className="nav-link" onMouseOver={displaySubmenu}>Men's</Link>
+                        <Link to='/kedai/pages/mens' className="nav-link" onMouseOver={displaySubmenu}>Men's</Link>
                     </li>
-                    <li>
-                        <Link to='/sneekers' className="nav-link" onMouseOver={displaySubmenu}>Sneekers</Link>
-                    </li>
+                    {/* <li>
+                        <Link to='/kedai/pages/sneekers' className="nav-link" onMouseOver={displaySubmenu}>Sneekers</Link>
+                    </li> */}
                 </ul>
             </div>
             <section className='search'>
                 <button className="nav-toggle" onClick={openSidebar}>
                     <FaBars />
                 </button>
-                <Link to='/cart' className='cart-link'>
+                <Link to='/kedai/pages/cart' className='cart-link'>
                     <IoBagOutline />
                     <div className='amount-container'>
                         <p className='total-amount'>{amount}</p>
